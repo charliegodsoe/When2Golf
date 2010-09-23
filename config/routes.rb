@@ -1,8 +1,16 @@
 When2Golf::Application.routes.draw do
+
+  resources :sessions, :only => [:new, :create, :destroy]
+
   resources :courses
 
   resources :users
+  
+  match '/signin',  :to => 'sessions#new'
+  match '/signout', :to => 'sessions#destroy'
 
+  root :to => 'users#index'
+  
   # The priority is based upon order of creation:
   # first created -> highest priority.
 

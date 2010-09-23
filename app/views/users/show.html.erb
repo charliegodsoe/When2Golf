@@ -12,18 +12,9 @@
 
 <p>
   <b>User role:</b>
-  <%= @user.user_role_id %>
+  <%= "#{@user_role.role} - #{@user_role.description}" %>
 </p>
 
-<p>
-  <b>Encrypted password:</b>
-  <%= @user.encrypted_password %>
-</p>
-
-<p>
-  <b>Salt:</b>
-  <%= @user.salt %>
-</p>
 
 
 <%= link_to 'Edit', edit_user_path(@user) %> |

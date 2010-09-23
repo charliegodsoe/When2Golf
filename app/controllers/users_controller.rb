@@ -1,4 +1,12 @@
 class UsersController < ApplicationController
+  
+  before_filter :authenticate, :only => [:show, :edit, :update, :destroy]
+  
+  def authenticate 
+    #redirect_to signin_path, :notice => "please sign in" unless signed_in?
+    deny_access unless signed_in?
+  end
+  
   # GET /users
   # GET /users.xml
   def index
@@ -14,6 +22,7 @@ class UsersController < ApplicationController
   # GET /users/1.xml
   def show
     @user = User.find(params[:id])
+    @user_role = UserRole.find(@user.user_role_id)
 
     respond_to do |format|
       format.html # show.html.erb
@@ -44,6 +53,8 @@ class UsersController < ApplicationController
 
     respond_to do |format|
       if @user.save
+        sign_in @user
+        flash[:success] = "Welcome to the Sample App!"
         format.html { redirect_to(@user, :notice => 'User was successfully created.') }
         format.xml  { render :xml => @user, :status => :created, :location => @user }
       else

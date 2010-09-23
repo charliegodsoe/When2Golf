@@ -1,0 +1,331 @@
+  Processing by CoursesController#index as HTML
+Rendered courses/index.html.erb within layouts/application (1.0ms)
+Completed 200 OK in 69ms (Views: 36.6ms | ActiveRecord: 0.0ms)
+  Processing by CoursesController#show as HTML
+  Parameters: {"id"=>"37"}
+Completed 200 OK in 8ms (Views: 6.5ms | ActiveRecord: 0.0ms)
+  Processing by CoursesController#new as HTML
+Completed 200 OK in 5ms (Views: 3.4ms | ActiveRecord: 0.0ms)
+  Processing by CoursesController#edit as HTML
+  Parameters: {"id"=>"37"}
+Completed 200 OK in 5ms (Views: 3.7ms | ActiveRecord: 0.0ms)
+  Processing by CoursesController#create as HTML
+  Parameters: {"course"=>{"these"=>"params"}}
+Redirected to http://test.host/courses/1005
+Completed 302 Found in 3ms
+  Processing by CoursesController#create as HTML
+  Parameters: {"course"=>{}}
+Redirected to http://test.host/courses/1006
+Completed 302 Found in 3ms
+  Processing by CoursesController#create as HTML
+  Parameters: {"course"=>{"these"=>"params"}}
+Completed 200 OK in 3ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+  Processing by CoursesController#create as HTML
+  Parameters: {"course"=>{}}
+Completed 200 OK in 3ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+  Processing by CoursesController#update as HTML
+  Parameters: {"course"=>{"these"=>"params"}, "id"=>"37"}
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+  Processing by CoursesController#update as HTML
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/courses/1010
+Completed 302 Found in 4ms
+  Processing by CoursesController#update as HTML
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/courses/1011
+Completed 302 Found in 3ms
+  Processing by CoursesController#update as HTML
+  Parameters: {"id"=>"1"}
+Completed 200 OK in 3ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+  Processing by CoursesController#update as HTML
+  Parameters: {"id"=>"1"}
+Completed 200 OK in 3ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+  Processing by CoursesController#destroy as HTML
+  Parameters: {"id"=>"37"}
+Redirected to http://test.host/courses
+Completed 302 Found in 1ms
+  Processing by CoursesController#destroy as HTML
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/courses
+Completed 302 Found in 2ms
+  Processing by UsersController#index as HTML
+Completed 200 OK in 42ms (Views: 40.4ms | ActiveRecord: 0.0ms)
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"37"}
+Completed 200 OK in 6ms (Views: 3.2ms | ActiveRecord: 0.0ms)
+  Processing by UsersController#new as HTML
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.0ms)
+  Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"37"}
+Completed 200 OK in 5ms (Views: 3.1ms | ActiveRecord: 0.0ms)
+  Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"these"=>"params"}}
+Redirected to http://test.host/users/1020
+Completed 302 Found in 5ms
+  Processing by UsersController#create as HTML
+  Parameters: {"user"=>{}}
+Redirected to http://test.host/users/1021
+Completed 302 Found in 3ms
+  Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"these"=>"params"}}
+Completed 200 OK in 6ms (Views: 1.4ms | ActiveRecord: 0.0ms)
+  Processing by UsersController#create as HTML
+  Parameters: {"user"=>{}}
+Completed 200 OK in 4ms (Views: 1.8ms | ActiveRecord: 0.0ms)
+  Processing by UsersController#update as HTML
+  Parameters: {"user"=>{"these"=>"params"}, "id"=>"37"}
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+  Processing by UsersController#update as HTML
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/users/1025
+Completed 302 Found in 3ms
+  Processing by UsersController#update as HTML
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/users/1026
+Completed 302 Found in 38ms
+  Processing by UsersController#update as HTML
+  Parameters: {"id"=>"1"}
+Completed 200 OK in 3ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+  Processing by UsersController#update as HTML
+  Parameters: {"id"=>"1"}
+Completed 200 OK in 5ms (Views: 2.8ms | ActiveRecord: 0.0ms)
+  Processing by UsersController#destroy as HTML
+  Parameters: {"id"=>"37"}
+Redirected to http://test.host/users
+Completed 302 Found in 1ms
+  Processing by UsersController#destroy as HTML
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/users
+Completed 302 Found in 2ms
+
+
+Started GET "/courses" for 127.0.0.1 at 2010-09-16 18:30:42 -0600
+  Processing by CoursesController#index as HTML
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mCourse Load (0.4ms)[0m  SELECT "courses".* FROM "courses"
+SQLite3::SQLException: no such table: courses: SELECT     "courses".* FROM       "courses"
+Completed   in 107ms
+
+
+Started GET "/users" for 127.0.0.1 at 2010-09-16 18:30:43 -0600
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users"[0m
+SQLite3::SQLException: no such table: users: SELECT     "users".* FROM       "users"
+Completed   in 3ms
+  Processing by CoursesController#index as HTML
+Rendered courses/index.html.erb within layouts/application (0.6ms)
+Completed 200 OK in 8ms (Views: 5.9ms | ActiveRecord: 0.0ms)
+  Processing by CoursesController#show as HTML
+  Parameters: {"id"=>"37"}
+Completed 200 OK in 4ms (Views: 2.4ms | ActiveRecord: 0.0ms)
+  Processing by CoursesController#new as HTML
+Completed 200 OK in 4ms (Views: 2.4ms | ActiveRecord: 0.0ms)
+  Processing by CoursesController#edit as HTML
+  Parameters: {"id"=>"37"}
+Completed 200 OK in 4ms (Views: 2.8ms | ActiveRecord: 0.0ms)
+  Processing by CoursesController#create as HTML
+  Parameters: {"course"=>{"these"=>"params"}}
+Redirected to http://test.host/courses/1005
+Completed 302 Found in 3ms
+  Processing by CoursesController#create as HTML
+  Parameters: {"course"=>{}}
+Redirected to http://test.host/courses/1006
+Completed 302 Found in 3ms
+  Processing by CoursesController#create as HTML
+  Parameters: {"course"=>{"these"=>"params"}}
+Completed 200 OK in 4ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+  Processing by CoursesController#create as HTML
+  Parameters: {"course"=>{}}
+Completed 200 OK in 4ms (Views: 1.3ms | ActiveRecord: 0.0ms)
+  Processing by CoursesController#update as HTML
+  Parameters: {"course"=>{"these"=>"params"}, "id"=>"37"}
+Completed 200 OK in 3ms (Views: 2.2ms | ActiveRecord: 0.0ms)
+  Processing by CoursesController#update as HTML
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/courses/1010
+Completed 302 Found in 3ms
+  Processing by CoursesController#update as HTML
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/courses/1011
+Completed 302 Found in 2ms
+  Processing by CoursesController#update as HTML
+  Parameters: {"id"=>"1"}
+Completed 200 OK in 3ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+  Processing by CoursesController#update as HTML
+  Parameters: {"id"=>"1"}
+Completed 200 OK in 3ms (Views: 1.0ms | ActiveRecord: 0.0ms)
+  Processing by CoursesController#destroy as HTML
+  Parameters: {"id"=>"37"}
+Redirected to http://test.host/courses
+Completed 302 Found in 1ms
+  Processing by CoursesController#destroy as HTML
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/courses
+Completed 302 Found in 2ms
+  Processing by UsersController#index as HTML
+Completed 200 OK in 5ms (Views: 3.4ms | ActiveRecord: 0.0ms)
+  Processing by UsersController#show as HTML
+  Parameters: {"id"=>"37"}
+Completed 200 OK in 5ms (Views: 3.0ms | ActiveRecord: 0.0ms)
+  Processing by UsersController#new as HTML
+Completed 200 OK in 4ms (Views: 2.3ms | ActiveRecord: 0.0ms)
+  Processing by UsersController#edit as HTML
+  Parameters: {"id"=>"37"}
+Completed 200 OK in 4ms (Views: 2.3ms | ActiveRecord: 0.0ms)
+  Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"these"=>"params"}}
+Redirected to http://test.host/users/1020
+Completed 302 Found in 4ms
+  Processing by UsersController#create as HTML
+  Parameters: {"user"=>{}}
+Redirected to http://test.host/users/1021
+Completed 302 Found in 4ms
+  Processing by UsersController#create as HTML
+  Parameters: {"user"=>{"these"=>"params"}}
+Completed 200 OK in 4ms (Views: 1.2ms | ActiveRecord: 0.0ms)
+  Processing by UsersController#create as HTML
+  Parameters: {"user"=>{}}
+Completed 200 OK in 3ms (Views: 1.4ms | ActiveRecord: 0.0ms)
+  Processing by UsersController#update as HTML
+  Parameters: {"user"=>{"these"=>"params"}, "id"=>"37"}
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+  Processing by UsersController#update as HTML
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/users/1025
+Completed 302 Found in 3ms
+  Processing by UsersController#update as HTML
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/users/1026
+Completed 302 Found in 42ms
+  Processing by UsersController#update as HTML
+  Parameters: {"id"=>"1"}
+Completed 200 OK in 3ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+  Processing by UsersController#update as HTML
+  Parameters: {"id"=>"1"}
+Completed 200 OK in 3ms (Views: 1.1ms | ActiveRecord: 0.0ms)
+  Processing by UsersController#destroy as HTML
+  Parameters: {"id"=>"37"}
+Redirected to http://test.host/users
+Completed 302 Found in 1ms
+  Processing by UsersController#destroy as HTML
+  Parameters: {"id"=>"1"}
+Redirected to http://test.host/users
+Completed 302 Found in 2ms
+
+
+Started GET "/courses" for 127.0.0.1 at 2010-09-16 18:34:11 -0600
+  Processing by CoursesController#index as HTML
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses"
+Completed 200 OK in 66ms (Views: 3.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/users" for 127.0.0.1 at 2010-09-16 18:34:11 -0600
+  Processing by UsersController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users"[0m
+Completed 200 OK in 6ms (Views: 3.3ms | ActiveRecord: 0.2ms)
+WARNING: Can't mass-assign protected attributes: user_role_id
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users"."id" FROM "users" WHERE (LOWER("users"."email") = LOWER('charliegodsoe@gmail.com')) LIMIT 1
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "encrypted_password", "name", "salt", "updated_at", "user_role_id") VALUES ('2010-09-23 02:06:02.722410', 'charliegodsoe@gmail.com', '1e6feb5b6038eb23374dbef291207ddda0ee40f20a65be412c11934eec435de7', 'Charlie Godsoe', 'fd899650686609316e19a043f7afd29eabdd088370cd179e9b2f041331fcb919', '2010-09-23 02:06:02.722410', NULL)[0m
+WARNING: Can't mass-assign protected attributes: user_role_id
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users"."id" FROM "users" WHERE (LOWER("users"."email") = LOWER('charliegodsoe@gmail.com')) LIMIT 1
+WARNING: Can't mass-assign protected attributes: user_role_id
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users"."id" FROM "users" WHERE (LOWER("users"."email") = LOWER('')) LIMIT 1[0m
+WARNING: Can't mass-assign protected attributes: user_role_id
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users"."id" FROM "users" WHERE (LOWER("users"."email") = LOWER('charliegodsoe@gmail.com')) LIMIT 1
+WARNING: Can't mass-assign protected attributes: user_role_id
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users"."id" FROM "users" WHERE (LOWER("users"."email") = LOWER('user@foo.com')) LIMIT 1[0m
+WARNING: Can't mass-assign protected attributes: user_role_id
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users"."id" FROM "users" WHERE (LOWER("users"."email") = LOWER('THE_USER@foo.bar.org')) LIMIT 1
+WARNING: Can't mass-assign protected attributes: user_role_id
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users"."id" FROM "users" WHERE (LOWER("users"."email") = LOWER('first.last@foo.jp')) LIMIT 1[0m
+WARNING: Can't mass-assign protected attributes: user_role_id
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users"."id" FROM "users" WHERE (LOWER("users"."email") = LOWER('user@foo,com')) LIMIT 1
+WARNING: Can't mass-assign protected attributes: user_role_id
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users"."id" FROM "users" WHERE (LOWER("users"."email") = LOWER('user_at_foo.org')) LIMIT 1[0m
+WARNING: Can't mass-assign protected attributes: user_role_id
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users"."id" FROM "users" WHERE (LOWER("users"."email") = LOWER('example.user@foo.')) LIMIT 1
+WARNING: Can't mass-assign protected attributes: user_role_id
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users"."id" FROM "users" WHERE (LOWER("users"."email") = LOWER('charliegodsoe@gmail.com')) LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("created_at", "email", "encrypted_password", "name", "salt", "updated_at", "user_role_id") VALUES ('2010-09-23 02:06:02.889039', 'charliegodsoe@gmail.com', '1e6feb5b6038eb23374dbef291207ddda0ee40f20a65be412c11934eec435de7', 'Charlie Godsoe', 'fd899650686609316e19a043f7afd29eabdd088370cd179e9b2f041331fcb919', '2010-09-23 02:06:02.889039', NULL)
+WARNING: Can't mass-assign protected attributes: user_role_id
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users"."id" FROM "users" WHERE (LOWER("users"."email") = LOWER('charliegodsoe@gmail.com')) LIMIT 1[0m
+WARNING: Can't mass-assign protected attributes: user_role_id
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users"."id" FROM "users" WHERE (LOWER("users"."email") = LOWER('CHARLIEGODSOE@GMAIL.COM')) LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "encrypted_password", "name", "salt", "updated_at", "user_role_id") VALUES ('2010-09-23 02:06:02.899328', 'CHARLIEGODSOE@GMAIL.COM', '1e6feb5b6038eb23374dbef291207ddda0ee40f20a65be412c11934eec435de7', 'Charlie Godsoe', 'fd899650686609316e19a043f7afd29eabdd088370cd179e9b2f041331fcb919', '2010-09-23 02:06:02.899328', NULL)[0m
+WARNING: Can't mass-assign protected attributes: user_role_id
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users"."id" FROM "users" WHERE (LOWER("users"."email") = LOWER('charliegodsoe@gmail.com')) LIMIT 1
+WARNING: Can't mass-assign protected attributes: user_role_id
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users"."id" FROM "users" WHERE (LOWER("users"."email") = LOWER('charliegodsoe@gmail.com')) LIMIT 1[0m
+WARNING: Can't mass-assign protected attributes: user_role_id
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users"."id" FROM "users" WHERE (LOWER("users"."email") = LOWER('charliegodsoe@gmail.com')) LIMIT 1
+WARNING: Can't mass-assign protected attributes: user_role_id
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users"."id" FROM "users" WHERE (LOWER("users"."email") = LOWER('charliegodsoe@gmail.com')) LIMIT 1[0m
+WARNING: Can't mass-assign protected attributes: user_role_id
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users"."id" FROM "users" WHERE (LOWER("users"."email") = LOWER('charliegodsoe@gmail.com')) LIMIT 1
+WARNING: Can't mass-assign protected attributes: user_role_id
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users"."id" FROM "users" WHERE (LOWER("users"."email") = LOWER('charliegodsoe@gmail.com')) LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("created_at", "email", "encrypted_password", "name", "salt", "updated_at", "user_role_id") VALUES ('2010-09-23 02:06:02.937507', 'charliegodsoe@gmail.com', '1e6feb5b6038eb23374dbef291207ddda0ee40f20a65be412c11934eec435de7', 'Charlie Godsoe', 'fd899650686609316e19a043f7afd29eabdd088370cd179e9b2f041331fcb919', '2010-09-23 02:06:02.937507', NULL)
+WARNING: Can't mass-assign protected attributes: user_role_id
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users"."id" FROM "users" WHERE (LOWER("users"."email") = LOWER('charliegodsoe@gmail.com')) LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("created_at", "email", "encrypted_password", "name", "salt", "updated_at", "user_role_id") VALUES ('2010-09-23 02:06:02.945410', 'charliegodsoe@gmail.com', '1e6feb5b6038eb23374dbef291207ddda0ee40f20a65be412c11934eec435de7', 'Charlie Godsoe', 'fd899650686609316e19a043f7afd29eabdd088370cd179e9b2f041331fcb919', '2010-09-23 02:06:02.945410', NULL)
+WARNING: Can't mass-assign protected attributes: user_role_id
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users"."id" FROM "users" WHERE (LOWER("users"."email") = LOWER('charliegodsoe@gmail.com')) LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("created_at", "email", "encrypted_password", "name", "salt", "updated_at", "user_role_id") VALUES ('2010-09-23 02:06:02.953313', 'charliegodsoe@gmail.com', '1e6feb5b6038eb23374dbef291207ddda0ee40f20a65be412c11934eec435de7', 'Charlie Godsoe', 'fd899650686609316e19a043f7afd29eabdd088370cd179e9b2f041331fcb919', '2010-09-23 02:06:02.953313', NULL)
+WARNING: Can't mass-assign protected attributes: user_role_id
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users"."id" FROM "users" WHERE (LOWER("users"."email") = LOWER('charliegodsoe@gmail.com')) LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("created_at", "email", "encrypted_password", "name", "salt", "updated_at", "user_role_id") VALUES ('2010-09-23 02:06:02.961517', 'charliegodsoe@gmail.com', '1e6feb5b6038eb23374dbef291207ddda0ee40f20a65be412c11934eec435de7', 'Charlie Godsoe', 'fd899650686609316e19a043f7afd29eabdd088370cd179e9b2f041331fcb919', '2010-09-23 02:06:02.961517', NULL)
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."email" = 'charliegodsoe@gmail.com') LIMIT 1[0m
+WARNING: Can't mass-assign protected attributes: user_role_id
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users"."id" FROM "users" WHERE (LOWER("users"."email") = LOWER('charliegodsoe@gmail.com')) LIMIT 1
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "encrypted_password", "name", "salt", "updated_at", "user_role_id") VALUES ('2010-09-23 02:06:03.002868', 'charliegodsoe@gmail.com', 'cf80466014c8baab9332ca6773d0978391275f1635298ee4652191871c68e70b', 'Charlie Godsoe', 'e9f768dd56a53ae08cdce9c8de31c9ff99aaf81c645cfee0b2c9a7857c5a54c3', '2010-09-23 02:06:03.002868', NULL)[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."email" = 'bar@foo.com') LIMIT 1
+WARNING: Can't mass-assign protected attributes: user_role_id
+  [1m[36mUser Load (0.5ms)[0m  [1mSELECT "users"."id" FROM "users" WHERE (LOWER("users"."email") = LOWER('charliegodsoe@gmail.com')) LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("created_at", "email", "encrypted_password", "name", "salt", "updated_at", "user_role_id") VALUES ('2010-09-23 02:06:03.013782', 'charliegodsoe@gmail.com', 'cf80466014c8baab9332ca6773d0978391275f1635298ee4652191871c68e70b', 'Charlie Godsoe', 'e9f768dd56a53ae08cdce9c8de31c9ff99aaf81c645cfee0b2c9a7857c5a54c3', '2010-09-23 02:06:03.013782', NULL)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."email" = 'charliegodsoe@gmail.com') LIMIT 1[0m
+  Processing by SessionsController#new as HTML
+Rendered sessions/new.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 10ms (Views: 9.1ms | ActiveRecord: 0.0ms)
+  Processing by SessionsController#create as HTML
+Completed   in 0ms
+  Processing by SessionsController#create as HTML
+  Parameters: {"session"=>{"email"=>"charliegodsoe@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."email" = 'charliegodsoe@gmail.com') LIMIT 1
+Completed 200 OK in 81ms (Views: 1.7ms | ActiveRecord: 0.4ms)
+  Processing by SessionsController#create as HTML
+  Parameters: {"session"=>{"email"=>"charliegodsoe@gmail.com", "password"=>"[FILTERED]"}}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."email" = 'charliegodsoe@gmail.com') LIMIT 1[0m
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.2ms)
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users"."id" FROM "users" WHERE (LOWER("users"."email") = LOWER('mhartl@example.com')) LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "encrypted_password", "name", "salt", "updated_at", "user_role_id") VALUES ('2010-09-23 02:08:04.190392', 'mhartl@example.com', '83a11dce45bd306090f466d13003df3ae3a4e5e5f154fd0ef99cf00b774ab617', 'Michael Hartl', '82b24c29dcb4711b1bc5f2ba4af86a441a69c6f840685be960a4c65517b8d962', '2010-09-23 02:08:04.190392', 1)[0m
+  Processing by SessionsController#create as HTML
+  Parameters: {"session"=>{"email"=>"mhartl@example.com", "name"=>"Michael Hartl"}}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."email" = 'mhartl@example.com') LIMIT 1
+Completed 200 OK in 2ms (Views: 1.3ms | ActiveRecord: 0.9ms)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users"."id" FROM "users" WHERE (LOWER("users"."email") = LOWER('mhartl@example.com')) LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("created_at", "email", "encrypted_password", "name", "salt", "updated_at", "user_role_id") VALUES ('2010-09-23 02:08:04.217704', 'mhartl@example.com', '83a11dce45bd306090f466d13003df3ae3a4e5e5f154fd0ef99cf00b774ab617', 'Michael Hartl', '82b24c29dcb4711b1bc5f2ba4af86a441a69c6f840685be960a4c65517b8d962', '2010-09-23 02:08:04.217704', 1)
+  Processing by SessionsController#create as HTML
+  Parameters: {"session"=>{"email"=>"mhartl@example.com", "name"=>"Michael Hartl"}}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."email" = 'mhartl@example.com') LIMIT 1[0m
+Completed 200 OK in 2ms (Views: 1.1ms | ActiveRecord: 0.9ms)
+  Processing by SessionsController#destroy as HTML
+Completed   in 1ms
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users"."id" FROM "users" WHERE (LOWER("users"."email") = LOWER('mhartl@example.com')) LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "encrypted_password", "name", "salt", "updated_at", "user_role_id") VALUES ('2010-09-23 02:08:04.240569', 'mhartl@example.com', '83a11dce45bd306090f466d13003df3ae3a4e5e5f154fd0ef99cf00b774ab617', 'Michael Hartl', '82b24c29dcb4711b1bc5f2ba4af86a441a69c6f840685be960a4c65517b8d962', '2010-09-23 02:08:04.240569', 1)[0m
+  Processing by SessionsController#destroy as HTML
+Completed   in 1ms
