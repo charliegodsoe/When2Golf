@@ -311,3 +311,14 @@ nav ul li a:hover {
   text-decoration: underline;
 }
 
+.outer_publish {
+	border:solid;
+	border-width:2px;
+	border-color:black;
+}
+
+.inner_publish {
+	border:solid;
+	border-width:1px;
+	border-color:blue;
+}

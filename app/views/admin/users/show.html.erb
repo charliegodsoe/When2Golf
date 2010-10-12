@@ -1,0 +1,41 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Email:</b>
+  <%= @user.email %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @user.name %>
+</p>
+
+<p>
+  <b>User role:</b>
+  <%= "#{@user_role.role} - #{@user_role.description}" %>
+</p>
+
+
+<% if has_owner_privileges? and @user.is_publisher? %>
+	<table>
+	  <tr>
+	    <th>Add As Publisher</th>
+	    <th>Course</th>
+	  </tr>
+	<% current_user.courses.each do |c| %>
+		<tr>
+		    <td><%=check_box_tag c.id, 1, @user.associated?(c), 
+			  :onclick => remote_function(
+			  :url => save_path(@user), 
+			  :with => "'course=#{c.id}&amp;show=' + this.checked", 
+			  :method => :post) %>
+			</td>	
+			<td><%=h c.name %></ts>
+		</tr>
+	<% end %>
+	</table>
+<% end %>
+
+
+<%= link_to 'Edit', edit_admin_user_path(@user) %> |
+<%= link_to 'Back', admin_users_path %>

@@ -1,0 +1,57 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Name:</b>
+  <%= @course.name %>
+</p>
+
+<p>
+  <b>Description:</b>
+  <%= @course.description %>
+</p>
+
+<p>
+  <b>Location:</b>
+  <%= @course.location %>
+</p>
+
+<% if has_publisher_privileges? %>
+	<table  class="outer_publish">
+	  	<tr>
+			<th class="outer_publish">Name</th>
+		    <th class="outer_publish">Today</th>
+		    <th class="outer_publish">Today + 1</th>
+		    <th class="outer_publish">Today + 2</th>
+		    <th class="outer_publish">Today + 3</th>
+	  	</tr>
+		<tr>
+			<td class="outer_publish"><%=@course.name%>
+		<% 4.times do %>
+	    	<td class="outer_publish">
+		 		<table class="inner_publish">
+					<tr>
+		 				<% @course_display.time_format_groups.each do |format_group| %>
+							<th class="inner_publish"><%= format_group.group_display_name %></th>
+						<% end %>
+					</tr>
+					<tr>
+						<% @course_display.time_format_groups.each do |format_group| %>
+							<td class="inner_publish">
+								<% #= link_to @course.tee_times(format_group, @day), :action => "add_tee_time", :controller => "admin/course", :id => @course %>
+								<%= link_to @course.tee_times(format_group, @day), :action => :add_tee_time, :id => @course, :time_format_group_id => format_group, :day => @day %>
+							</td>
+						<% end %>
+					</th>
+				</table>
+			</td>
+			<% @day = @day.tomorrow%>
+		<% end %>
+	  	</tr>
+	</table>
+<% end %>
+
+<% if has_owner_privileges?%>
+	<%= link_to 'Edit', edit_admin_course_path(@course) %> |
+<% end %>
+
+<%= link_to 'Back', admin_courses_path %>

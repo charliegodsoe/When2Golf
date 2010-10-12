@@ -1,12 +1,12 @@
 # == Schema Information
-# Schema version: 20100915234332
+# Schema version: 20101011170824
 #
 # Table name: users
 #
 #  id                 :integer         not null, primary key
 #  email              :string(255)
 #  name               :string(255)
-#  user_role_id       :integer
+#  user_role_id       :integer         default(3)
 #  encrypted_password :string(255)
 #  salt               :string(255)
 #  created_at         :datetime
@@ -15,6 +15,7 @@
 
 class User < ActiveRecord::Base
   has_and_belongs_to_many :courses
+  belongs_to :user_role
   
   attr_accessor :password
   attr_accessible :name, :email, :password, :password_confirmation
@@ -35,6 +36,14 @@ class User < ActiveRecord::Base
 
   before_save :encrypt_password
   
+  def associated?(course)
+    # course.users.each do |user|
+    #       return true if user.id == id
+    #     end
+    #     return false
+    courses.include?(course)
+  end
+  
   # Return true if the user's password matches the submitted password.
   def has_password?(submitted_password)
     encrypted_password == encrypt(submitted_password)
@@ -49,6 +58,18 @@ class User < ActiveRecord::Base
   def self.authenticate_with_salt(id, cookie_salt)
     user = find_by_id(id)
     (user && user.salt == cookie_salt) ? user : nil
+  end
+  
+  def is_admin?
+    user_role.role == "Administrator"
+  end
+  
+  def is_owner?
+    user_role.role == "Owner"
+  end
+  
+  def is_publisher? 
+    user_role.role == "Publisher"
   end
   
   private
