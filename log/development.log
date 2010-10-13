@@ -5658,3 +5658,193 @@ Rendered layouts/_header.html.erb (126.6ms)
 Rendered layouts/_footer.html.erb (0.3ms)
 Rendered courses/index.html.erb within layouts/application (367.3ms)
 Completed 200 OK in 459ms (Views: 370.1ms | ActiveRecord: 7.7ms)
+  [1m[36mSQL (0.8ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+  [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+  [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+Migrating to CreateTimeEntries (20101011170824)
+  [1m[35mSQL (0.1ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (0.7ms)[0m  [1mDROP TABLE "time_entries"[0m
+  [1m[35mSQL (0.3ms)[0m  DELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20101011170824'
+Migrating to CreateCoursesTimeDisplayFormatsJoinTable (20101007000705)
+  [1m[36mSQL (0.6ms)[0m  [1mDROP TABLE "courses_time_display_formats"[0m
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20101007000705'
+Migrating to CreateTimeFormatGroups (20101007000154)
+  [1m[36mSQL (0.8ms)[0m  [1mDROP TABLE "time_format_groups"[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20101007000154'
+Migrating to CreateTimeDisplayTypes (20101006235831)
+  [1m[36mSQL (0.6ms)[0m  [1mDROP TABLE "time_display_types"[0m
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20101006235831'
+Migrating to CreateTimeDisplayFormats (20101006235651)
+  [1m[36mSQL (0.6ms)[0m  [1mDROP TABLE "time_display_formats"[0m
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20101006235651'
+Migrating to CreateCoursesUsersJoinTable (20100925202933)
+  [1m[36mSQL (0.7ms)[0m  [1mDROP TABLE "courses_users"[0m
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20100925202933'
+Migrating to CreateCourses (20100915234332)
+  [1m[36mSQL (0.7ms)[0m  [1mDROP TABLE "courses"[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20100915234332'
+Migrating to CreateUserRoles (20100915231427)
+  [1m[36mSQL (0.6ms)[0m  [1mDROP TABLE "user_roles"[0m
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20100915231427'
+Migrating to CreateUsers (20100915231226)
+  [1m[36mSQL (0.6ms)[0m  [1mDROP TABLE "users"[0m
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20100915231226'
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+  [1m[36mSQL (0.1ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[36mSQL (0.5ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+Migrating to CreateUsers (20100915231226)
+  [1m[35mSQL (0.1ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (0.6ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar(255), "name" varchar(255), "user_role_id" integer DEFAULT 3, "encrypted_password" varchar(255), "salt" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+WARNING: Can't mass-assign protected attributes: user_role_id
+  [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users"."id" FROM "users" WHERE (LOWER("users"."email") = LOWER('charliegodsoe@gmail.com')) LIMIT 1[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "users" ("created_at", "email", "encrypted_password", "name", "salt", "updated_at", "user_role_id") VALUES ('2010-10-13 18:31:55.879330', 'charliegodsoe@gmail.com', 'cce72017e204fae5aa8ed1ab83ce309eaa8791db8c0db7d58472f4125fe40e1f', 'Charlie Godsoe', '9c099bc3d14e72dfa5e8401a372763f0259f1715ae324aec143e447f3064529b', '2010-10-13 18:31:55.879330', 3)
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20100915231226')[0m
+Migrating to CreateUserRoles (20100915231427)
+  [1m[35mSQL (0.5ms)[0m  CREATE TABLE "user_roles" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "role" varchar(255), "description" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "user_roles" ("created_at", "description", "role", "updated_at") VALUES ('2010-10-13 18:31:55.991201', 'Manages website, can create Owners, and perform Owner operations.', 'Administrator', '2010-10-13 18:31:55.991201')
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "user_roles" ("created_at", "description", "role", "updated_at") VALUES ('2010-10-13 18:31:55.998972', 'Manages courses and course information along with Publishers', 'Owner', '2010-10-13 18:31:55.998972')[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "user_roles" ("created_at", "description", "role", "updated_at") VALUES ('2010-10-13 18:31:55.999931', 'Manages course content and tee time availablity information', 'Publisher', '2010-10-13 18:31:55.999931')
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20100915231427')[0m
+Migrating to CreateCourses (20100915234332)
+  [1m[35mSQL (0.5ms)[0m  CREATE TABLE "courses" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "description" varchar(255), "location" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20100915234332')[0m
+Migrating to CreateCoursesUsersJoinTable (20100925202933)
+  [1m[35mSQL (0.4ms)[0m  CREATE TABLE "courses_users" ("course_id" integer, "user_id" integer) 
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20100925202933')[0m
+Migrating to CreateTimeDisplayFormats (20101006235651)
+  [1m[35mSQL (0.5ms)[0m  CREATE TABLE "time_display_formats" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "format_name" varchar(255), "time_display_type_id" integer, "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "time_display_formats" ("created_at", "format_name", "time_display_type_id", "updated_at") VALUES ('2010-10-13 18:31:56.049231', 'Standard Golf - Weekly', 2, '2010-10-13 18:31:56.049231')
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20101006235651')[0m
+Migrating to CreateTimeDisplayTypes (20101006235831)
+  [1m[35mSQL (0.5ms)[0m  CREATE TABLE "time_display_types" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "type_name" varchar(255), "type_description" varchar(255), "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "time_display_types" ("created_at", "type_description", "type_name", "updated_at") VALUES ('2010-10-13 18:31:56.111730', 'Monthly view for tee times', 'Monthly', '2010-10-13 18:31:56.111730')
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "time_display_types" ("created_at", "type_description", "type_name", "updated_at") VALUES ('2010-10-13 18:31:56.119540', 'Weekly view for tee times', 'Weekly', '2010-10-13 18:31:56.119540')[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "time_display_types" ("created_at", "type_description", "type_name", "updated_at") VALUES ('2010-10-13 18:31:56.120525', 'Daily view for tee times', 'Daily', '2010-10-13 18:31:56.120525')
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20101006235831')[0m
+Migrating to CreateTimeFormatGroups (20101007000154)
+  [1m[35mSQL (0.5ms)[0m  CREATE TABLE "time_format_groups" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "time_display_format_id" integer, "group_name" varchar(255), "group_display_name" varchar(255), "start_time" time, "end_time" time, "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "time_format_groups" ("created_at", "end_time", "group_display_name", "group_name", "start_time", "time_display_format_id", "updated_at") VALUES ('2010-10-13 18:31:56.148166', '2010-10-13 15:00:00.000000', 'EM', 'Early Morning', '2010-10-13 11:00:00.000000', 1, '2010-10-13 18:31:56.148166')
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "time_format_groups" ("created_at", "end_time", "group_display_name", "group_name", "start_time", "time_display_format_id", "updated_at") VALUES ('2010-10-13 18:31:56.161190', '2010-10-13 19:00:00.000000', 'M', 'Morning', '2010-10-13 15:00:00.000000', 1, '2010-10-13 18:31:56.161190')[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "time_format_groups" ("created_at", "end_time", "group_display_name", "group_name", "start_time", "time_display_format_id", "updated_at") VALUES ('2010-10-13 18:31:56.167535', '2010-10-14 00:00:00.000000', 'A', 'Afternoon', '2010-10-13 19:00:00.000000', 1, '2010-10-13 18:31:56.167535')
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "time_format_groups" ("created_at", "end_time", "group_display_name", "group_name", "start_time", "time_display_format_id", "updated_at") VALUES ('2010-10-13 18:31:56.169207', '2010-10-14 06:00:00.000000', 'EV', 'Evening', '2010-10-14 00:00:00.000000', 1, '2010-10-13 18:31:56.169207')[0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "time_format_groups" ("created_at", "end_time", "group_display_name", "group_name", "start_time", "time_display_format_id", "updated_at") VALUES ('2010-10-13 18:31:56.170653', '2010-10-13 11:00:00.000000', 'T', 'Twilight', '2010-10-14 06:00:00.000000', 1, '2010-10-13 18:31:56.170653')
+  [1m[36mSQL (0.1ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20101007000154')[0m
+Migrating to CreateCoursesTimeDisplayFormatsJoinTable (20101007000705)
+  [1m[35mSQL (0.5ms)[0m  CREATE TABLE "courses_time_display_formats" ("course_id" integer, "time_display_format_id" integer) 
+  [1m[36mTimeDisplayFormat Load (0.2ms)[0m  [1mSELECT "time_display_formats".* FROM "time_display_formats" WHERE ("time_display_formats"."id" = 1) LIMIT 1[0m
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses"
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20101007000705')[0m
+Migrating to CreateTimeEntries (20101011170824)
+  [1m[35mSQL (0.5ms)[0m  CREATE TABLE "time_entries" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "course_id" integer, "start_date_time" datetime, "end_date_time" datetime, "created_at" datetime, "updated_at" datetime) 
+  [1m[36mSQL (0.2ms)[0m  [1mINSERT INTO "schema_migrations" ("version") VALUES ('20101011170824')[0m
+  [1m[35mSQL (0.4ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+  [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.0ms)[0m  [1mPRAGMA index_list("courses")[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("courses_time_display_formats")
+  [1m[36mSQL (0.1ms)[0m  [1mPRAGMA index_list("courses_users")[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("time_display_formats")
+  [1m[36mSQL (0.0ms)[0m  [1mPRAGMA index_list("time_display_types")[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("time_entries")
+  [1m[36mSQL (0.0ms)[0m  [1mPRAGMA index_list("time_format_groups")[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("user_roles")
+  [1m[36mSQL (0.0ms)[0m  [1mPRAGMA index_list("users")[0m
+
+
+Started GET "/" for 127.0.0.1 at 2010-10-13 11:38:39 -0700
+  Processing by CoursesController#index as HTML
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses"
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Rendered layouts/_header.html.erb (55.8ms)
+Rendered layouts/_footer.html.erb (0.4ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1
+Rendered courses/index.html.erb within layouts/application (64.1ms)
+Completed 200 OK in 194ms (Views: 70.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2010-10-13 11:38:48 -0700
+  Processing by SessionsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Rendered layouts/_header.html.erb (64.5ms)
+Rendered layouts/_footer.html.erb (0.4ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1
+Rendered sessions/new.html.erb within layouts/application (75.6ms)
+Completed 200 OK in 83ms (Views: 82.4ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2010-10-13 11:39:07 -0700
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"msjloMgXetz1sfA7hXANrrxIVTmFboF4cN4p4UDidbM=", "session"=>{"email"=>"example@example.com", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."email" = 'example@example.com') LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1
+Rendered layouts/_header.html.erb (33.7ms)
+Rendered layouts/_footer.html.erb (0.4ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Rendered sessions/new.html.erb within layouts/application (42.4ms)
+Completed 200 OK in 74ms (Views: 48.4ms | ActiveRecord: 0.4ms)

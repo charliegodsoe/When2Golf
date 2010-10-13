@@ -10,7 +10,7 @@ class CreateUsers < ActiveRecord::Migration
       t.timestamps
     end
     
-    User.create :email => "charliegodsoe@gmail.com", :name => "Charlie Godsoe", :user_role_id => 1, :password => "pinhead", :password_confirmation => "pinhead"
+    User.create :email => "l", :name => "Charlie Godsoe", :user_role_id => 1, :password => "pinhead", :password_confirmation => "pinhead"
   end
 
   def self.down
