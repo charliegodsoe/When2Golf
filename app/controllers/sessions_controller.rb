@@ -12,7 +12,7 @@ class SessionsController < ApplicationController
     else
       flash[:notice] = "Sign in successful!"
       sign_in user
-      redirect_to user
+      redirect_to [:admin, user]
     end
   end
 

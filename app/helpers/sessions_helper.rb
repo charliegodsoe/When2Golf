@@ -21,6 +21,24 @@ module SessionsHelper
     !current_user.nil?
   end
   
+  def has_admin_privileges?
+    if signed_in?
+      current_user.is_admin?
+    end
+  end
+  
+  def has_owner_privileges?
+    if signed_in?
+      current_user.is_admin? or current_user.is_owner?
+    end
+  end
+  
+  def has_publisher_privileges?
+    if signed_in?
+      current_user.is_admin? or current_user.is_owner? or current_user.is_publisher?
+    end
+  end
+  
   def deny_access
     redirect_to signin_path, :notice => "Please sign in to access this page."
   end

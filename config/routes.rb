@@ -4,12 +4,24 @@ When2Golf::Application.routes.draw do
 
   resources :courses
 
-  resources :users
+  resources :users, :only => :new
   
-  match '/signin',  :to => 'sessions#new'
-  match '/signout', :to => 'sessions#destroy'
-
-  root :to => 'users#index'
+  match '/signin',    :to => 'sessions#new'
+  match '/signout',   :to => 'sessions#destroy'
+  match '/signup',    :to => 'admin/users#new'
+  root :to => 'courses#index'
+  
+  namespace :admin do
+    resources :courses 
+    resources :users# do
+      # member do
+      #       post 'save' #, :member => {:save => :post}
+      #     end
+      #   end
+  end
+  
+  match 'admin/users/:id/save' => 'admin/users#save', :as => :save
+  match 'admin/courses/add_tee_time/:id' => 'admin/courses#add_tee_time' 
   
   # The priority is based upon order of creation:
   # first created -> highest priority.

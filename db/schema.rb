@@ -10,12 +10,54 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20100915234332) do
+ActiveRecord::Schema.define(:version => 20101011170824) do
 
   create_table "courses", :force => true do |t|
     t.string   "name"
     t.string   "description"
     t.string   "location"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "courses_time_display_formats", :id => false, :force => true do |t|
+    t.integer "course_id"
+    t.integer "time_display_format_id"
+  end
+
+  create_table "courses_users", :id => false, :force => true do |t|
+    t.integer "course_id"
+    t.integer "user_id"
+  end
+
+  create_table "time_display_formats", :force => true do |t|
+    t.string   "format_name"
+    t.integer  "time_display_type_id"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "time_display_types", :force => true do |t|
+    t.string   "type_name"
+    t.string   "type_description"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "time_entries", :force => true do |t|
+    t.integer  "course_id"
+    t.datetime "start_date_time"
+    t.datetime "end_date_time"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "time_format_groups", :force => true do |t|
+    t.integer  "time_display_format_id"
+    t.string   "group_name"
+    t.string   "group_display_name"
+    t.time     "start_time"
+    t.time     "end_time"
     t.datetime "created_at"
     t.datetime "updated_at"
   end
@@ -30,7 +72,7 @@ ActiveRecord::Schema.define(:version => 20100915234332) do
   create_table "users", :force => true do |t|
     t.string   "email"
     t.string   "name"
-    t.integer  "user_role_id"
+    t.integer  "user_role_id",       :default => 3
     t.string   "encrypted_password"
     t.string   "salt"
     t.datetime "created_at"

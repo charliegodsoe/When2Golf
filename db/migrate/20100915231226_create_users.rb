@@ -3,12 +3,14 @@ class CreateUsers < ActiveRecord::Migration
     create_table :users do |t|
       t.string :email
       t.string :name
-      t.integer :user_role_id
+      t.references :user_role, :default => 3
       t.string :encrypted_password
       t.string :salt
 
       t.timestamps
     end
+    
+    User.create :email => "charliegodsoe@gmail.com", :name => "Charlie Godsoe", :user_role_id => 1, :password => "pinhead", :password_confirmation => "pinhead"
   end
 
   def self.down

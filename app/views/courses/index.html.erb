@@ -1,27 +1,41 @@
 <h1>Listing courses</h1>
-
 <table>
   <tr>
-    <th>Name</th>
-    <th>Description</th>
-    <th>Location</th>
-    <th></th>
-    <th></th>
-    <th></th>
+    	<th class="outer_publish">Name</th>
+	    <th class="outer_publish">Today</th>
+	    <th class="outer_publish">Today + 1</th>
+	    <th class="outer_publish">Today + 2</th>
+	    <th class="outer_publish">Today + 3</th>
   </tr>
 
 <% @courses.each do |course| %>
-  <tr>
-    <td><%= course.name %></td>
-    <td><%= course.description %></td>
-    <td><%= course.location %></td>
-    <td><%= link_to 'Show', course %></td>
-    <td><%= link_to 'Edit', edit_course_path(course) %></td>
-    <td><%= link_to 'Destroy', course, :confirm => 'Are you sure?', :method => :delete %></td>
-  </tr>
+	<tr>
+	  	<td class="outer_publish"><%=course.name%></td>
+		<% 4.times do %>
+			<td class="outer_publish">
+				<table class="inner_publish">
+					<tr>
+						<% # ToDo: something better than just grabbing the first time display format %>
+		 				<% course.time_display_formats.first.time_format_groups.each do |format_group| %>
+							<th class="inner_publish"><%= format_group.group_display_name %></th>
+						<% end %>
+					</tr>	
+					<tr>
+						<% course.time_display_formats.first.time_format_groups.each do |format_group| %>
+							<td class="inner_publish">
+								<%= course.tee_times(format_group, @day) %>
+							</td>
+						<% end %>
+					</tr>
+					</tr>
+				</table>
+			</td>
+			<% @day = @day.tomorrow%>
+		<% end %>
+	</tr>
+	<% @day = DateTime.now %>
+
 <% end %>
 </table>
 
 <br />
-
-<%= link_to 'New Course', new_course_path %>
