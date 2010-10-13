@@ -5424,3 +5424,237 @@ Completed 200 OK in 195ms (Views: 112.6ms | ActiveRecord: 2.1ms)
   [1m[36mCourse Load (0.3ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE ("courses"."id" = 2) LIMIT 1[0m
   [1m[35mTimeEntry Load (1.3ms)[0m  SELECT "time_entries".* FROM "time_entries" WHERE ("time_entries".course_id = 2) ORDER BY updated_at desc
   [1m[36mTimeEntry Load (1.3ms)[0m  [1mSELECT "time_entries".* FROM "time_entries" WHERE ("time_entries".course_id = 2) ORDER BY updated_at desc[0m
+
+
+Started GET "/" for 127.0.0.1 at 2010-10-13 10:56:44 -0400
+  Processing by CoursesController#index as HTML
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mCourse Load (0.3ms)[0m  SELECT "courses".* FROM "courses"
+  [1m[36mTimeEntry Load (0.7ms)[0m  [1mSELECT "time_entries".* FROM "time_entries" WHERE ("time_entries".course_id = 6) ORDER BY updated_at desc[0m
+  [1m[35mTimeEntry Load (1.0ms)[0m  SELECT "time_entries".* FROM "time_entries" WHERE ("time_entries".course_id = 2) ORDER BY updated_at desc
+  [1m[36mTimeEntry Load (0.5ms)[0m  [1mSELECT "time_entries".* FROM "time_entries" WHERE ("time_entries".course_id = 7) ORDER BY updated_at desc[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "time_entries".* FROM "time_entries" WHERE ("time_entries".course_id = 6) ORDER BY updated_at desc
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "time_entries".* FROM "time_entries" WHERE ("time_entries".course_id = 6) ORDER BY updated_at desc[0m
+  [1m[35mTimeEntry Load (0.8ms)[0m  SELECT "time_entries".* FROM "time_entries" WHERE ("time_entries".course_id = 5) ORDER BY updated_at desc
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "time_entries".* FROM "time_entries" WHERE ("time_entries".course_id = 5) ORDER BY updated_at desc[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "time_entries".* FROM "time_entries" WHERE ("time_entries".course_id = 2) ORDER BY updated_at desc
+  [1m[36mTimeDisplayFormat Load (0.3ms)[0m  [1mSELECT * FROM "time_display_formats" INNER JOIN "courses_time_display_formats" ON "time_display_formats".id = "courses_time_display_formats".time_display_format_id WHERE ("courses_time_display_formats".course_id = 5 ) LIMIT 1[0m
+  [1m[35mTimeFormatGroup Load (0.5ms)[0m  SELECT "time_format_groups".* FROM "time_format_groups" WHERE ("time_format_groups".time_display_format_id = 1)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT * FROM "time_display_formats" INNER JOIN "courses_time_display_formats" ON "time_display_formats".id = "courses_time_display_formats".time_display_format_id WHERE ("courses_time_display_formats".course_id = 5 ) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "time_format_groups".* FROM "time_format_groups" WHERE ("time_format_groups".time_display_format_id = 1)
+  [1m[36mTimeEntry Load (0.6ms)[0m  [1mSELECT "time_entries".* FROM "time_entries" WHERE ("time_entries".course_id = 5)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT * FROM "time_display_formats" INNER JOIN "courses_time_display_formats" ON "time_display_formats".id = "courses_time_display_formats".time_display_format_id WHERE ("courses_time_display_formats".course_id = 5 ) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "time_format_groups".* FROM "time_format_groups" WHERE ("time_format_groups".time_display_format_id = 1)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT * FROM "time_display_formats" INNER JOIN "courses_time_display_formats" ON "time_display_formats".id = "courses_time_display_formats".time_display_format_id WHERE ("courses_time_display_formats".course_id = 5 ) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "time_format_groups".* FROM "time_format_groups" WHERE ("time_format_groups".time_display_format_id = 1)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT * FROM "time_display_formats" INNER JOIN "courses_time_display_formats" ON "time_display_formats".id = "courses_time_display_formats".time_display_format_id WHERE ("courses_time_display_formats".course_id = 5 ) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "time_format_groups".* FROM "time_format_groups" WHERE ("time_format_groups".time_display_format_id = 1)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT * FROM "time_display_formats" INNER JOIN "courses_time_display_formats" ON "time_display_formats".id = "courses_time_display_formats".time_display_format_id WHERE ("courses_time_display_formats".course_id = 5 ) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "time_format_groups".* FROM "time_format_groups" WHERE ("time_format_groups".time_display_format_id = 1)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT * FROM "time_display_formats" INNER JOIN "courses_time_display_formats" ON "time_display_formats".id = "courses_time_display_formats".time_display_format_id WHERE ("courses_time_display_formats".course_id = 5 ) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "time_format_groups".* FROM "time_format_groups" WHERE ("time_format_groups".time_display_format_id = 1)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT * FROM "time_display_formats" INNER JOIN "courses_time_display_formats" ON "time_display_formats".id = "courses_time_display_formats".time_display_format_id WHERE ("courses_time_display_formats".course_id = 5 ) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "time_format_groups".* FROM "time_format_groups" WHERE ("time_format_groups".time_display_format_id = 1)[0m
+  [1m[35mTimeDisplayFormat Load (0.3ms)[0m  SELECT * FROM "time_display_formats" INNER JOIN "courses_time_display_formats" ON "time_display_formats".id = "courses_time_display_formats".time_display_format_id WHERE ("courses_time_display_formats".course_id = 2 ) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "time_format_groups".* FROM "time_format_groups" WHERE ("time_format_groups".time_display_format_id = 1)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT * FROM "time_display_formats" INNER JOIN "courses_time_display_formats" ON "time_display_formats".id = "courses_time_display_formats".time_display_format_id WHERE ("courses_time_display_formats".course_id = 2 ) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "time_format_groups".* FROM "time_format_groups" WHERE ("time_format_groups".time_display_format_id = 1)[0m
+  [1m[35mTimeEntry Load (0.7ms)[0m  SELECT "time_entries".* FROM "time_entries" WHERE ("time_entries".course_id = 2)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT * FROM "time_display_formats" INNER JOIN "courses_time_display_formats" ON "time_display_formats".id = "courses_time_display_formats".time_display_format_id WHERE ("courses_time_display_formats".course_id = 2 ) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "time_format_groups".* FROM "time_format_groups" WHERE ("time_format_groups".time_display_format_id = 1)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT * FROM "time_display_formats" INNER JOIN "courses_time_display_formats" ON "time_display_formats".id = "courses_time_display_formats".time_display_format_id WHERE ("courses_time_display_formats".course_id = 2 ) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "time_format_groups".* FROM "time_format_groups" WHERE ("time_format_groups".time_display_format_id = 1)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT * FROM "time_display_formats" INNER JOIN "courses_time_display_formats" ON "time_display_formats".id = "courses_time_display_formats".time_display_format_id WHERE ("courses_time_display_formats".course_id = 2 ) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "time_format_groups".* FROM "time_format_groups" WHERE ("time_format_groups".time_display_format_id = 1)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT * FROM "time_display_formats" INNER JOIN "courses_time_display_formats" ON "time_display_formats".id = "courses_time_display_formats".time_display_format_id WHERE ("courses_time_display_formats".course_id = 2 ) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "time_format_groups".* FROM "time_format_groups" WHERE ("time_format_groups".time_display_format_id = 1)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT * FROM "time_display_formats" INNER JOIN "courses_time_display_formats" ON "time_display_formats".id = "courses_time_display_formats".time_display_format_id WHERE ("courses_time_display_formats".course_id = 2 ) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "time_format_groups".* FROM "time_format_groups" WHERE ("time_format_groups".time_display_format_id = 1)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT * FROM "time_display_formats" INNER JOIN "courses_time_display_formats" ON "time_display_formats".id = "courses_time_display_formats".time_display_format_id WHERE ("courses_time_display_formats".course_id = 2 ) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "time_format_groups".* FROM "time_format_groups" WHERE ("time_format_groups".time_display_format_id = 1)
+  [1m[36mTimeDisplayFormat Load (0.3ms)[0m  [1mSELECT * FROM "time_display_formats" INNER JOIN "courses_time_display_formats" ON "time_display_formats".id = "courses_time_display_formats".time_display_format_id WHERE ("courses_time_display_formats".course_id = 6 ) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "time_format_groups".* FROM "time_format_groups" WHERE ("time_format_groups".time_display_format_id = 1)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT * FROM "time_display_formats" INNER JOIN "courses_time_display_formats" ON "time_display_formats".id = "courses_time_display_formats".time_display_format_id WHERE ("courses_time_display_formats".course_id = 6 ) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "time_format_groups".* FROM "time_format_groups" WHERE ("time_format_groups".time_display_format_id = 1)
+  [1m[36mTimeEntry Load (0.1ms)[0m  [1mSELECT "time_entries".* FROM "time_entries" WHERE ("time_entries".course_id = 6)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT * FROM "time_display_formats" INNER JOIN "courses_time_display_formats" ON "time_display_formats".id = "courses_time_display_formats".time_display_format_id WHERE ("courses_time_display_formats".course_id = 6 ) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "time_format_groups".* FROM "time_format_groups" WHERE ("time_format_groups".time_display_format_id = 1)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT * FROM "time_display_formats" INNER JOIN "courses_time_display_formats" ON "time_display_formats".id = "courses_time_display_formats".time_display_format_id WHERE ("courses_time_display_formats".course_id = 6 ) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "time_format_groups".* FROM "time_format_groups" WHERE ("time_format_groups".time_display_format_id = 1)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT * FROM "time_display_formats" INNER JOIN "courses_time_display_formats" ON "time_display_formats".id = "courses_time_display_formats".time_display_format_id WHERE ("courses_time_display_formats".course_id = 6 ) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "time_format_groups".* FROM "time_format_groups" WHERE ("time_format_groups".time_display_format_id = 1)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT * FROM "time_display_formats" INNER JOIN "courses_time_display_formats" ON "time_display_formats".id = "courses_time_display_formats".time_display_format_id WHERE ("courses_time_display_formats".course_id = 6 ) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "time_format_groups".* FROM "time_format_groups" WHERE ("time_format_groups".time_display_format_id = 1)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT * FROM "time_display_formats" INNER JOIN "courses_time_display_formats" ON "time_display_formats".id = "courses_time_display_formats".time_display_format_id WHERE ("courses_time_display_formats".course_id = 6 ) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "time_format_groups".* FROM "time_format_groups" WHERE ("time_format_groups".time_display_format_id = 1)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT * FROM "time_display_formats" INNER JOIN "courses_time_display_formats" ON "time_display_formats".id = "courses_time_display_formats".time_display_format_id WHERE ("courses_time_display_formats".course_id = 6 ) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "time_format_groups".* FROM "time_format_groups" WHERE ("time_format_groups".time_display_format_id = 1)[0m
+  [1m[35mTimeDisplayFormat Load (0.3ms)[0m  SELECT * FROM "time_display_formats" INNER JOIN "courses_time_display_formats" ON "time_display_formats".id = "courses_time_display_formats".time_display_format_id WHERE ("courses_time_display_formats".course_id = 7 ) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "time_format_groups".* FROM "time_format_groups" WHERE ("time_format_groups".time_display_format_id = 1)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT * FROM "time_display_formats" INNER JOIN "courses_time_display_formats" ON "time_display_formats".id = "courses_time_display_formats".time_display_format_id WHERE ("courses_time_display_formats".course_id = 7 ) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "time_format_groups".* FROM "time_format_groups" WHERE ("time_format_groups".time_display_format_id = 1)[0m
+  [1m[35mTimeEntry Load (0.1ms)[0m  SELECT "time_entries".* FROM "time_entries" WHERE ("time_entries".course_id = 7)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT * FROM "time_display_formats" INNER JOIN "courses_time_display_formats" ON "time_display_formats".id = "courses_time_display_formats".time_display_format_id WHERE ("courses_time_display_formats".course_id = 7 ) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "time_format_groups".* FROM "time_format_groups" WHERE ("time_format_groups".time_display_format_id = 1)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT * FROM "time_display_formats" INNER JOIN "courses_time_display_formats" ON "time_display_formats".id = "courses_time_display_formats".time_display_format_id WHERE ("courses_time_display_formats".course_id = 7 ) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "time_format_groups".* FROM "time_format_groups" WHERE ("time_format_groups".time_display_format_id = 1)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT * FROM "time_display_formats" INNER JOIN "courses_time_display_formats" ON "time_display_formats".id = "courses_time_display_formats".time_display_format_id WHERE ("courses_time_display_formats".course_id = 7 ) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "time_format_groups".* FROM "time_format_groups" WHERE ("time_format_groups".time_display_format_id = 1)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT * FROM "time_display_formats" INNER JOIN "courses_time_display_formats" ON "time_display_formats".id = "courses_time_display_formats".time_display_format_id WHERE ("courses_time_display_formats".course_id = 7 ) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "time_format_groups".* FROM "time_format_groups" WHERE ("time_format_groups".time_display_format_id = 1)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT * FROM "time_display_formats" INNER JOIN "courses_time_display_formats" ON "time_display_formats".id = "courses_time_display_formats".time_display_format_id WHERE ("courses_time_display_formats".course_id = 7 ) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "time_format_groups".* FROM "time_format_groups" WHERE ("time_format_groups".time_display_format_id = 1)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT * FROM "time_display_formats" INNER JOIN "courses_time_display_formats" ON "time_display_formats".id = "courses_time_display_formats".time_display_format_id WHERE ("courses_time_display_formats".course_id = 7 ) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "time_format_groups".* FROM "time_format_groups" WHERE ("time_format_groups".time_display_format_id = 1)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+  [1m[35mUserRole Load (0.2ms)[0m  SELECT "user_roles".* FROM "user_roles" WHERE ("user_roles"."id" = 2) LIMIT 1
+Rendered layouts/_header.html.erb (148.0ms)
+Rendered layouts/_footer.html.erb (0.4ms)
+Rendered courses/index.html.erb within layouts/application (383.8ms)
+Completed 200 OK in 807ms (Views: 386.5ms | ActiveRecord: 7.6ms)
+
+
+Started GET "/admin/courses" for 127.0.0.1 at 2010-10-13 11:40:54 -0400
+  Processing by Admin::CoursesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+  [1m[35mUserRole Load (0.2ms)[0m  SELECT "user_roles".* FROM "user_roles" WHERE ("user_roles"."id" = 2) LIMIT 1
+  [1m[36mCourse Load (0.5ms)[0m  [1mSELECT * FROM "courses" INNER JOIN "courses_users" ON "courses".id = "courses_users".course_id WHERE ("courses_users".user_id = 2 )[0m
+Rendered layouts/_header.html.erb (28.4ms)
+Rendered layouts/_footer.html.erb (0.4ms)
+Rendered admin/courses/index.html.erb within layouts/application (56.3ms)
+Completed 200 OK in 178ms (Views: 61.0ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/admin/courses/2" for 127.0.0.1 at 2010-10-13 11:40:56 -0400
+  Processing by Admin::CoursesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1
+  [1m[36mCourse Load (0.2ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE ("courses"."id" = 2) LIMIT 1[0m
+  [1m[35mTimeDisplayFormat Load (0.3ms)[0m  SELECT "time_display_formats".* FROM "time_display_formats" WHERE ("time_display_formats"."time_display_type_id" = 2) LIMIT 1
+  [1m[36mUserRole Load (0.2ms)[0m  [1mSELECT "user_roles".* FROM "user_roles" WHERE ("user_roles"."id" = 2) LIMIT 1[0m
+  [1m[35mTimeFormatGroup Load (0.5ms)[0m  SELECT "time_format_groups".* FROM "time_format_groups" WHERE ("time_format_groups".time_display_format_id = 1)
+  [1m[36mTimeEntry Load (0.8ms)[0m  [1mSELECT "time_entries".* FROM "time_entries" WHERE ("time_entries".course_id = 2)[0m
+Rendered layouts/_header.html.erb (23.8ms)
+Rendered layouts/_footer.html.erb (0.4ms)
+Rendered admin/courses/show.html.erb within layouts/application (197.7ms)
+Completed 200 OK in 344ms (Views: 204.9ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/admin/courses/add_tee_time/2?time_format_group_id=1&day=2010-10-13T11%3A40%3A56-04%3A00" for 127.0.0.1 at 2010-10-13 11:40:59 -0400
+  Processing by Admin::CoursesController#add_tee_time as HTML
+  Parameters: {"time_format_group_id"=>"1", "day"=>"2010-10-13T11:40:56-04:00", "id"=>"2"}
+  [1m[35mUser Load (0.7ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1
+  [1m[36mCourse Load (0.2ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE ("courses"."id" = 2) LIMIT 1[0m
+  [1m[35mTimeFormatGroup Load (0.3ms)[0m  SELECT "time_format_groups".* FROM "time_format_groups" WHERE ("time_format_groups"."id" = 1) LIMIT 1
+Time format group: #<TimeFormatGroup id: 1, time_display_format_id: 1, group_name: "Early Morning", group_display_name: "EM", start_time: "2000-01-01 08:00:00", end_time: "2000-01-01 12:00:00", created_at: "2010-10-08 00:23:22", updated_at: "2010-10-08 00:23:22">
+Day: Wed, 13 Oct 2010
+Start Time: Wed, 13 Oct 2010 08:00:00 +0000
+End Time: Wed, 13 Oct 2010 08:00:00 +0000
+  [1m[36mSQL (0.6ms)[0m  [1mINSERT INTO "time_entries" ("course_id", "created_at", "end_date_time", "start_date_time", "updated_at") VALUES (2, '2010-10-13 15:40:59.499487', '2010-10-13 08:00:00.000000', '2010-10-13 08:00:00.000000', '2010-10-13 15:40:59.499487')[0m
+Redirected to http://localhost:3000/admin/courses/2
+Completed 302 Found in 267ms
+
+
+Started GET "/admin/courses/2" for 127.0.0.1 at 2010-10-13 11:40:59 -0400
+  Processing by Admin::CoursesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1
+  [1m[36mCourse Load (0.3ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE ("courses"."id" = 2) LIMIT 1[0m
+  [1m[35mTimeDisplayFormat Load (0.2ms)[0m  SELECT "time_display_formats".* FROM "time_display_formats" WHERE ("time_display_formats"."time_display_type_id" = 2) LIMIT 1
+  [1m[36mUserRole Load (0.3ms)[0m  [1mSELECT "user_roles".* FROM "user_roles" WHERE ("user_roles"."id" = 2) LIMIT 1[0m
+  [1m[35mTimeFormatGroup Load (0.5ms)[0m  SELECT "time_format_groups".* FROM "time_format_groups" WHERE ("time_format_groups".time_display_format_id = 1)
+  [1m[36mTimeEntry Load (1.0ms)[0m  [1mSELECT "time_entries".* FROM "time_entries" WHERE ("time_entries".course_id = 2)[0m
+Rendered layouts/_header.html.erb (4.0ms)
+Rendered layouts/_footer.html.erb (0.4ms)
+Rendered admin/courses/show.html.erb within layouts/application (185.6ms)
+Completed 200 OK in 367ms (Views: 190.3ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-10-13 11:41:02 -0400
+  Processing by CoursesController#index as HTML
+  [1m[35mCourse Load (0.4ms)[0m  SELECT "courses".* FROM "courses"
+  [1m[36mTimeEntry Load (0.6ms)[0m  [1mSELECT "time_entries".* FROM "time_entries" WHERE ("time_entries".course_id = 6) ORDER BY updated_at desc[0m
+  [1m[35mTimeEntry Load (1.0ms)[0m  SELECT "time_entries".* FROM "time_entries" WHERE ("time_entries".course_id = 2) ORDER BY updated_at desc
+  [1m[36mTimeEntry Load (0.5ms)[0m  [1mSELECT "time_entries".* FROM "time_entries" WHERE ("time_entries".course_id = 7) ORDER BY updated_at desc[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "time_entries".* FROM "time_entries" WHERE ("time_entries".course_id = 6) ORDER BY updated_at desc
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "time_entries".* FROM "time_entries" WHERE ("time_entries".course_id = 6) ORDER BY updated_at desc[0m
+  [1m[35mTimeEntry Load (0.8ms)[0m  SELECT "time_entries".* FROM "time_entries" WHERE ("time_entries".course_id = 5) ORDER BY updated_at desc
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "time_entries".* FROM "time_entries" WHERE ("time_entries".course_id = 5) ORDER BY updated_at desc[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "time_entries".* FROM "time_entries" WHERE ("time_entries".course_id = 2) ORDER BY updated_at desc
+  [1m[36mTimeDisplayFormat Load (0.3ms)[0m  [1mSELECT * FROM "time_display_formats" INNER JOIN "courses_time_display_formats" ON "time_display_formats".id = "courses_time_display_formats".time_display_format_id WHERE ("courses_time_display_formats".course_id = 2 ) LIMIT 1[0m
+  [1m[35mTimeFormatGroup Load (0.6ms)[0m  SELECT "time_format_groups".* FROM "time_format_groups" WHERE ("time_format_groups".time_display_format_id = 1)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT * FROM "time_display_formats" INNER JOIN "courses_time_display_formats" ON "time_display_formats".id = "courses_time_display_formats".time_display_format_id WHERE ("courses_time_display_formats".course_id = 2 ) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "time_format_groups".* FROM "time_format_groups" WHERE ("time_format_groups".time_display_format_id = 1)
+  [1m[36mTimeEntry Load (0.8ms)[0m  [1mSELECT "time_entries".* FROM "time_entries" WHERE ("time_entries".course_id = 2)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT * FROM "time_display_formats" INNER JOIN "courses_time_display_formats" ON "time_display_formats".id = "courses_time_display_formats".time_display_format_id WHERE ("courses_time_display_formats".course_id = 2 ) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "time_format_groups".* FROM "time_format_groups" WHERE ("time_format_groups".time_display_format_id = 1)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT * FROM "time_display_formats" INNER JOIN "courses_time_display_formats" ON "time_display_formats".id = "courses_time_display_formats".time_display_format_id WHERE ("courses_time_display_formats".course_id = 2 ) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "time_format_groups".* FROM "time_format_groups" WHERE ("time_format_groups".time_display_format_id = 1)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT * FROM "time_display_formats" INNER JOIN "courses_time_display_formats" ON "time_display_formats".id = "courses_time_display_formats".time_display_format_id WHERE ("courses_time_display_formats".course_id = 2 ) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "time_format_groups".* FROM "time_format_groups" WHERE ("time_format_groups".time_display_format_id = 1)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT * FROM "time_display_formats" INNER JOIN "courses_time_display_formats" ON "time_display_formats".id = "courses_time_display_formats".time_display_format_id WHERE ("courses_time_display_formats".course_id = 2 ) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "time_format_groups".* FROM "time_format_groups" WHERE ("time_format_groups".time_display_format_id = 1)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT * FROM "time_display_formats" INNER JOIN "courses_time_display_formats" ON "time_display_formats".id = "courses_time_display_formats".time_display_format_id WHERE ("courses_time_display_formats".course_id = 2 ) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "time_format_groups".* FROM "time_format_groups" WHERE ("time_format_groups".time_display_format_id = 1)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT * FROM "time_display_formats" INNER JOIN "courses_time_display_formats" ON "time_display_formats".id = "courses_time_display_formats".time_display_format_id WHERE ("courses_time_display_formats".course_id = 2 ) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "time_format_groups".* FROM "time_format_groups" WHERE ("time_format_groups".time_display_format_id = 1)[0m
+  [1m[35mTimeDisplayFormat Load (0.3ms)[0m  SELECT * FROM "time_display_formats" INNER JOIN "courses_time_display_formats" ON "time_display_formats".id = "courses_time_display_formats".time_display_format_id WHERE ("courses_time_display_formats".course_id = 5 ) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "time_format_groups".* FROM "time_format_groups" WHERE ("time_format_groups".time_display_format_id = 1)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT * FROM "time_display_formats" INNER JOIN "courses_time_display_formats" ON "time_display_formats".id = "courses_time_display_formats".time_display_format_id WHERE ("courses_time_display_formats".course_id = 5 ) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "time_format_groups".* FROM "time_format_groups" WHERE ("time_format_groups".time_display_format_id = 1)[0m
+  [1m[35mTimeEntry Load (0.7ms)[0m  SELECT "time_entries".* FROM "time_entries" WHERE ("time_entries".course_id = 5)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT * FROM "time_display_formats" INNER JOIN "courses_time_display_formats" ON "time_display_formats".id = "courses_time_display_formats".time_display_format_id WHERE ("courses_time_display_formats".course_id = 5 ) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "time_format_groups".* FROM "time_format_groups" WHERE ("time_format_groups".time_display_format_id = 1)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT * FROM "time_display_formats" INNER JOIN "courses_time_display_formats" ON "time_display_formats".id = "courses_time_display_formats".time_display_format_id WHERE ("courses_time_display_formats".course_id = 5 ) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "time_format_groups".* FROM "time_format_groups" WHERE ("time_format_groups".time_display_format_id = 1)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT * FROM "time_display_formats" INNER JOIN "courses_time_display_formats" ON "time_display_formats".id = "courses_time_display_formats".time_display_format_id WHERE ("courses_time_display_formats".course_id = 5 ) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "time_format_groups".* FROM "time_format_groups" WHERE ("time_format_groups".time_display_format_id = 1)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT * FROM "time_display_formats" INNER JOIN "courses_time_display_formats" ON "time_display_formats".id = "courses_time_display_formats".time_display_format_id WHERE ("courses_time_display_formats".course_id = 5 ) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "time_format_groups".* FROM "time_format_groups" WHERE ("time_format_groups".time_display_format_id = 1)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT * FROM "time_display_formats" INNER JOIN "courses_time_display_formats" ON "time_display_formats".id = "courses_time_display_formats".time_display_format_id WHERE ("courses_time_display_formats".course_id = 5 ) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "time_format_groups".* FROM "time_format_groups" WHERE ("time_format_groups".time_display_format_id = 1)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT * FROM "time_display_formats" INNER JOIN "courses_time_display_formats" ON "time_display_formats".id = "courses_time_display_formats".time_display_format_id WHERE ("courses_time_display_formats".course_id = 5 ) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "time_format_groups".* FROM "time_format_groups" WHERE ("time_format_groups".time_display_format_id = 1)
+  [1m[36mTimeDisplayFormat Load (0.3ms)[0m  [1mSELECT * FROM "time_display_formats" INNER JOIN "courses_time_display_formats" ON "time_display_formats".id = "courses_time_display_formats".time_display_format_id WHERE ("courses_time_display_formats".course_id = 6 ) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "time_format_groups".* FROM "time_format_groups" WHERE ("time_format_groups".time_display_format_id = 1)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT * FROM "time_display_formats" INNER JOIN "courses_time_display_formats" ON "time_display_formats".id = "courses_time_display_formats".time_display_format_id WHERE ("courses_time_display_formats".course_id = 6 ) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "time_format_groups".* FROM "time_format_groups" WHERE ("time_format_groups".time_display_format_id = 1)
+  [1m[36mTimeEntry Load (0.1ms)[0m  [1mSELECT "time_entries".* FROM "time_entries" WHERE ("time_entries".course_id = 6)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT * FROM "time_display_formats" INNER JOIN "courses_time_display_formats" ON "time_display_formats".id = "courses_time_display_formats".time_display_format_id WHERE ("courses_time_display_formats".course_id = 6 ) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "time_format_groups".* FROM "time_format_groups" WHERE ("time_format_groups".time_display_format_id = 1)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT * FROM "time_display_formats" INNER JOIN "courses_time_display_formats" ON "time_display_formats".id = "courses_time_display_formats".time_display_format_id WHERE ("courses_time_display_formats".course_id = 6 ) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "time_format_groups".* FROM "time_format_groups" WHERE ("time_format_groups".time_display_format_id = 1)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT * FROM "time_display_formats" INNER JOIN "courses_time_display_formats" ON "time_display_formats".id = "courses_time_display_formats".time_display_format_id WHERE ("courses_time_display_formats".course_id = 6 ) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "time_format_groups".* FROM "time_format_groups" WHERE ("time_format_groups".time_display_format_id = 1)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT * FROM "time_display_formats" INNER JOIN "courses_time_display_formats" ON "time_display_formats".id = "courses_time_display_formats".time_display_format_id WHERE ("courses_time_display_formats".course_id = 6 ) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "time_format_groups".* FROM "time_format_groups" WHERE ("time_format_groups".time_display_format_id = 1)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT * FROM "time_display_formats" INNER JOIN "courses_time_display_formats" ON "time_display_formats".id = "courses_time_display_formats".time_display_format_id WHERE ("courses_time_display_formats".course_id = 6 ) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "time_format_groups".* FROM "time_format_groups" WHERE ("time_format_groups".time_display_format_id = 1)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT * FROM "time_display_formats" INNER JOIN "courses_time_display_formats" ON "time_display_formats".id = "courses_time_display_formats".time_display_format_id WHERE ("courses_time_display_formats".course_id = 6 ) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "time_format_groups".* FROM "time_format_groups" WHERE ("time_format_groups".time_display_format_id = 1)[0m
+  [1m[35mTimeDisplayFormat Load (0.3ms)[0m  SELECT * FROM "time_display_formats" INNER JOIN "courses_time_display_formats" ON "time_display_formats".id = "courses_time_display_formats".time_display_format_id WHERE ("courses_time_display_formats".course_id = 7 ) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "time_format_groups".* FROM "time_format_groups" WHERE ("time_format_groups".time_display_format_id = 1)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT * FROM "time_display_formats" INNER JOIN "courses_time_display_formats" ON "time_display_formats".id = "courses_time_display_formats".time_display_format_id WHERE ("courses_time_display_formats".course_id = 7 ) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "time_format_groups".* FROM "time_format_groups" WHERE ("time_format_groups".time_display_format_id = 1)[0m
+  [1m[35mTimeEntry Load (0.2ms)[0m  SELECT "time_entries".* FROM "time_entries" WHERE ("time_entries".course_id = 7)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT * FROM "time_display_formats" INNER JOIN "courses_time_display_formats" ON "time_display_formats".id = "courses_time_display_formats".time_display_format_id WHERE ("courses_time_display_formats".course_id = 7 ) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "time_format_groups".* FROM "time_format_groups" WHERE ("time_format_groups".time_display_format_id = 1)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT * FROM "time_display_formats" INNER JOIN "courses_time_display_formats" ON "time_display_formats".id = "courses_time_display_formats".time_display_format_id WHERE ("courses_time_display_formats".course_id = 7 ) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "time_format_groups".* FROM "time_format_groups" WHERE ("time_format_groups".time_display_format_id = 1)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT * FROM "time_display_formats" INNER JOIN "courses_time_display_formats" ON "time_display_formats".id = "courses_time_display_formats".time_display_format_id WHERE ("courses_time_display_formats".course_id = 7 ) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "time_format_groups".* FROM "time_format_groups" WHERE ("time_format_groups".time_display_format_id = 1)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT * FROM "time_display_formats" INNER JOIN "courses_time_display_formats" ON "time_display_formats".id = "courses_time_display_formats".time_display_format_id WHERE ("courses_time_display_formats".course_id = 7 ) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "time_format_groups".* FROM "time_format_groups" WHERE ("time_format_groups".time_display_format_id = 1)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT * FROM "time_display_formats" INNER JOIN "courses_time_display_formats" ON "time_display_formats".id = "courses_time_display_formats".time_display_format_id WHERE ("courses_time_display_formats".course_id = 7 ) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "time_format_groups".* FROM "time_format_groups" WHERE ("time_format_groups".time_display_format_id = 1)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT * FROM "time_display_formats" INNER JOIN "courses_time_display_formats" ON "time_display_formats".id = "courses_time_display_formats".time_display_format_id WHERE ("courses_time_display_formats".course_id = 7 ) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "time_format_groups".* FROM "time_format_groups" WHERE ("time_format_groups".time_display_format_id = 1)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+  [1m[35mUserRole Load (0.3ms)[0m  SELECT "user_roles".* FROM "user_roles" WHERE ("user_roles"."id" = 2) LIMIT 1
+Rendered layouts/_header.html.erb (126.6ms)
+Rendered layouts/_footer.html.erb (0.3ms)
+Rendered courses/index.html.erb within layouts/application (367.3ms)
+Completed 200 OK in 459ms (Views: 370.1ms | ActiveRecord: 7.7ms)
