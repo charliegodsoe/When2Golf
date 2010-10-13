@@ -2,7 +2,11 @@ class CoursesController < ApplicationController
   # GET /courses
   # GET /courses.xml
   def index
-    @courses = Course.all
+    @courses = Course.find(:all)
+    #@courses = Course.find(:all, :select => 'distinct course_id', :order => 'time_entries.updated_at desc', :joins => 'left outer join time_entries ON time_entries.course_id = courses.id')
+    #@course.time_entries.find(:all, :order => "updated_at", :limit => 1)
+    @courses.sort! { |a,b| b.last_tee_time_update <=> a.last_tee_time_update } #find(:all, :order => "updated_at", :limit => 1).first.updated_at }
+    @day = DateTime.now
 
     respond_to do |format|
       format.html # index.html.erb

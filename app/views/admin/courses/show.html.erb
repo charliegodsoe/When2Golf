@@ -25,7 +25,7 @@
 		    <th class="outer_publish">Today + 3</th>
 	  	</tr>
 		<tr>
-			<td class="outer_publish"><%=@course.name%>
+			<td class="outer_publish"><%=@course.name%></td>
 		<% 4.times do %>
 	    	<td class="outer_publish">
 		 		<table class="inner_publish">
@@ -41,10 +41,10 @@
 								<%= link_to @course.tee_times(format_group, @day), :action => :add_tee_time, :id => @course, :time_format_group_id => format_group, :day => @day %>
 							</td>
 						<% end %>
-					</th>
+					</tr>
 				</table>
 			</td>
-			<% @day = @day.tomorrow%>
+			<% @day = @day.tomorrow %>
 		<% end %>
 	  	</tr>
 	</table>
