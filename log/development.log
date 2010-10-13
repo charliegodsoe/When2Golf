@@ -5953,3 +5953,191 @@ Rendered layouts/_header.html.erb (1.7ms)
 Rendered layouts/_footer.html.erb (0.3ms)
 Rendered admin/courses/index.html.erb within layouts/application (16.0ms)
 Completed 200 OK in 126ms (Views: 22.1ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-10-13 15:12:20 -0400
+  Processing by CoursesController#index as HTML
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses"
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+Rendered layouts/_header.html.erb (118.8ms)
+Rendered layouts/_footer.html.erb (0.4ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1
+Rendered courses/index.html.erb within layouts/application (129.1ms)
+Completed 200 OK in 268ms (Views: 135.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/stylesheets/compiled/print.css" for 127.0.0.1 at 2010-10-13 15:12:21 -0400
+
+ActionController::RoutingError (No route matches "/stylesheets/compiled/print.css"):
+  
+
+Rendered /Users/charliegodsoe/.rvm/gems/ruby-1.9.2-p0@rails3/gems/actionpack-3.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/stylesheets/compiled/screen.css" for 127.0.0.1 at 2010-10-13 15:12:22 -0400
+
+ActionController::RoutingError (No route matches "/stylesheets/compiled/screen.css"):
+  
+
+Rendered /Users/charliegodsoe/.rvm/gems/ruby-1.9.2-p0@rails3/gems/actionpack-3.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-10-13 15:12:26 -0400
+  Processing by CoursesController#index as HTML
+  [1m[36mCourse Load (0.2ms)[0m  [1mSELECT "courses".* FROM "courses"[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1
+Rendered layouts/_header.html.erb (39.9ms)
+Rendered layouts/_footer.html.erb (0.4ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+Rendered courses/index.html.erb within layouts/application (47.5ms)
+Completed 200 OK in 105ms (Views: 52.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/stylesheets/compiled/screen.css" for 127.0.0.1 at 2010-10-13 15:12:26 -0400
+
+ActionController::RoutingError (No route matches "/stylesheets/compiled/screen.css"):
+  
+
+Rendered /Users/charliegodsoe/.rvm/gems/ruby-1.9.2-p0@rails3/gems/actionpack-3.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (44.0ms)
+
+
+Started GET "/stylesheets/compiled/print.css" for 127.0.0.1 at 2010-10-13 15:12:26 -0400
+
+ActionController::RoutingError (No route matches "/stylesheets/compiled/print.css"):
+  
+
+Rendered /Users/charliegodsoe/.rvm/gems/ruby-1.9.2-p0@rails3/gems/actionpack-3.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-10-13 15:12:28 -0400
+  Processing by CoursesController#index as HTML
+  [1m[35mCourse Load (0.2ms)[0m  SELECT "courses".* FROM "courses"
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+Rendered layouts/_header.html.erb (68.7ms)
+Rendered layouts/_footer.html.erb (0.4ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1
+Rendered courses/index.html.erb within layouts/application (76.3ms)
+Completed 200 OK in 101ms (Views: 81.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/stylesheets/compiled/print.css" for 127.0.0.1 at 2010-10-13 15:12:28 -0400
+
+ActionController::RoutingError (No route matches "/stylesheets/compiled/print.css"):
+  
+
+Rendered /Users/charliegodsoe/.rvm/gems/ruby-1.9.2-p0@rails3/gems/actionpack-3.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.9ms)
+
+
+Started GET "/stylesheets/compiled/screen.css" for 127.0.0.1 at 2010-10-13 15:12:28 -0400
+
+ActionController::RoutingError (No route matches "/stylesheets/compiled/screen.css"):
+  
+
+Rendered /Users/charliegodsoe/.rvm/gems/ruby-1.9.2-p0@rails3/gems/actionpack-3.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2010-10-13 15:12:31 -0400
+  Processing by SessionsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+Rendered layouts/_header.html.erb (71.8ms)
+Rendered layouts/_footer.html.erb (0.4ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1
+Rendered sessions/new.html.erb within layouts/application (138.1ms)
+Completed 200 OK in 163ms (Views: 162.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/stylesheets/compiled/screen.css" for 127.0.0.1 at 2010-10-13 15:12:31 -0400
+
+ActionController::RoutingError (No route matches "/stylesheets/compiled/screen.css"):
+  
+
+Rendered /Users/charliegodsoe/.rvm/gems/ruby-1.9.2-p0@rails3/gems/actionpack-3.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/stylesheets/compiled/print.css" for 127.0.0.1 at 2010-10-13 15:12:31 -0400
+
+ActionController::RoutingError (No route matches "/stylesheets/compiled/print.css"):
+  
+
+Rendered /Users/charliegodsoe/.rvm/gems/ruby-1.9.2-p0@rails3/gems/actionpack-3.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-10-13 15:13:06 -0400
+  Processing by CoursesController#index as HTML
+  [1m[36mCourse Load (0.3ms)[0m  [1mSELECT "courses".* FROM "courses"[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1
+Rendered layouts/_header.html.erb (71.3ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+Rendered courses/index.html.erb within layouts/application (79.5ms)
+Completed 200 OK in 104ms (Views: 84.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/stylesheets/compiled/print.css" for 127.0.0.1 at 2010-10-13 15:13:07 -0400
+
+ActionController::RoutingError (No route matches "/stylesheets/compiled/print.css"):
+  
+
+Rendered /Users/charliegodsoe/.rvm/gems/ruby-1.9.2-p0@rails3/gems/actionpack-3.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.0ms)
+
+
+Started GET "/stylesheets/compiled/screen.css" for 127.0.0.1 at 2010-10-13 15:13:07 -0400
+
+ActionController::RoutingError (No route matches "/stylesheets/compiled/screen.css"):
+  
+
+Rendered /Users/charliegodsoe/.rvm/gems/ruby-1.9.2-p0@rails3/gems/actionpack-3.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/routing_error.erb within rescues/layout (1.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-10-13 15:25:27 -0400
+  Processing by CoursesController#index as HTML
+  [1m[35mCourse Load (0.2ms)[0m  SELECT "courses".* FROM "courses"
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+Rendered layouts/_header.html.erb (72.5ms)
+Rendered layouts/_footer.html.erb (0.4ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1
+Rendered courses/index.html.erb within layouts/application (81.5ms)
+Completed 200 OK in 109ms (Views: 86.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-10-13 15:25:31 -0400
+  Processing by CoursesController#index as HTML
+  [1m[36mCourse Load (0.2ms)[0m  [1mSELECT "courses".* FROM "courses"[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1
+Rendered layouts/_header.html.erb (45.0ms)
+Rendered layouts/_footer.html.erb (0.5ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+Rendered courses/index.html.erb within layouts/application (53.0ms)
+Completed 200 OK in 111ms (Views: 87.2ms | ActiveRecord: 0.4ms)
