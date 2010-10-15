@@ -6141,3 +6141,1605 @@ Rendered layouts/_footer.html.erb (0.5ms)
   [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
 Rendered courses/index.html.erb within layouts/application (53.0ms)
 Completed 200 OK in 111ms (Views: 87.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-10-13 15:27:18 -0400
+  Processing by CoursesController#index as HTML
+  [1m[35mCourse Load (0.2ms)[0m  SELECT "courses".* FROM "courses"
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+Rendered layouts/_header.html.erb (68.0ms)
+Rendered layouts/_footer.html.erb (0.4ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1
+Rendered courses/index.html.erb within layouts/application (76.1ms)
+Completed 200 OK in 106ms (Views: 80.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-10-13 15:27:20 -0400
+  Processing by CoursesController#index as HTML
+  [1m[36mCourse Load (0.2ms)[0m  [1mSELECT "courses".* FROM "courses"[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1
+Rendered layouts/_header.html.erb (70.9ms)
+Rendered layouts/_footer.html.erb (0.4ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+Rendered courses/index.html.erb within layouts/application (78.8ms)
+Completed 200 OK in 105ms (Views: 84.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-10-13 15:28:12 -0400
+  Processing by CoursesController#index as HTML
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses"
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+Rendered layouts/_header.html.erb (70.1ms)
+Rendered layouts/_footer.html.erb (0.4ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1
+Rendered courses/index.html.erb within layouts/application (80.9ms)
+Completed 200 OK in 253ms (Views: 87.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-10-13 15:28:16 -0400
+  Processing by CoursesController#index as HTML
+  [1m[36mCourse Load (0.2ms)[0m  [1mSELECT "courses".* FROM "courses"[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1
+Rendered layouts/_header.html.erb (66.0ms)
+Rendered layouts/_footer.html.erb (0.4ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+Rendered courses/index.html.erb within layouts/application (73.7ms)
+Completed 200 OK in 99ms (Views: 78.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-10-13 15:35:19 -0400
+  Processing by CoursesController#index as HTML
+  [1m[35mCourse Load (0.2ms)[0m  SELECT "courses".* FROM "courses"
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+Rendered layouts/_header.html.erb (74.5ms)
+Rendered layouts/_footer.html.erb (0.4ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1
+Rendered courses/index.html.erb within layouts/application (82.2ms)
+Completed 200 OK in 110ms (Views: 88.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/courses" for 127.0.0.1 at 2010-10-13 15:35:22 -0400
+  Processing by CoursesController#index as HTML
+  [1m[36mCourse Load (0.2ms)[0m  [1mSELECT "courses".* FROM "courses"[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1
+Rendered layouts/_header.html.erb (73.0ms)
+Rendered layouts/_footer.html.erb (0.5ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+Rendered courses/index.html.erb within layouts/application (83.5ms)
+Completed 200 OK in 110ms (Views: 88.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2010-10-13 15:35:23 -0400
+  Processing by SessionsController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1
+Rendered layouts/_header.html.erb (78.9ms)
+Rendered layouts/_footer.html.erb (0.4ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+Rendered sessions/new.html.erb within layouts/application (91.5ms)
+Completed 200 OK in 98ms (Views: 97.6ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2010-10-13 15:35:29 -0400
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LbbLt6KdHga9arLVnryrWWQBN70D92UViuU4wctPfmo=", "session"=>{"email"=>"example@example.com", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."email" = 'example@example.com') LIMIT 1
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+Rendered layouts/_header.html.erb (35.1ms)
+Rendered layouts/_footer.html.erb (0.3ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1
+Rendered sessions/new.html.erb within layouts/application (44.2ms)
+Completed 200 OK in 84ms (Views: 51.7ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2010-10-13 15:35:36 -0400
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LbbLt6KdHga9arLVnryrWWQBN70D92UViuU4wctPfmo=", "session"=>{"email"=>"example@example.com", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."email" = 'example@example.com') LIMIT 1[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1
+Rendered layouts/_header.html.erb (5.0ms)
+Rendered layouts/_footer.html.erb (0.3ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 2) LIMIT 1[0m
+Rendered sessions/new.html.erb within layouts/application (13.6ms)
+Completed 200 OK in 50ms (Views: 18.2ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2010-10-13 15:38:42 -0400
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LbbLt6KdHga9arLVnryrWWQBN70D92UViuU4wctPfmo=", "session"=>{"email"=>"charliegodsoe@gmail.com", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."email" = 'charliegodsoe@gmail.com') LIMIT 1
+Redirected to http://localhost:3000/admin/users/1
+Completed 302 Found in 121ms
+
+
+Started GET "/admin/users/1" for 127.0.0.1 at 2010-10-13 15:38:42 -0400
+  Processing by Admin::UsersController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 1) LIMIT 1
+  [1m[36mUserRole Load (0.3ms)[0m  [1mSELECT "user_roles".* FROM "user_roles" WHERE ("user_roles"."id" = 3) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "user_roles".* FROM "user_roles" WHERE ("user_roles"."id" = 3) LIMIT 1
+Rendered layouts/_header.html.erb (1.8ms)
+Rendered layouts/_footer.html.erb (0.3ms)
+Rendered admin/users/show.html.erb within layouts/application (24.9ms)
+Completed 200 OK in 117ms (Views: 33.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/admin/courses" for 127.0.0.1 at 2010-10-13 15:38:44 -0400
+  Processing by Admin::CoursesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [1m[35mUserRole Load (0.2ms)[0m  SELECT "user_roles".* FROM "user_roles" WHERE ("user_roles"."id" = 3) LIMIT 1
+  [1m[36mCourse Load (0.2ms)[0m  [1mSELECT * FROM "courses" INNER JOIN "courses_users" ON "courses".id = "courses_users".course_id WHERE ("courses_users".user_id = 1 )[0m
+Rendered admin/courses/_course.html.erb (0.0ms)
+Rendered layouts/_header.html.erb (1.9ms)
+Rendered layouts/_footer.html.erb (0.3ms)
+Rendered admin/courses/index.html.erb within layouts/application (45.5ms)
+Completed 200 OK in 162ms (Views: 50.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/admin/courses" for 127.0.0.1 at 2010-10-13 17:05:21 -0400
+  Processing by Admin::CoursesController#index as HTML
+  [1m[35mUser Load (0.4ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 1) LIMIT 1
+  [1m[36mUserRole Load (0.3ms)[0m  [1mSELECT "user_roles".* FROM "user_roles" WHERE ("user_roles"."id" = 3) LIMIT 1[0m
+  [1m[35mCourse Load (0.3ms)[0m  SELECT * FROM "courses" INNER JOIN "courses_users" ON "courses".id = "courses_users".course_id WHERE ("courses_users".user_id = 1 )
+Rendered admin/courses/_course.html.erb (0.1ms)
+Rendered layouts/_header.html.erb (1.9ms)
+Rendered layouts/_footer.html.erb (0.3ms)
+Rendered admin/courses/index.html.erb within layouts/application (46.5ms)
+Completed 200 OK in 227ms (Views: 58.7ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-10-13 17:05:23 -0400
+  Processing by CoursesController#index as HTML
+  [1m[36mCourse Load (0.5ms)[0m  [1mSELECT "courses".* FROM "courses"[0m
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 1) LIMIT 1
+  [1m[36mUserRole Load (0.2ms)[0m  [1mSELECT "user_roles".* FROM "user_roles" WHERE ("user_roles"."id" = 3) LIMIT 1[0m
+Rendered layouts/_header.html.erb (105.8ms)
+Rendered layouts/_footer.html.erb (0.4ms)
+Rendered courses/index.html.erb within layouts/application (113.4ms)
+Completed 200 OK in 231ms (Views: 175.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-10-14 21:15:55 -0400
+  Processing by CoursesController#index as HTML
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mCourse Load (0.1ms)[0m  SELECT "courses".* FROM "courses"
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 1) LIMIT 1[0m
+  [1m[35mUserRole Load (0.3ms)[0m  SELECT "user_roles".* FROM "user_roles" WHERE ("user_roles"."id" = 3) LIMIT 1
+Rendered layouts/_header.html.erb (176.7ms)
+Rendered layouts/_footer.html.erb (0.9ms)
+Rendered courses/index.html.erb within layouts/application (210.9ms)
+Completed 200 OK in 544ms (Views: 232.4ms | ActiveRecord: 1.1ms)
+WARNING: Can't mass-assign protected attributes: user_role_id
+WARNING: Can't mass-assign protected attributes: user_role
+  [1m[36mSQL (0.8ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+  [1m[36mSQL (0.9ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+WARNING: Can't mass-assign protected attributes: user_role_id
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users"."id" FROM "users" WHERE (LOWER("users"."email") = LOWER('admin@admin.com')) LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "encrypted_password", "name", "salt", "updated_at", "user_role_id") VALUES ('2010-10-15 01:34:42.107562', 'admin@admin.com', '275effa63a3df05ae9d66635d536911b9e7c14cc23ddbd98fc7ef9e335e7459e', 'Admin', '008231ce551be813fdcd4e79ea888119a523893499c3c73af46ed8476a24f0c8', '2010-10-15 01:34:42.107562', 3)[0m
+WARNING: Can't mass-assign protected attributes: user_role_id
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users"."id" FROM "users" WHERE (LOWER("users"."email") = LOWER('owner@owner.com')) LIMIT 1
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "encrypted_password", "name", "salt", "updated_at", "user_role_id") VALUES ('2010-10-15 01:34:42.153941', 'owner@owner.com', '275effa63a3df05ae9d66635d536911b9e7c14cc23ddbd98fc7ef9e335e7459e', 'Owner', '008231ce551be813fdcd4e79ea888119a523893499c3c73af46ed8476a24f0c8', '2010-10-15 01:34:42.153941', 3)[0m
+WARNING: Can't mass-assign protected attributes: user_role_id
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users"."id" FROM "users" WHERE (LOWER("users"."email") = LOWER('publisher@publisher.com')) LIMIT 1
+  [1m[36mSQL (0.7ms)[0m  [1mINSERT INTO "users" ("created_at", "email", "encrypted_password", "name", "salt", "updated_at", "user_role_id") VALUES ('2010-10-15 01:34:42.159505', 'publisher@publisher.com', '275effa63a3df05ae9d66635d536911b9e7c14cc23ddbd98fc7ef9e335e7459e', 'Publisher', '008231ce551be813fdcd4e79ea888119a523893499c3c73af46ed8476a24f0c8', '2010-10-15 01:34:42.159505', 3)[0m
+
+
+Started GET "/signout" for 127.0.0.1 at 2010-10-14 21:36:38 -0400
+  Processing by SessionsController#destroy as HTML
+Redirected to http://localhost:3000/
+Completed 302 Found in 1ms
+
+
+Started GET "/" for 127.0.0.1 at 2010-10-14 21:36:38 -0400
+  Processing by CoursesController#index as HTML
+  [1m[36mCourse Load (0.2ms)[0m  [1mSELECT "courses".* FROM "courses"[0m
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1
+Rendered layouts/_header.html.erb (65.8ms)
+Rendered layouts/_footer.html.erb (0.4ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Rendered courses/index.html.erb within layouts/application (73.7ms)
+Completed 200 OK in 98ms (Views: 78.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/signin" for 127.0.0.1 at 2010-10-14 21:36:39 -0400
+  Processing by SessionsController#new as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1
+Rendered layouts/_header.html.erb (38.7ms)
+Rendered layouts/_footer.html.erb (0.4ms)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" IS NULL) LIMIT 1[0m
+Rendered sessions/new.html.erb within layouts/application (104.8ms)
+Completed 200 OK in 119ms (Views: 118.9ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/sessions" for 127.0.0.1 at 2010-10-14 21:36:49 -0400
+  Processing by SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LbbLt6KdHga9arLVnryrWWQBN70D92UViuU4wctPfmo=", "session"=>{"email"=>"owner@owner.com", "password"=>"[FILTERED]"}, "commit"=>"Sign in"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."email" = 'owner@owner.com') LIMIT 1
+Redirected to http://localhost:3000/admin/users/3
+Completed 302 Found in 74ms
+
+
+Started GET "/admin/users/3" for 127.0.0.1 at 2010-10-14 21:36:49 -0400
+  Processing by Admin::UsersController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 3) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 3) LIMIT 1
+  [1m[36mUserRole Load (0.2ms)[0m  [1mSELECT "user_roles".* FROM "user_roles" WHERE ("user_roles"."id" = 2) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "user_roles".* FROM "user_roles" WHERE ("user_roles"."id" = 2) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "user_roles".* FROM "user_roles" WHERE ("user_roles"."id" = 2) LIMIT 1[0m
+Rendered layouts/_header.html.erb (1.8ms)
+Rendered layouts/_footer.html.erb (0.3ms)
+Rendered admin/users/show.html.erb within layouts/application (21.7ms)
+Completed 200 OK in 122ms (Views: 42.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/admin/courses" for 127.0.0.1 at 2010-10-14 21:36:52 -0400
+  Processing by Admin::CoursesController#index as HTML
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 3) LIMIT 1
+  [1m[36mUserRole Load (0.3ms)[0m  [1mSELECT "user_roles".* FROM "user_roles" WHERE ("user_roles"."id" = 2) LIMIT 1[0m
+  [1m[35mCourse Load (0.2ms)[0m  SELECT * FROM "courses" INNER JOIN "courses_users" ON "courses".id = "courses_users".course_id WHERE ("courses_users".user_id = 3 )
+Rendered admin/courses/_course.html.erb (0.0ms)
+Rendered layouts/_header.html.erb (2.0ms)
+Rendered layouts/_footer.html.erb (0.4ms)
+Rendered admin/courses/index.html.erb within layouts/application (29.8ms)
+Completed 200 OK in 149ms (Views: 48.7ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/admin/courses/new" for 127.0.0.1 at 2010-10-14 21:36:54 -0400
+  Processing by Admin::CoursesController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 3) LIMIT 1[0m
+Rendered admin/courses/_form.html.erb (9.6ms)
+  [1m[35mUserRole Load (0.3ms)[0m  SELECT "user_roles".* FROM "user_roles" WHERE ("user_roles"."id" = 2) LIMIT 1
+Rendered layouts/_header.html.erb (32.2ms)
+Rendered layouts/_footer.html.erb (0.4ms)
+Rendered admin/courses/new.html.erb within layouts/application (74.1ms)
+Completed 200 OK in 185ms (Views: 100.8ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/admin/courses" for 127.0.0.1 at 2010-10-14 21:40:55 -0400
+  Processing by Admin::CoursesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LbbLt6KdHga9arLVnryrWWQBN70D92UViuU4wctPfmo=", "course"=>{"name"=>"Valley Ridge Golf", "description"=>"A mere 15 minutes from downtown Calgary, Valley Ridge Golf Club feels as though it's worlds away from the hustle of city life", "location"=>"NW Calgary"}, "commit"=>"Create Course"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 3) LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "courses" ("created_at", "description", "location", "name", "updated_at") VALUES ('2010-10-15 01:40:55.947614', 'A mere 15 minutes from downtown Calgary, Valley Ridge Golf Club feels as though it''s worlds away from the hustle of city life', 'NW Calgary', 'Valley Ridge Golf', '2010-10-15 01:40:55.947614')
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "courses_users" ("course_id", "user_id") VALUES (1, 3)[0m
+Redirected to http://localhost:3000/admin/courses/1
+Completed 302 Found in 125ms
+
+
+Started GET "/admin/courses/1" for 127.0.0.1 at 2010-10-14 21:40:56 -0400
+  Processing by Admin::CoursesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 3) LIMIT 1
+  [1m[36mCourse Load (0.3ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE ("courses"."id" = 1) LIMIT 1[0m
+  [1m[35mTimeDisplayFormat Load (0.2ms)[0m  SELECT "time_display_formats".* FROM "time_display_formats" WHERE ("time_display_formats"."time_display_type_id" = 2) LIMIT 1
+  [1m[36mUserRole Load (0.3ms)[0m  [1mSELECT "user_roles".* FROM "user_roles" WHERE ("user_roles"."id" = 2) LIMIT 1[0m
+  [1m[35mTimeFormatGroup Load (0.5ms)[0m  SELECT "time_format_groups".* FROM "time_format_groups" WHERE ("time_format_groups".time_display_format_id = 1)
+  [1m[36mTimeEntry Load (0.2ms)[0m  [1mSELECT "time_entries".* FROM "time_entries" WHERE ("time_entries".course_id = 1)[0m
+Rendered layouts/_header.html.erb (1.8ms)
+Rendered layouts/_footer.html.erb (0.3ms)
+Rendered admin/courses/show.html.erb within layouts/application (101.9ms)
+Completed 200 OK in 251ms (Views: 120.1ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/admin/courses" for 127.0.0.1 at 2010-10-14 21:42:45 -0400
+  Processing by Admin::CoursesController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 3) LIMIT 1
+  [1m[36mUserRole Load (0.2ms)[0m  [1mSELECT "user_roles".* FROM "user_roles" WHERE ("user_roles"."id" = 2) LIMIT 1[0m
+  [1m[35mCourse Load (0.3ms)[0m  SELECT * FROM "courses" INNER JOIN "courses_users" ON "courses".id = "courses_users".course_id WHERE ("courses_users".user_id = 3 )
+Rendered admin/courses/_course.html.erb (10.9ms)
+Rendered layouts/_header.html.erb (1.8ms)
+Rendered layouts/_footer.html.erb (0.3ms)
+Rendered admin/courses/index.html.erb within layouts/application (25.7ms)
+Completed 200 OK in 131ms (Views: 30.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/admin/courses/new" for 127.0.0.1 at 2010-10-14 21:42:47 -0400
+  Processing by Admin::CoursesController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 3) LIMIT 1[0m
+Rendered admin/courses/_form.html.erb (7.7ms)
+  [1m[35mUserRole Load (0.2ms)[0m  SELECT "user_roles".* FROM "user_roles" WHERE ("user_roles"."id" = 2) LIMIT 1
+Rendered layouts/_header.html.erb (29.8ms)
+Rendered layouts/_footer.html.erb (0.3ms)
+Rendered admin/courses/new.html.erb within layouts/application (45.5ms)
+Completed 200 OK in 136ms (Views: 50.2ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/admin/courses" for 127.0.0.1 at 2010-10-14 21:43:31 -0400
+  Processing by Admin::CoursesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LbbLt6KdHga9arLVnryrWWQBN70D92UViuU4wctPfmo=", "course"=>{"name"=>"RCGA Golf Centre", "description"=>"The RCGA Golf Centre is open to the public and provides a variety of quality golf products, services and programs targeted to families and golfers of all age groups and skill levels.", "location"=>"SE Calgary"}, "commit"=>"Create Course"}
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 3) LIMIT 1[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "courses" ("created_at", "description", "location", "name", "updated_at") VALUES ('2010-10-15 01:43:31.390507', 'The RCGA Golf Centre is open to the public and provides a variety of quality golf products, services and programs targeted to families and golfers of all age groups and skill levels.', 'SE Calgary', 'RCGA Golf Centre', '2010-10-15 01:43:31.390507')
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "courses_users" ("course_id", "user_id") VALUES (2, 3)[0m
+Redirected to http://localhost:3000/admin/courses/2
+Completed 302 Found in 118ms
+
+
+Started GET "/admin/courses/2" for 127.0.0.1 at 2010-10-14 21:43:31 -0400
+  Processing by Admin::CoursesController#show as HTML
+  Parameters: {"id"=>"2"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 3) LIMIT 1
+  [1m[36mCourse Load (0.2ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE ("courses"."id" = 2) LIMIT 1[0m
+  [1m[35mTimeDisplayFormat Load (0.3ms)[0m  SELECT "time_display_formats".* FROM "time_display_formats" WHERE ("time_display_formats"."time_display_type_id" = 2) LIMIT 1
+  [1m[36mUserRole Load (0.2ms)[0m  [1mSELECT "user_roles".* FROM "user_roles" WHERE ("user_roles"."id" = 2) LIMIT 1[0m
+  [1m[35mTimeFormatGroup Load (0.5ms)[0m  SELECT "time_format_groups".* FROM "time_format_groups" WHERE ("time_format_groups".time_display_format_id = 1)
+  [1m[36mTimeEntry Load (0.2ms)[0m  [1mSELECT "time_entries".* FROM "time_entries" WHERE ("time_entries".course_id = 2)[0m
+Rendered layouts/_header.html.erb (1.7ms)
+Rendered layouts/_footer.html.erb (0.3ms)
+Rendered admin/courses/show.html.erb within layouts/application (75.6ms)
+Completed 200 OK in 236ms (Views: 79.4ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/admin/courses" for 127.0.0.1 at 2010-10-14 21:44:20 -0400
+  Processing by Admin::CoursesController#index as HTML
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 3) LIMIT 1
+  [1m[36mUserRole Load (0.4ms)[0m  [1mSELECT "user_roles".* FROM "user_roles" WHERE ("user_roles"."id" = 2) LIMIT 1[0m
+  [1m[35mCourse Load (0.3ms)[0m  SELECT * FROM "courses" INNER JOIN "courses_users" ON "courses".id = "courses_users".course_id WHERE ("courses_users".user_id = 3 )
+Rendered admin/courses/_course.html.erb (12.3ms)
+Rendered layouts/_header.html.erb (1.8ms)
+Rendered layouts/_footer.html.erb (0.3ms)
+Rendered admin/courses/index.html.erb within layouts/application (26.9ms)
+Completed 200 OK in 133ms (Views: 31.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/admin/courses/new" for 127.0.0.1 at 2010-10-14 21:44:34 -0400
+  Processing by Admin::CoursesController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 3) LIMIT 1[0m
+Rendered admin/courses/_form.html.erb (7.7ms)
+  [1m[35mUserRole Load (0.3ms)[0m  SELECT "user_roles".* FROM "user_roles" WHERE ("user_roles"."id" = 2) LIMIT 1
+Rendered layouts/_header.html.erb (57.6ms)
+Rendered layouts/_footer.html.erb (0.4ms)
+Rendered admin/courses/new.html.erb within layouts/application (73.4ms)
+Completed 200 OK in 163ms (Views: 77.9ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/admin/courses" for 127.0.0.1 at 2010-10-14 21:45:45 -0400
+  Processing by Admin::CoursesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LbbLt6KdHga9arLVnryrWWQBN70D92UViuU4wctPfmo=", "course"=>{"name"=>"Calgary Elks Lodge & Golf Club", "description"=>"he Elks is a beautiful oasis conveniently located just northwest of the junction of Deerfoot Trail and the Trans Canada Highway in the center of Calgary", "location"=>"NE Calgary"}, "commit"=>"Create Course"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 3) LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "courses" ("created_at", "description", "location", "name", "updated_at") VALUES ('2010-10-15 01:45:45.183361', 'he Elks is a beautiful oasis conveniently located just northwest of the junction of Deerfoot Trail and the Trans Canada Highway in the center of Calgary', 'NE Calgary', 'Calgary Elks Lodge & Golf Club', '2010-10-15 01:45:45.183361')
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "courses_users" ("course_id", "user_id") VALUES (3, 3)[0m
+Redirected to http://localhost:3000/admin/courses/3
+Completed 302 Found in 118ms
+
+
+Started GET "/admin/courses/3" for 127.0.0.1 at 2010-10-14 21:45:45 -0400
+  Processing by Admin::CoursesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mUser Load (0.3ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 3) LIMIT 1
+  [1m[36mCourse Load (0.3ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE ("courses"."id" = 3) LIMIT 1[0m
+  [1m[35mTimeDisplayFormat Load (0.2ms)[0m  SELECT "time_display_formats".* FROM "time_display_formats" WHERE ("time_display_formats"."time_display_type_id" = 2) LIMIT 1
+  [1m[36mUserRole Load (0.2ms)[0m  [1mSELECT "user_roles".* FROM "user_roles" WHERE ("user_roles"."id" = 2) LIMIT 1[0m
+  [1m[35mTimeFormatGroup Load (0.4ms)[0m  SELECT "time_format_groups".* FROM "time_format_groups" WHERE ("time_format_groups".time_display_format_id = 1)
+  [1m[36mTimeEntry Load (0.2ms)[0m  [1mSELECT "time_entries".* FROM "time_entries" WHERE ("time_entries".course_id = 3)[0m
+Rendered layouts/_header.html.erb (30.3ms)
+Rendered layouts/_footer.html.erb (0.3ms)
+Rendered admin/courses/show.html.erb within layouts/application (107.1ms)
+Completed 200 OK in 283ms (Views: 111.1ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/admin/courses/3/edit" for 127.0.0.1 at 2010-10-14 21:46:00 -0400
+  Processing by Admin::CoursesController#edit as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 3) LIMIT 1
+  [1m[36mCourse Load (0.2ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE ("courses"."id" = 3) LIMIT 1[0m
+Rendered admin/courses/_form.html.erb (13.4ms)
+  [1m[35mUserRole Load (0.2ms)[0m  SELECT "user_roles".* FROM "user_roles" WHERE ("user_roles"."id" = 2) LIMIT 1
+Rendered layouts/_header.html.erb (29.1ms)
+Rendered layouts/_footer.html.erb (0.3ms)
+Rendered admin/courses/edit.html.erb within layouts/application (51.2ms)
+Completed 200 OK in 398ms (Views: 310.9ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/admin/courses/3" for 127.0.0.1 at 2010-10-14 21:46:06 -0400
+  Processing by Admin::CoursesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"LbbLt6KdHga9arLVnryrWWQBN70D92UViuU4wctPfmo=", "course"=>{"name"=>"Calgary Elks Lodge & Golf Club", "description"=>"The Elks is a beautiful oasis conveniently located just northwest of the junction of Deerfoot Trail and the Trans Canada Highway in the center of Calgary", "location"=>"NE Calgary"}, "commit"=>"Update Course", "id"=>"3"}
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 3) LIMIT 1[0m
+  [1m[35mCourse Load (0.3ms)[0m  SELECT "courses".* FROM "courses" WHERE ("courses"."id" = 3) LIMIT 1
+  [1m[36mSQL (0.5ms)[0m  [1mUPDATE "courses" SET "description" = 'The Elks is a beautiful oasis conveniently located just northwest of the junction of Deerfoot Trail and the Trans Canada Highway in the center of Calgary', "updated_at" = '2010-10-15 01:46:06.270606' WHERE ("courses"."id" = 3)[0m
+Redirected to http://localhost:3000/admin/courses/3
+Completed 302 Found in 102ms
+
+
+Started GET "/admin/courses/3" for 127.0.0.1 at 2010-10-14 21:46:06 -0400
+  Processing by Admin::CoursesController#show as HTML
+  Parameters: {"id"=>"3"}
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 3) LIMIT 1
+  [1m[36mCourse Load (0.2ms)[0m  [1mSELECT "courses".* FROM "courses" WHERE ("courses"."id" = 3) LIMIT 1[0m
+  [1m[35mTimeDisplayFormat Load (0.2ms)[0m  SELECT "time_display_formats".* FROM "time_display_formats" WHERE ("time_display_formats"."time_display_type_id" = 2) LIMIT 1
+  [1m[36mUserRole Load (0.2ms)[0m  [1mSELECT "user_roles".* FROM "user_roles" WHERE ("user_roles"."id" = 2) LIMIT 1[0m
+  [1m[35mTimeFormatGroup Load (0.5ms)[0m  SELECT "time_format_groups".* FROM "time_format_groups" WHERE ("time_format_groups".time_display_format_id = 1)
+  [1m[36mTimeEntry Load (0.2ms)[0m  [1mSELECT "time_entries".* FROM "time_entries" WHERE ("time_entries".course_id = 3)[0m
+Rendered layouts/_header.html.erb (1.7ms)
+Rendered layouts/_footer.html.erb (0.3ms)
+Rendered admin/courses/show.html.erb within layouts/application (101.7ms)
+Completed 200 OK in 237ms (Views: 105.6ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/" for 127.0.0.1 at 2010-10-14 21:47:03 -0400
+  Processing by CoursesController#index as HTML
+  [1m[35mCourse Load (0.3ms)[0m  SELECT "courses".* FROM "courses"
+  [1m[36mTimeEntry Load (0.6ms)[0m  [1mSELECT "time_entries".* FROM "time_entries" WHERE ("time_entries".course_id = 2) ORDER BY updated_at desc[0m
+  [1m[35mTimeEntry Load (0.4ms)[0m  SELECT "time_entries".* FROM "time_entries" WHERE ("time_entries".course_id = 1) ORDER BY updated_at desc
+  [1m[36mTimeEntry Load (0.4ms)[0m  [1mSELECT "time_entries".* FROM "time_entries" WHERE ("time_entries".course_id = 3) ORDER BY updated_at desc[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "time_entries".* FROM "time_entries" WHERE ("time_entries".course_id = 2) ORDER BY updated_at desc
+  [1m[36mTimeDisplayFormat Load (0.2ms)[0m  [1mSELECT * FROM "time_display_formats" INNER JOIN "courses_time_display_formats" ON "time_display_formats".id = "courses_time_display_formats".time_display_format_id WHERE ("courses_time_display_formats".course_id = 1 ) LIMIT 1[0m
+Rendered courses/index.html.erb within layouts/application (395.1ms)
+Completed   in 443ms
+
+ActionView::Template::Error (undefined method `time_format_groups' for nil:NilClass):
+    16: 				<table class="inner_publish">
+    17: 					<tr>
+    18: 						<% # ToDo: something better than just grabbing the first time display format %>
+    19: 		 				<% course.time_display_formats.first.time_format_groups.each do |format_group| %>
+    20: 							<th class="inner_publish"><%= format_group.group_display_name %></th>
+    21: 						<% end %>
+    22: 					</tr>	
+  app/views/courses/index.html.erb:19:in `block (2 levels) in _app_views_courses_index_html_erb__263571005_19194970_748316642'
+  app/views/courses/index.html.erb:14:in `times'
+  app/views/courses/index.html.erb:14:in `block in _app_views_courses_index_html_erb__263571005_19194970_748316642'
+  app/views/courses/index.html.erb:11:in `each'
+  app/views/courses/index.html.erb:11:in `_app_views_courses_index_html_erb__263571005_19194970_748316642'
+  app/controllers/courses_controller.rb:11:in `index'
+
+Rendered /Users/charliegodsoe/.rvm/gems/ruby-1.9.2-p0@rails3/gems/actionpack-3.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_trace.erb (1.6ms)
+Rendered /Users/charliegodsoe/.rvm/gems/ruby-1.9.2-p0@rails3/gems/actionpack-3.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/_request_and_response.erb (32.8ms)
+Rendered /Users/charliegodsoe/.rvm/gems/ruby-1.9.2-p0@rails3/gems/actionpack-3.0.0.rc2/lib/action_dispatch/middleware/templates/rescues/template_error.erb within rescues/layout (42.6ms)
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mCourse Load (0.2ms)[0m  SELECT "courses".* FROM "courses"
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.2ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (1.9ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35mSQL (0.1ms)[0m  PRAGMA index_list("schema_migrations")
+  [1m[36mSQL (2.1ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+Migrating to CreateUsers (20100915231226)
+  [1m[36mSQL (0.6ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar(255), "name" varchar(255), "user_role_id" integer DEFAULT 3, "encrypted_password" varchar(255), "salt" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20100915231226')
+Migrating to CreateUserRoles (20100915231427)
+  [1m[36mSQL (0.5ms)[0m  [1mCREATE TABLE "user_roles" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "role" varchar(255), "description" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20100915231427')
+Migrating to CreateCourses (20100915234332)
+  [1m[36mSQL (0.5ms)[0m  [1mCREATE TABLE "courses" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "description" varchar(255), "location" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20100915234332')
+Migrating to CreateCoursesUsersJoinTable (20100925202933)
+  [1m[36mSQL (0.5ms)[0m  [1mCREATE TABLE "courses_users" ("course_id" integer, "user_id" integer) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20100925202933')
+Migrating to CreateTimeDisplayFormats (20101006235651)
+  [1m[36mSQL (0.5ms)[0m  [1mCREATE TABLE "time_display_formats" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "format_name" varchar(255), "time_display_type_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20101006235651')
+Migrating to CreateTimeDisplayTypes (20101006235831)
+  [1m[36mSQL (0.5ms)[0m  [1mCREATE TABLE "time_display_types" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "type_name" varchar(255), "type_description" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20101006235831')
+Migrating to CreateTimeFormatGroups (20101007000154)
+  [1m[36mSQL (0.5ms)[0m  [1mCREATE TABLE "time_format_groups" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "time_display_format_id" integer, "group_name" varchar(255), "group_display_name" varchar(255), "start_time" time, "end_time" time, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20101007000154')
+Migrating to CreateCoursesTimeDisplayFormatsJoinTable (20101007000705)
+  [1m[36mSQL (0.5ms)[0m  [1mCREATE TABLE "courses_time_display_formats" ("course_id" integer, "time_display_format_id" integer) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20101007000705')
+Migrating to CreateTimeEntries (20101011170824)
+  [1m[36mSQL (0.5ms)[0m  [1mCREATE TABLE "time_entries" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "course_id" integer, "start_date_time" datetime, "end_date_time" datetime, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20101011170824')
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("courses")
+  [1m[36mSQL (0.0ms)[0m  [1mPRAGMA index_list("courses_time_display_formats")[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("courses_users")
+  [1m[36mSQL (0.0ms)[0m  [1mPRAGMA index_list("time_display_formats")[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("time_display_types")
+  [1m[36mSQL (0.0ms)[0m  [1mPRAGMA index_list("time_entries")[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("time_format_groups")
+  [1m[36mSQL (0.0ms)[0m  [1mPRAGMA index_list("user_roles")[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("users")
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.2ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (2.0ms)[0m  [1mCREATE TABLE "schema_migrations" ("version" varchar(255) NOT NULL) [0m
+  [1m[35mSQL (0.1ms)[0m  PRAGMA index_list("schema_migrations")
+  [1m[36mSQL (1.9ms)[0m  [1mCREATE UNIQUE INDEX "unique_schema_migrations" ON "schema_migrations" ("version")[0m
+  [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+Migrating to CreateUsers (20100915231226)
+  [1m[36mSQL (0.6ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar(255), "name" varchar(255), "user_role_id" integer DEFAULT 3, "encrypted_password" varchar(255), "salt" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20100915231226')
+Migrating to CreateUserRoles (20100915231427)
+  [1m[36mSQL (0.6ms)[0m  [1mCREATE TABLE "user_roles" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "role" varchar(255), "description" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20100915231427')
+Migrating to CreateCourses (20100915234332)
+  [1m[36mSQL (0.5ms)[0m  [1mCREATE TABLE "courses" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "description" varchar(255), "location" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20100915234332')
+Migrating to CreateCoursesUsersJoinTable (20100925202933)
+  [1m[36mSQL (0.5ms)[0m  [1mCREATE TABLE "courses_users" ("course_id" integer, "user_id" integer) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20100925202933')
+Migrating to CreateTimeDisplayFormats (20101006235651)
+  [1m[36mSQL (0.5ms)[0m  [1mCREATE TABLE "time_display_formats" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "format_name" varchar(255), "time_display_type_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20101006235651')
+Migrating to CreateTimeDisplayTypes (20101006235831)
+  [1m[36mSQL (0.6ms)[0m  [1mCREATE TABLE "time_display_types" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "type_name" varchar(255), "type_description" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20101006235831')
+Migrating to CreateTimeFormatGroups (20101007000154)
+  [1m[36mSQL (0.5ms)[0m  [1mCREATE TABLE "time_format_groups" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "time_display_format_id" integer, "group_name" varchar(255), "group_display_name" varchar(255), "start_time" time, "end_time" time, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20101007000154')
+Migrating to CreateCoursesTimeDisplayFormatsJoinTable (20101007000705)
+  [1m[36mSQL (0.5ms)[0m  [1mCREATE TABLE "courses_time_display_formats" ("course_id" integer, "time_display_format_id" integer) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20101007000705')
+Migrating to CreateTimeEntries (20101011170824)
+  [1m[36mSQL (0.5ms)[0m  [1mCREATE TABLE "time_entries" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "course_id" integer, "start_date_time" datetime, "end_date_time" datetime, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20101011170824')
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("courses")
+  [1m[36mSQL (0.0ms)[0m  [1mPRAGMA index_list("courses_time_display_formats")[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("courses_users")
+  [1m[36mSQL (0.0ms)[0m  [1mPRAGMA index_list("time_display_formats")[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("time_display_types")
+  [1m[36mSQL (0.0ms)[0m  [1mPRAGMA index_list("time_entries")[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("time_format_groups")
+  [1m[36mSQL (0.0ms)[0m  [1mPRAGMA index_list("user_roles")[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("users")
+  [1m[36mSQL (0.8ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+  [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+Migrating to CreateTimeEntries (20101011170824)
+  [1m[35mSQL (0.1ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (0.5ms)[0m  [1mDROP TABLE "time_entries"[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20101011170824'
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m  PRAGMA index_list("courses")
+  [1m[36mSQL (0.0ms)[0m  [1mPRAGMA index_list("courses_time_display_formats")[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("courses_users")
+  [1m[36mSQL (0.0ms)[0m  [1mPRAGMA index_list("time_display_formats")[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("time_display_types")
+  [1m[36mSQL (0.0ms)[0m  [1mPRAGMA index_list("time_format_groups")[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("user_roles")
+  [1m[36mSQL (0.0ms)[0m  [1mPRAGMA index_list("users")[0m
+  [1m[36mSQL (0.8ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+  [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+Migrating to CreateCoursesTimeDisplayFormatsJoinTable (20101007000705)
+  [1m[35mSQL (0.1ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (0.5ms)[0m  [1mDROP TABLE "courses_time_display_formats"[0m
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20101007000705'
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m  PRAGMA index_list("courses")
+  [1m[36mSQL (0.0ms)[0m  [1mPRAGMA index_list("courses_users")[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("time_display_formats")
+  [1m[36mSQL (0.0ms)[0m  [1mPRAGMA index_list("time_display_types")[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("time_format_groups")
+  [1m[36mSQL (0.0ms)[0m  [1mPRAGMA index_list("user_roles")[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("users")
+  [1m[36mSQL (0.8ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+  [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+Migrating to CreateTimeFormatGroups (20101007000154)
+  [1m[35mSQL (0.1ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (0.6ms)[0m  [1mDROP TABLE "time_format_groups"[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20101007000154'
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m  PRAGMA index_list("courses")
+  [1m[36mSQL (0.0ms)[0m  [1mPRAGMA index_list("courses_users")[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("time_display_formats")
+  [1m[36mSQL (0.0ms)[0m  [1mPRAGMA index_list("time_display_types")[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("user_roles")
+  [1m[36mSQL (0.0ms)[0m  [1mPRAGMA index_list("users")[0m
+  [1m[36mSQL (0.7ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+  [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+Migrating to CreateTimeDisplayTypes (20101006235831)
+  [1m[35mSQL (0.1ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (0.5ms)[0m  [1mDROP TABLE "time_display_types"[0m
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20101006235831'
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m  PRAGMA index_list("courses")
+  [1m[36mSQL (0.0ms)[0m  [1mPRAGMA index_list("courses_users")[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("time_display_formats")
+  [1m[36mSQL (0.0ms)[0m  [1mPRAGMA index_list("user_roles")[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("users")
+  [1m[36mSQL (0.7ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+  [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+Migrating to CreateTimeDisplayFormats (20101006235651)
+  [1m[35mSQL (0.1ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (0.6ms)[0m  [1mDROP TABLE "time_display_formats"[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20101006235651'
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m  PRAGMA index_list("courses")
+  [1m[36mSQL (0.0ms)[0m  [1mPRAGMA index_list("courses_users")[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("user_roles")
+  [1m[36mSQL (0.0ms)[0m  [1mPRAGMA index_list("users")[0m
+  [1m[36mSQL (0.7ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+  [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+Migrating to CreateCoursesUsersJoinTable (20100925202933)
+  [1m[35mSQL (0.1ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (0.5ms)[0m  [1mDROP TABLE "courses_users"[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20100925202933'
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("courses")
+  [1m[36mSQL (0.0ms)[0m  [1mPRAGMA index_list("user_roles")[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("users")
+  [1m[36mSQL (0.6ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+  [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+Migrating to CreateCourses (20100915234332)
+  [1m[35mSQL (0.1ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (0.6ms)[0m  [1mDROP TABLE "courses"[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20100915234332'
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m  PRAGMA index_list("user_roles")
+  [1m[36mSQL (0.0ms)[0m  [1mPRAGMA index_list("users")[0m
+  [1m[36mSQL (0.6ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+  [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+Migrating to CreateUserRoles (20100915231427)
+  [1m[35mSQL (0.1ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (0.5ms)[0m  [1mDROP TABLE "user_roles"[0m
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20100915231427'
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+  [1m[36mSQL (0.1ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m  PRAGMA index_list("users")
+  [1m[36mSQL (0.6ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+  [1m[35mSQL (0.1ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+Migrating to CreateUsers (20100915231226)
+  [1m[35mSQL (0.1ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (0.5ms)[0m  [1mDROP TABLE "users"[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20100915231226'
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[36mSQL (0.5ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+  [1m[35mSQL (0.1ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+  [1m[36mSQL (0.1ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[36mSQL (0.5ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+  [1m[35mSQL (0.1ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (0.1ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+  [1m[36mSQL (0.1ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[36mSQL (0.5ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+Migrating to CreateUsers (20100915231226)
+  [1m[35mSQL (0.1ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (0.6ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar(255), "name" varchar(255), "user_role_id" integer DEFAULT 3, "encrypted_password" varchar(255), "salt" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20100915231226')
+Migrating to CreateUserRoles (20100915231427)
+  [1m[36mSQL (0.6ms)[0m  [1mCREATE TABLE "user_roles" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "role" varchar(255), "description" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20100915231427')
+Migrating to CreateCourses (20100915234332)
+  [1m[36mSQL (0.5ms)[0m  [1mCREATE TABLE "courses" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "description" varchar(255), "location" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20100915234332')
+Migrating to CreateCoursesUsersJoinTable (20100925202933)
+  [1m[36mSQL (0.5ms)[0m  [1mCREATE TABLE "courses_users" ("course_id" integer, "user_id" integer) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20100925202933')
+Migrating to CreateTimeDisplayFormats (20101006235651)
+  [1m[36mSQL (0.5ms)[0m  [1mCREATE TABLE "time_display_formats" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "format_name" varchar(255), "time_display_type_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20101006235651')
+Migrating to CreateTimeDisplayTypes (20101006235831)
+  [1m[36mSQL (0.5ms)[0m  [1mCREATE TABLE "time_display_types" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "type_name" varchar(255), "type_description" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20101006235831')
+Migrating to CreateTimeFormatGroups (20101007000154)
+  [1m[36mSQL (0.5ms)[0m  [1mCREATE TABLE "time_format_groups" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "time_display_format_id" integer, "group_name" varchar(255), "group_display_name" varchar(255), "start_time" time, "end_time" time, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20101007000154')
+Migrating to CreateCoursesTimeDisplayFormatsJoinTable (20101007000705)
+  [1m[36mSQL (0.5ms)[0m  [1mCREATE TABLE "courses_time_display_formats" ("course_id" integer, "time_display_format_id" integer) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20101007000705')
+Migrating to CreateTimeEntries (20101011170824)
+  [1m[36mSQL (0.5ms)[0m  [1mCREATE TABLE "time_entries" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "course_id" integer, "start_date_time" datetime, "end_date_time" datetime, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20101011170824')
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("courses")
+  [1m[36mSQL (0.0ms)[0m  [1mPRAGMA index_list("courses_time_display_formats")[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("courses_users")
+  [1m[36mSQL (0.0ms)[0m  [1mPRAGMA index_list("time_display_formats")[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("time_display_types")
+  [1m[36mSQL (0.0ms)[0m  [1mPRAGMA index_list("time_entries")[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("time_format_groups")
+  [1m[36mSQL (0.0ms)[0m  [1mPRAGMA index_list("user_roles")[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("users")
+  [1m[36mSQL (0.9ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "user_roles" ("created_at", "description", "role", "updated_at") VALUES ('2010-10-15 02:19:36.325414', 'Manages website, can create Owners, and perform Owner operations.', 'Administrator', '2010-10-15 02:19:36.325414')
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "user_roles" ("created_at", "description", "role", "updated_at") VALUES ('2010-10-15 02:19:36.416969', 'Manages courses and course information along with Publishers', 'Owner', '2010-10-15 02:19:36.416969')[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "user_roles" ("created_at", "description", "role", "updated_at") VALUES ('2010-10-15 02:19:36.420448', 'Manages course content and tee time availablity information', 'Publisher', '2010-10-15 02:19:36.420448')
+WARNING: Can't mass-assign protected attributes: user_role
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users"."id" FROM "users" WHERE (LOWER("users"."email") = LOWER('admin@admin.com')) LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("created_at", "email", "encrypted_password", "name", "salt", "updated_at", "user_role_id") VALUES ('2010-10-15 02:19:36.485671', 'admin@admin.com', '6338422b3e5caac011d4eb16e4c728121d7d1cafc351fb9ac6a9f40ba543ddf3', 'Admin', 'abd50d2282bc4fdb5ac09bbdd2f48d5213c6a1919447f09fb35723f60de44146', '2010-10-15 02:19:36.485671', 3)
+WARNING: Can't mass-assign protected attributes: user_role
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users"."id" FROM "users" WHERE (LOWER("users"."email") = LOWER('owner@owner.com')) LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("created_at", "email", "encrypted_password", "name", "salt", "updated_at", "user_role_id") VALUES ('2010-10-15 02:19:36.521203', 'owner@owner.com', '6338422b3e5caac011d4eb16e4c728121d7d1cafc351fb9ac6a9f40ba543ddf3', 'Owner', 'abd50d2282bc4fdb5ac09bbdd2f48d5213c6a1919447f09fb35723f60de44146', '2010-10-15 02:19:36.521203', 3)
+WARNING: Can't mass-assign protected attributes: user_role
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users"."id" FROM "users" WHERE (LOWER("users"."email") = LOWER('publisher@publisher.com')) LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("created_at", "email", "encrypted_password", "name", "salt", "updated_at", "user_role_id") VALUES ('2010-10-15 02:19:36.526782', 'publisher@publisher.com', '6338422b3e5caac011d4eb16e4c728121d7d1cafc351fb9ac6a9f40ba543ddf3', 'Publisher', 'abd50d2282bc4fdb5ac09bbdd2f48d5213c6a1919447f09fb35723f60de44146', '2010-10-15 02:19:36.526782', 3)
+WARNING: Can't mass-assign protected attributes: user_role
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users"."id" FROM "users" WHERE (LOWER("users"."email") = LOWER('l')) LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "time_display_types" ("created_at", "type_description", "type_name", "updated_at") VALUES ('2010-10-15 02:19:36.547191', 'Monthly view for tee times', 'Monthly', '2010-10-15 02:19:36.547191')
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "time_display_types" ("created_at", "type_description", "type_name", "updated_at") VALUES ('2010-10-15 02:19:36.558719', 'Weekly view for tee times', 'Weekly', '2010-10-15 02:19:36.558719')[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "time_display_types" ("created_at", "type_description", "type_name", "updated_at") VALUES ('2010-10-15 02:19:36.563858', 'Daily view for tee times', 'Daily', '2010-10-15 02:19:36.563858')
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "time_display_formats" ("created_at", "format_name", "time_display_type_id", "updated_at") VALUES ('2010-10-15 02:19:36.584079', 'Standard Golf - Weekly', 2, '2010-10-15 02:19:36.584079')[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "time_format_groups" ("created_at", "end_time", "group_display_name", "group_name", "start_time", "time_display_format_id", "updated_at") VALUES ('2010-10-15 02:19:36.610064', '2010-10-14 12:00:00.000000', 'EM', 'Early Morning', '2010-10-14 08:00:00.000000', 1, '2010-10-15 02:19:36.610064')
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "time_format_groups" ("created_at", "end_time", "group_display_name", "group_name", "start_time", "time_display_format_id", "updated_at") VALUES ('2010-10-15 02:19:36.651963', '2010-10-14 16:00:00.000000', 'M', 'Morning', '2010-10-14 12:00:00.000000', 1, '2010-10-15 02:19:36.651963')[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "time_format_groups" ("created_at", "end_time", "group_display_name", "group_name", "start_time", "time_display_format_id", "updated_at") VALUES ('2010-10-15 02:19:36.657389', '2010-10-14 21:00:00.000000', 'A', 'Afternoon', '2010-10-14 16:00:00.000000', 1, '2010-10-15 02:19:36.657389')
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "time_format_groups" ("created_at", "end_time", "group_display_name", "group_name", "start_time", "time_display_format_id", "updated_at") VALUES ('2010-10-15 02:19:36.662345', '2010-10-15 03:00:00.000000', 'EV', 'Evening', '2010-10-14 21:00:00.000000', 1, '2010-10-15 02:19:36.662345')[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "time_format_groups" ("created_at", "end_time", "group_display_name", "group_name", "start_time", "time_display_format_id", "updated_at") VALUES ('2010-10-15 02:19:36.668854', '2010-10-14 08:00:00.000000', 'T', 'Twilight', '2010-10-15 03:00:00.000000', 1, '2010-10-15 02:19:36.668854')
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "courses" ("created_at", "description", "location", "name", "updated_at") VALUES ('2010-10-15 02:19:36.692437', 'A mere 15 minutes from downtown Calgary, Valley Ridge Golf Club feels as though it''s worlds away from the hustle of city life', 'NW Calgary', 'Valley Ridge Golf', '2010-10-15 02:19:36.692437')[0m
+  [1m[36mSQL (0.8ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "user_roles" ("created_at", "description", "role", "updated_at") VALUES ('2010-10-15 02:20:10.947776', 'Manages website, can create Owners, and perform Owner operations.', 'Administrator', '2010-10-15 02:20:10.947776')
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "user_roles" ("created_at", "description", "role", "updated_at") VALUES ('2010-10-15 02:20:11.066474', 'Manages courses and course information along with Publishers', 'Owner', '2010-10-15 02:20:11.066474')[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "user_roles" ("created_at", "description", "role", "updated_at") VALUES ('2010-10-15 02:20:11.069872', 'Manages course content and tee time availablity information', 'Publisher', '2010-10-15 02:20:11.069872')
+WARNING: Can't mass-assign protected attributes: user_role
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users"."id" FROM "users" WHERE (LOWER("users"."email") = LOWER('admin@admin.com')) LIMIT 1[0m
+WARNING: Can't mass-assign protected attributes: user_role
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users"."id" FROM "users" WHERE (LOWER("users"."email") = LOWER('owner@owner.com')) LIMIT 1
+WARNING: Can't mass-assign protected attributes: user_role
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users"."id" FROM "users" WHERE (LOWER("users"."email") = LOWER('publisher@publisher.com')) LIMIT 1[0m
+WARNING: Can't mass-assign protected attributes: user_role
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users"."id" FROM "users" WHERE (LOWER("users"."email") = LOWER('l')) LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "time_display_types" ("created_at", "type_description", "type_name", "updated_at") VALUES ('2010-10-15 02:20:11.142952', 'Monthly view for tee times', 'Monthly', '2010-10-15 02:20:11.142952')[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "time_display_types" ("created_at", "type_description", "type_name", "updated_at") VALUES ('2010-10-15 02:20:11.154941', 'Weekly view for tee times', 'Weekly', '2010-10-15 02:20:11.154941')
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "time_display_types" ("created_at", "type_description", "type_name", "updated_at") VALUES ('2010-10-15 02:20:11.159428', 'Daily view for tee times', 'Daily', '2010-10-15 02:20:11.159428')[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "time_display_formats" ("created_at", "format_name", "time_display_type_id", "updated_at") VALUES ('2010-10-15 02:20:11.206695', 'Standard Golf - Weekly', 2, '2010-10-15 02:20:11.206695')
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "time_format_groups" ("created_at", "end_time", "group_display_name", "group_name", "start_time", "time_display_format_id", "updated_at") VALUES ('2010-10-15 02:20:11.232846', '2010-10-14 12:00:00.000000', 'EM', 'Early Morning', '2010-10-14 08:00:00.000000', 1, '2010-10-15 02:20:11.232846')[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "time_format_groups" ("created_at", "end_time", "group_display_name", "group_name", "start_time", "time_display_format_id", "updated_at") VALUES ('2010-10-15 02:20:11.247737', '2010-10-14 16:00:00.000000', 'M', 'Morning', '2010-10-14 12:00:00.000000', 1, '2010-10-15 02:20:11.247737')
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "time_format_groups" ("created_at", "end_time", "group_display_name", "group_name", "start_time", "time_display_format_id", "updated_at") VALUES ('2010-10-15 02:20:11.253236', '2010-10-14 21:00:00.000000', 'A', 'Afternoon', '2010-10-14 16:00:00.000000', 1, '2010-10-15 02:20:11.253236')[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "time_format_groups" ("created_at", "end_time", "group_display_name", "group_name", "start_time", "time_display_format_id", "updated_at") VALUES ('2010-10-15 02:20:11.258374', '2010-10-15 03:00:00.000000', 'EV', 'Evening', '2010-10-14 21:00:00.000000', 1, '2010-10-15 02:20:11.258374')
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "time_format_groups" ("created_at", "end_time", "group_display_name", "group_name", "start_time", "time_display_format_id", "updated_at") VALUES ('2010-10-15 02:20:11.263147', '2010-10-14 08:00:00.000000', 'T', 'Twilight', '2010-10-15 03:00:00.000000', 1, '2010-10-15 02:20:11.263147')[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "courses" ("created_at", "description", "location", "name", "updated_at") VALUES ('2010-10-15 02:20:11.290389', 'A mere 15 minutes from downtown Calgary, Valley Ridge Golf Club feels as though it''s worlds away from the hustle of city life', 'NW Calgary', 'Valley Ridge Golf', '2010-10-15 02:20:11.290389')
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "courses" ("created_at", "description", "location", "name", "updated_at") VALUES ('2010-10-15 02:20:11.329547', 'The RCGA Golf Centre is open to the public and provides a variety of quality golf products, services and programs targeted to families and golfers of all age groups and skill levels.', 'SE Calgary', 'RCGA Golf Centre', '2010-10-15 02:20:11.329547')[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "courses" ("created_at", "description", "location", "name", "updated_at") VALUES ('2010-10-15 02:20:11.334146', 'The Elks is a beautiful oasis conveniently located just northwest of the junction of Deerfoot Trail and the Trans Canada Highway in the center of Calgary.', 'NE Calgary', 'Calgary Elks Lodge & Golf Club', '2010-10-15 02:20:11.334146')
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "courses" ("created_at", "description", "location", "name", "updated_at") VALUES ('2010-10-15 02:20:11.339305', 'The two course development provides two distinctively different and exciting golf experiences. ', 'NE Calgary', 'Country Hills Golf Club', '2010-10-15 02:20:11.339305')[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "courses" ("created_at", "description", "location", "name", "updated_at") VALUES ('2010-10-15 02:20:11.344401', 'he Front 9 is beautiful and fun to play. A great job was done in adding trees, rocks, etc. The rolling greens are a nice addition as are the paved pathways.', 'SW Calgary', 'Shaganappi Point Golf Course', '2010-10-15 02:20:11.344401')
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "courses" ("created_at", "description", "location", "name", "updated_at") VALUES ('2010-10-15 02:20:11.349722', 'Imagine the traditions of a premier golf club only fifteen minutes from the heart of downtown. A place where deer, coyotes, hawks and owls still call home.', 'NW Calgary', 'Silver Springs Golf & Country Club', '2010-10-15 02:20:11.349722')[0m
+  [1m[35mTimeDisplayFormat Load (0.2ms)[0m  SELECT "time_display_formats".* FROM "time_display_formats" WHERE ("time_display_formats"."id" = 1) LIMIT 1
+  [1m[36mCourse Load (0.3ms)[0m  [1mSELECT "courses".* FROM "courses"[0m
+  [1m[36mSQL (0.9ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "user_roles" ("created_at", "description", "role", "updated_at") VALUES ('2010-10-15 02:20:27.769618', 'Manages website, can create Owners, and perform Owner operations.', 'Administrator', '2010-10-15 02:20:27.769618')
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "user_roles" ("created_at", "description", "role", "updated_at") VALUES ('2010-10-15 02:20:27.859440', 'Manages courses and course information along with Publishers', 'Owner', '2010-10-15 02:20:27.859440')[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "user_roles" ("created_at", "description", "role", "updated_at") VALUES ('2010-10-15 02:20:27.862752', 'Manages course content and tee time availablity information', 'Publisher', '2010-10-15 02:20:27.862752')
+WARNING: Can't mass-assign protected attributes: user_role
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users"."id" FROM "users" WHERE (LOWER("users"."email") = LOWER('admin@admin.com')) LIMIT 1[0m
+WARNING: Can't mass-assign protected attributes: user_role
+  [1m[35mUser Load (0.1ms)[0m  SELECT "users"."id" FROM "users" WHERE (LOWER("users"."email") = LOWER('owner@owner.com')) LIMIT 1
+WARNING: Can't mass-assign protected attributes: user_role
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users"."id" FROM "users" WHERE (LOWER("users"."email") = LOWER('publisher@publisher.com')) LIMIT 1[0m
+WARNING: Can't mass-assign protected attributes: user_role
+  [1m[35mUser Load (0.2ms)[0m  SELECT "users"."id" FROM "users" WHERE (LOWER("users"."email") = LOWER('l')) LIMIT 1
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "time_display_types" ("created_at", "type_description", "type_name", "updated_at") VALUES ('2010-10-15 02:20:27.963914', 'Monthly view for tee times', 'Monthly', '2010-10-15 02:20:27.963914')[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "time_display_types" ("created_at", "type_description", "type_name", "updated_at") VALUES ('2010-10-15 02:20:27.975383', 'Weekly view for tee times', 'Weekly', '2010-10-15 02:20:27.975383')
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "time_display_types" ("created_at", "type_description", "type_name", "updated_at") VALUES ('2010-10-15 02:20:27.980353', 'Daily view for tee times', 'Daily', '2010-10-15 02:20:27.980353')[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "time_display_formats" ("created_at", "format_name", "time_display_type_id", "updated_at") VALUES ('2010-10-15 02:20:28.000102', 'Standard Golf - Weekly', 2, '2010-10-15 02:20:28.000102')
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "time_format_groups" ("created_at", "end_time", "group_display_name", "group_name", "start_time", "time_display_format_id", "updated_at") VALUES ('2010-10-15 02:20:28.025499', '2010-10-14 12:00:00.000000', 'EM', 'Early Morning', '2010-10-14 08:00:00.000000', 1, '2010-10-15 02:20:28.025499')[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "time_format_groups" ("created_at", "end_time", "group_display_name", "group_name", "start_time", "time_display_format_id", "updated_at") VALUES ('2010-10-15 02:20:28.040634', '2010-10-14 16:00:00.000000', 'M', 'Morning', '2010-10-14 12:00:00.000000', 1, '2010-10-15 02:20:28.040634')
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "time_format_groups" ("created_at", "end_time", "group_display_name", "group_name", "start_time", "time_display_format_id", "updated_at") VALUES ('2010-10-15 02:20:28.045365', '2010-10-14 21:00:00.000000', 'A', 'Afternoon', '2010-10-14 16:00:00.000000', 1, '2010-10-15 02:20:28.045365')[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "time_format_groups" ("created_at", "end_time", "group_display_name", "group_name", "start_time", "time_display_format_id", "updated_at") VALUES ('2010-10-15 02:20:28.050469', '2010-10-15 03:00:00.000000', 'EV', 'Evening', '2010-10-14 21:00:00.000000', 1, '2010-10-15 02:20:28.050469')
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "time_format_groups" ("created_at", "end_time", "group_display_name", "group_name", "start_time", "time_display_format_id", "updated_at") VALUES ('2010-10-15 02:20:28.055461', '2010-10-14 08:00:00.000000', 'T', 'Twilight', '2010-10-15 03:00:00.000000', 1, '2010-10-15 02:20:28.055461')[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "courses" ("created_at", "description", "location", "name", "updated_at") VALUES ('2010-10-15 02:20:28.109898', 'A mere 15 minutes from downtown Calgary, Valley Ridge Golf Club feels as though it''s worlds away from the hustle of city life', 'NW Calgary', 'Valley Ridge Golf', '2010-10-15 02:20:28.109898')
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "courses" ("created_at", "description", "location", "name", "updated_at") VALUES ('2010-10-15 02:20:28.123133', 'The RCGA Golf Centre is open to the public and provides a variety of quality golf products, services and programs targeted to families and golfers of all age groups and skill levels.', 'SE Calgary', 'RCGA Golf Centre', '2010-10-15 02:20:28.123133')[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "courses" ("created_at", "description", "location", "name", "updated_at") VALUES ('2010-10-15 02:20:28.128338', 'The Elks is a beautiful oasis conveniently located just northwest of the junction of Deerfoot Trail and the Trans Canada Highway in the center of Calgary.', 'NE Calgary', 'Calgary Elks Lodge & Golf Club', '2010-10-15 02:20:28.128338')
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "courses" ("created_at", "description", "location", "name", "updated_at") VALUES ('2010-10-15 02:20:28.134149', 'The two course development provides two distinctively different and exciting golf experiences. ', 'NE Calgary', 'Country Hills Golf Club', '2010-10-15 02:20:28.134149')[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "courses" ("created_at", "description", "location", "name", "updated_at") VALUES ('2010-10-15 02:20:28.139379', 'he Front 9 is beautiful and fun to play. A great job was done in adding trees, rocks, etc. The rolling greens are a nice addition as are the paved pathways.', 'SW Calgary', 'Shaganappi Point Golf Course', '2010-10-15 02:20:28.139379')
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "courses" ("created_at", "description", "location", "name", "updated_at") VALUES ('2010-10-15 02:20:28.144337', 'Imagine the traditions of a premier golf club only fifteen minutes from the heart of downtown. A place where deer, coyotes, hawks and owls still call home.', 'NW Calgary', 'Silver Springs Golf & Country Club', '2010-10-15 02:20:28.144337')[0m
+  [1m[35mTimeDisplayFormat Load (0.4ms)[0m  SELECT "time_display_formats".* FROM "time_display_formats" WHERE ("time_display_formats"."id" = 1) LIMIT 1
+  [1m[36mCourse Load (0.6ms)[0m  [1mSELECT "courses".* FROM "courses"[0m
+  [1m[36mSQL (0.8ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+  [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+  [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+  [1m[36mSQL (0.8ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+  [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+  [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+Migrating to CreateTimeEntries (20101011170824)
+  [1m[35mSQL (0.1ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (0.6ms)[0m  [1mDROP TABLE "time_entries"[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20101011170824'
+Migrating to CreateCoursesTimeDisplayFormatsJoinTable (20101007000705)
+  [1m[36mSQL (0.4ms)[0m  [1mDROP TABLE "courses_time_display_formats"[0m
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20101007000705'
+Migrating to CreateTimeFormatGroups (20101007000154)
+  [1m[36mSQL (0.5ms)[0m  [1mDROP TABLE "time_format_groups"[0m
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20101007000154'
+Migrating to CreateTimeDisplayTypes (20101006235831)
+  [1m[36mSQL (0.5ms)[0m  [1mDROP TABLE "time_display_types"[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20101006235831'
+Migrating to CreateTimeDisplayFormats (20101006235651)
+  [1m[36mSQL (0.5ms)[0m  [1mDROP TABLE "time_display_formats"[0m
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20101006235651'
+Migrating to CreateCoursesUsersJoinTable (20100925202933)
+  [1m[36mSQL (0.5ms)[0m  [1mDROP TABLE "courses_users"[0m
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20100925202933'
+Migrating to CreateCourses (20100915234332)
+  [1m[36mSQL (0.6ms)[0m  [1mDROP TABLE "courses"[0m
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20100915234332'
+Migrating to CreateUserRoles (20100915231427)
+  [1m[36mSQL (0.5ms)[0m  [1mDROP TABLE "user_roles"[0m
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20100915231427'
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("users")
+  [1m[36mSQL (0.6ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+  [1m[35mSQL (0.1ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+Migrating to CreateUsers (20100915231226)
+  [1m[35mSQL (0.1ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (0.5ms)[0m  [1mDROP TABLE "users"[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20100915231226'
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+  [1m[36mSQL (0.1ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[36mSQL (0.5ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+Migrating to CreateUsers (20100915231226)
+  [1m[35mSQL (0.1ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (0.6ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar(255), "name" varchar(255), "user_role_id" integer DEFAULT 3, "encrypted_password" varchar(255), "salt" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20100915231226')
+Migrating to CreateUserRoles (20100915231427)
+  [1m[36mSQL (0.6ms)[0m  [1mCREATE TABLE "user_roles" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "role" varchar(255), "description" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (509.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20100915231427')
+Migrating to CreateCourses (20100915234332)
+  [1m[36mSQL (0.5ms)[0m  [1mCREATE TABLE "courses" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "description" varchar(255), "location" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20100915234332')
+Migrating to CreateCoursesUsersJoinTable (20100925202933)
+  [1m[36mSQL (0.5ms)[0m  [1mCREATE TABLE "courses_users" ("course_id" integer, "user_id" integer) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20100925202933')
+Migrating to CreateTimeDisplayFormats (20101006235651)
+  [1m[36mSQL (0.5ms)[0m  [1mCREATE TABLE "time_display_formats" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "format_name" varchar(255), "time_display_type_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20101006235651')
+Migrating to CreateTimeDisplayTypes (20101006235831)
+  [1m[36mSQL (0.6ms)[0m  [1mCREATE TABLE "time_display_types" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "type_name" varchar(255), "type_description" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20101006235831')
+Migrating to CreateTimeFormatGroups (20101007000154)
+  [1m[36mSQL (0.6ms)[0m  [1mCREATE TABLE "time_format_groups" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "time_display_format_id" integer, "group_name" varchar(255), "group_display_name" varchar(255), "start_time" time, "end_time" time, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20101007000154')
+Migrating to CreateCoursesTimeDisplayFormatsJoinTable (20101007000705)
+  [1m[36mSQL (0.5ms)[0m  [1mCREATE TABLE "courses_time_display_formats" ("course_id" integer, "time_display_format_id" integer) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20101007000705')
+Migrating to CreateTimeEntries (20101011170824)
+  [1m[36mSQL (0.5ms)[0m  [1mCREATE TABLE "time_entries" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "course_id" integer, "start_date_time" datetime, "end_date_time" datetime, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20101011170824')
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("courses")
+  [1m[36mSQL (0.0ms)[0m  [1mPRAGMA index_list("courses_time_display_formats")[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("courses_users")
+  [1m[36mSQL (0.0ms)[0m  [1mPRAGMA index_list("time_display_formats")[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("time_display_types")
+  [1m[36mSQL (0.0ms)[0m  [1mPRAGMA index_list("time_entries")[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("time_format_groups")
+  [1m[36mSQL (0.0ms)[0m  [1mPRAGMA index_list("user_roles")[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("users")
+  [1m[36mSQL (0.8ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+  [1m[35mSQL (0.7ms)[0m  INSERT INTO "user_roles" ("created_at", "description", "role", "updated_at") VALUES ('2010-10-15 02:28:51.977149', 'Manages website, can create Owners, and perform Owner operations.', 'Administrator', '2010-10-15 02:28:51.977149')
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "user_roles" ("created_at", "description", "role", "updated_at") VALUES ('2010-10-15 02:28:52.068655', 'Manages courses and course information along with Publishers', 'Owner', '2010-10-15 02:28:52.068655')[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "user_roles" ("created_at", "description", "role", "updated_at") VALUES ('2010-10-15 02:28:52.072005', 'Manages course content and tee time availablity information', 'Publisher', '2010-10-15 02:28:52.072005')
+WARNING: Can't mass-assign protected attributes: user_role
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users"."id" FROM "users" WHERE (LOWER("users"."email") = LOWER('admin@admin.com')) LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("created_at", "email", "encrypted_password", "name", "salt", "updated_at", "user_role_id") VALUES ('2010-10-15 02:28:52.136041', 'admin@admin.com', '0d2f9e97654fb9fed87b0c5707f31cb6690e3acfeb29ad0359da63e2ed5a4262', 'Admin', 'f7c9642499934a12780941f49af0f58541f632130fdf24ef9d7e931e01fec8e4', '2010-10-15 02:28:52.136041', 3)
+WARNING: Can't mass-assign protected attributes: user_role
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users"."id" FROM "users" WHERE (LOWER("users"."email") = LOWER('owner@owner.com')) LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("created_at", "email", "encrypted_password", "name", "salt", "updated_at", "user_role_id") VALUES ('2010-10-15 02:28:52.171243', 'owner@owner.com', '0d2f9e97654fb9fed87b0c5707f31cb6690e3acfeb29ad0359da63e2ed5a4262', 'Owner', 'f7c9642499934a12780941f49af0f58541f632130fdf24ef9d7e931e01fec8e4', '2010-10-15 02:28:52.171243', 3)
+WARNING: Can't mass-assign protected attributes: user_role
+  [1m[36mUser Load (0.1ms)[0m  [1mSELECT "users"."id" FROM "users" WHERE (LOWER("users"."email") = LOWER('publisher@publisher.com')) LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("created_at", "email", "encrypted_password", "name", "salt", "updated_at", "user_role_id") VALUES ('2010-10-15 02:28:52.177087', 'publisher@publisher.com', '0d2f9e97654fb9fed87b0c5707f31cb6690e3acfeb29ad0359da63e2ed5a4262', 'Publisher', 'f7c9642499934a12780941f49af0f58541f632130fdf24ef9d7e931e01fec8e4', '2010-10-15 02:28:52.177087', 3)
+WARNING: Can't mass-assign protected attributes: user_role
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users"."id" FROM "users" WHERE (LOWER("users"."email") = LOWER('l')) LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "time_display_types" ("created_at", "type_description", "type_name", "updated_at") VALUES ('2010-10-15 02:28:52.195616', 'Monthly view for tee times', 'Monthly', '2010-10-15 02:28:52.195616')
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "time_display_types" ("created_at", "type_description", "type_name", "updated_at") VALUES ('2010-10-15 02:28:52.205899', 'Weekly view for tee times', 'Weekly', '2010-10-15 02:28:52.205899')[0m
+  [1m[35mSQL (0.2ms)[0m  INSERT INTO "time_display_types" ("created_at", "type_description", "type_name", "updated_at") VALUES ('2010-10-15 02:28:52.208918', 'Daily view for tee times', 'Daily', '2010-10-15 02:28:52.208918')
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "time_display_formats" ("created_at", "format_name", "time_display_type_id", "updated_at") VALUES ('2010-10-15 02:28:52.228181', 'Standard Golf - Weekly', 2, '2010-10-15 02:28:52.228181')[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "time_format_groups" ("created_at", "end_time", "group_display_name", "group_name", "start_time", "time_display_format_id", "updated_at") VALUES ('2010-10-15 02:28:52.255322', '2010-10-14 12:00:00.000000', 'EM', 'Early Morning', '2010-10-14 08:00:00.000000', 1, '2010-10-15 02:28:52.255322')
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "time_format_groups" ("created_at", "end_time", "group_display_name", "group_name", "start_time", "time_display_format_id", "updated_at") VALUES ('2010-10-15 02:28:52.296788', '2010-10-14 16:00:00.000000', 'M', 'Morning', '2010-10-14 12:00:00.000000', 1, '2010-10-15 02:28:52.296788')[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "time_format_groups" ("created_at", "end_time", "group_display_name", "group_name", "start_time", "time_display_format_id", "updated_at") VALUES ('2010-10-15 02:28:52.302926', '2010-10-14 21:00:00.000000', 'A', 'Afternoon', '2010-10-14 16:00:00.000000', 1, '2010-10-15 02:28:52.302926')
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "time_format_groups" ("created_at", "end_time", "group_display_name", "group_name", "start_time", "time_display_format_id", "updated_at") VALUES ('2010-10-15 02:28:52.307808', '2010-10-15 03:00:00.000000', 'EV', 'Evening', '2010-10-14 21:00:00.000000', 1, '2010-10-15 02:28:52.307808')[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "time_format_groups" ("created_at", "end_time", "group_display_name", "group_name", "start_time", "time_display_format_id", "updated_at") VALUES ('2010-10-15 02:28:52.313505', '2010-10-14 08:00:00.000000', 'T', 'Twilight', '2010-10-15 03:00:00.000000', 1, '2010-10-15 02:28:52.313505')
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "courses" ("created_at", "description", "location", "name", "updated_at") VALUES ('2010-10-15 02:28:52.340754', 'A mere 15 minutes from downtown Calgary, Valley Ridge Golf Club feels as though it''s worlds away from the hustle of city life', 'NW Calgary', 'Valley Ridge Golf', '2010-10-15 02:28:52.340754')[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "courses_users" ("course_id", "user_id") VALUES (1, 2)
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "courses" ("created_at", "description", "location", "name", "updated_at") VALUES ('2010-10-15 02:28:52.361069', 'The RCGA Golf Centre is open to the public and provides a variety of quality golf products, services and programs targeted to families and golfers of all age groups and skill levels.', 'SE Calgary', 'RCGA Golf Centre', '2010-10-15 02:28:52.361069')[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "courses_users" ("course_id", "user_id") VALUES (2, 2)
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "courses" ("created_at", "description", "location", "name", "updated_at") VALUES ('2010-10-15 02:28:52.371715', 'The Elks is a beautiful oasis conveniently located just northwest of the junction of Deerfoot Trail and the Trans Canada Highway in the center of Calgary.', 'NE Calgary', 'Calgary Elks Lodge & Golf Club', '2010-10-15 02:28:52.371715')[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "courses_users" ("course_id", "user_id") VALUES (3, 2)
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "courses" ("created_at", "description", "location", "name", "updated_at") VALUES ('2010-10-15 02:28:52.383281', 'The two course development provides two distinctively different and exciting golf experiences. ', 'NE Calgary', 'Country Hills Golf Club', '2010-10-15 02:28:52.383281')[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "courses" ("created_at", "description", "location", "name", "updated_at") VALUES ('2010-10-15 02:28:52.388194', 'he Front 9 is beautiful and fun to play. A great job was done in adding trees, rocks, etc. The rolling greens are a nice addition as are the paved pathways.', 'SW Calgary', 'Shaganappi Point Golf Course', '2010-10-15 02:28:52.388194')
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "courses" ("created_at", "description", "location", "name", "updated_at") VALUES ('2010-10-15 02:28:52.393900', 'Imagine the traditions of a premier golf club only fifteen minutes from the heart of downtown. A place where deer, coyotes, hawks and owls still call home.', 'NW Calgary', 'Silver Springs Golf & Country Club', '2010-10-15 02:28:52.393900')[0m
+  [1m[35mTimeDisplayFormat Load (0.4ms)[0m  SELECT "time_display_formats".* FROM "time_display_formats" WHERE ("time_display_formats"."id" = 1) LIMIT 1
+  [1m[36mCourse Load (0.4ms)[0m  [1mSELECT "courses".* FROM "courses"[0m
+  [1m[36mSQL (0.9ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+  [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+Migrating to CreateTimeEntries (20101011170824)
+  [1m[35mSQL (0.1ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (0.6ms)[0m  [1mDROP TABLE "time_entries"[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20101011170824'
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.2ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m  PRAGMA index_list("courses")
+  [1m[36mSQL (0.0ms)[0m  [1mPRAGMA index_list("courses_time_display_formats")[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("courses_users")
+  [1m[36mSQL (0.0ms)[0m  [1mPRAGMA index_list("time_display_formats")[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("time_display_types")
+  [1m[36mSQL (0.0ms)[0m  [1mPRAGMA index_list("time_format_groups")[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("user_roles")
+  [1m[36mSQL (0.0ms)[0m  [1mPRAGMA index_list("users")[0m
+  [1m[36mSQL (0.8ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+  [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+  [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+Migrating to CreateCoursesTimeDisplayFormatsJoinTable (20101007000705)
+  [1m[35mSQL (0.1ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (0.6ms)[0m  [1mDROP TABLE "courses_time_display_formats"[0m
+  [1m[35mSQL (0.2ms)[0m  DELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20101007000705'
+Migrating to CreateTimeFormatGroups (20101007000154)
+  [1m[36mSQL (0.5ms)[0m  [1mDROP TABLE "time_format_groups"[0m
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20101007000154'
+Migrating to CreateTimeDisplayTypes (20101006235831)
+  [1m[36mSQL (0.5ms)[0m  [1mDROP TABLE "time_display_types"[0m
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20101006235831'
+Migrating to CreateTimeDisplayFormats (20101006235651)
+  [1m[36mSQL (0.5ms)[0m  [1mDROP TABLE "time_display_formats"[0m
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20101006235651'
+Migrating to CreateCoursesUsersJoinTable (20100925202933)
+  [1m[36mSQL (0.5ms)[0m  [1mDROP TABLE "courses_users"[0m
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20100925202933'
+Migrating to CreateCourses (20100915234332)
+  [1m[36mSQL (0.6ms)[0m  [1mDROP TABLE "courses"[0m
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20100915234332'
+Migrating to CreateUserRoles (20100915231427)
+  [1m[36mSQL (0.5ms)[0m  [1mDROP TABLE "user_roles"[0m
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20100915231427'
+Migrating to CreateUsers (20100915231226)
+  [1m[36mSQL (0.5ms)[0m  [1mDROP TABLE "users"[0m
+  [1m[35mSQL (0.1ms)[0m  DELETE FROM "schema_migrations" WHERE "schema_migrations"."version" = '20100915231226'
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.1ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+  [1m[36mSQL (0.1ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[36mSQL (0.5ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+  [1m[36mSQL (0.5ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.2ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.1ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+Migrating to CreateUsers (20100915231226)
+  [1m[35mSQL (0.1ms)[0m  select sqlite_version(*)
+  [1m[36mSQL (0.6ms)[0m  [1mCREATE TABLE "users" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar(255), "name" varchar(255), "user_role_id" integer DEFAULT 3, "encrypted_password" varchar(255), "salt" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20100915231226')
+Migrating to CreateUserRoles (20100915231427)
+  [1m[36mSQL (0.6ms)[0m  [1mCREATE TABLE "user_roles" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "role" varchar(255), "description" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20100915231427')
+Migrating to CreateCourses (20100915234332)
+  [1m[36mSQL (0.5ms)[0m  [1mCREATE TABLE "courses" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "name" varchar(255), "description" varchar(255), "location" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20100915234332')
+Migrating to CreateCoursesUsersJoinTable (20100925202933)
+  [1m[36mSQL (0.5ms)[0m  [1mCREATE TABLE "courses_users" ("course_id" integer, "user_id" integer) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20100925202933')
+Migrating to CreateTimeDisplayFormats (20101006235651)
+  [1m[36mSQL (0.5ms)[0m  [1mCREATE TABLE "time_display_formats" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "format_name" varchar(255), "time_display_type_id" integer, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20101006235651')
+Migrating to CreateTimeDisplayTypes (20101006235831)
+  [1m[36mSQL (0.6ms)[0m  [1mCREATE TABLE "time_display_types" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "type_name" varchar(255), "type_description" varchar(255), "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20101006235831')
+Migrating to CreateTimeFormatGroups (20101007000154)
+  [1m[36mSQL (0.5ms)[0m  [1mCREATE TABLE "time_format_groups" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "time_display_format_id" integer, "group_name" varchar(255), "group_display_name" varchar(255), "start_time" time, "end_time" time, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20101007000154')
+Migrating to CreateCoursesTimeDisplayFormatsJoinTable (20101007000705)
+  [1m[36mSQL (0.5ms)[0m  [1mCREATE TABLE "courses_time_display_formats" ("course_id" integer, "time_display_format_id" integer) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20101007000705')
+Migrating to CreateTimeEntries (20101011170824)
+  [1m[36mSQL (0.5ms)[0m  [1mCREATE TABLE "time_entries" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "course_id" integer, "start_date_time" datetime, "end_date_time" datetime, "created_at" datetime, "updated_at" datetime) [0m
+  [1m[35mSQL (0.1ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES ('20101011170824')
+  [1m[36mSQL (0.4ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.3ms)[0m  SELECT "schema_migrations"."version" FROM "schema_migrations"
+  [1m[36mSQL (0.2ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("courses")
+  [1m[36mSQL (0.0ms)[0m  [1mPRAGMA index_list("courses_time_display_formats")[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("courses_users")
+  [1m[36mSQL (0.0ms)[0m  [1mPRAGMA index_list("time_display_formats")[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("time_display_types")
+  [1m[36mSQL (0.0ms)[0m  [1mPRAGMA index_list("time_entries")[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("time_format_groups")
+  [1m[36mSQL (0.0ms)[0m  [1mPRAGMA index_list("user_roles")[0m
+  [1m[35mSQL (0.0ms)[0m  PRAGMA index_list("users")
+  [1m[36mSQL (0.8ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mSQL (0.3ms)[0m   SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+  [1m[36mSQL (0.2ms)[0m  [1mSELECT "schema_migrations"."version" FROM "schema_migrations"[0m
+  [1m[35mSQL (0.5ms)[0m  INSERT INTO "user_roles" ("created_at", "description", "role", "updated_at") VALUES ('2010-10-15 02:30:29.656803', 'Manages website, can create Owners, and perform Owner operations.', 'Administrator', '2010-10-15 02:30:29.656803')
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "user_roles" ("created_at", "description", "role", "updated_at") VALUES ('2010-10-15 02:30:29.747437', 'Manages courses and course information along with Publishers', 'Owner', '2010-10-15 02:30:29.747437')[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "user_roles" ("created_at", "description", "role", "updated_at") VALUES ('2010-10-15 02:30:29.751637', 'Manages course content and tee time availablity information', 'Publisher', '2010-10-15 02:30:29.751637')
+WARNING: Can't mass-assign protected attributes: user_role
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users"."id" FROM "users" WHERE (LOWER("users"."email") = LOWER('admin@admin.com')) LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "users" ("created_at", "email", "encrypted_password", "name", "salt", "updated_at", "user_role_id") VALUES ('2010-10-15 02:30:29.816385', 'admin@admin.com', '34e48e30d6c96648e437030ee4b85b2356c735ea7de484b47a217728c4d7cc37', 'Admin', '176b32dd547fccd2c49796a1a53a882c4102c0335b5220fa4df5fdac6d2bd071', '2010-10-15 02:30:29.816385', 3)
+WARNING: Can't mass-assign protected attributes: user_role
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users"."id" FROM "users" WHERE (LOWER("users"."email") = LOWER('owner@owner.com')) LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("created_at", "email", "encrypted_password", "name", "salt", "updated_at", "user_role_id") VALUES ('2010-10-15 02:30:29.851055', 'owner@owner.com', '34e48e30d6c96648e437030ee4b85b2356c735ea7de484b47a217728c4d7cc37', 'Owner', '176b32dd547fccd2c49796a1a53a882c4102c0335b5220fa4df5fdac6d2bd071', '2010-10-15 02:30:29.851055', 3)
+WARNING: Can't mass-assign protected attributes: user_role
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users"."id" FROM "users" WHERE (LOWER("users"."email") = LOWER('publisher@publisher.com')) LIMIT 1[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "users" ("created_at", "email", "encrypted_password", "name", "salt", "updated_at", "user_role_id") VALUES ('2010-10-15 02:30:29.856685', 'publisher@publisher.com', '34e48e30d6c96648e437030ee4b85b2356c735ea7de484b47a217728c4d7cc37', 'Publisher', '176b32dd547fccd2c49796a1a53a882c4102c0335b5220fa4df5fdac6d2bd071', '2010-10-15 02:30:29.856685', 3)
+WARNING: Can't mass-assign protected attributes: user_role
+  [1m[36mUser Load (0.2ms)[0m  [1mSELECT "users"."id" FROM "users" WHERE (LOWER("users"."email") = LOWER('l')) LIMIT 1[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "time_display_types" ("created_at", "type_description", "type_name", "updated_at") VALUES ('2010-10-15 02:30:29.875429', 'Monthly view for tee times', 'Monthly', '2010-10-15 02:30:29.875429')
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "time_display_types" ("created_at", "type_description", "type_name", "updated_at") VALUES ('2010-10-15 02:30:29.886817', 'Weekly view for tee times', 'Weekly', '2010-10-15 02:30:29.886817')[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "time_display_types" ("created_at", "type_description", "type_name", "updated_at") VALUES ('2010-10-15 02:30:29.891745', 'Daily view for tee times', 'Daily', '2010-10-15 02:30:29.891745')
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "time_display_formats" ("created_at", "format_name", "time_display_type_id", "updated_at") VALUES ('2010-10-15 02:30:29.912143', 'Standard Golf - Weekly', 2, '2010-10-15 02:30:29.912143')[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "time_format_groups" ("created_at", "end_time", "group_display_name", "group_name", "start_time", "time_display_format_id", "updated_at") VALUES ('2010-10-15 02:30:29.938062', '2010-10-14 12:00:00.000000', 'EM', 'Early Morning', '2010-10-14 08:00:00.000000', 1, '2010-10-15 02:30:29.938062')
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "time_format_groups" ("created_at", "end_time", "group_display_name", "group_name", "start_time", "time_display_format_id", "updated_at") VALUES ('2010-10-15 02:30:29.979869', '2010-10-14 16:00:00.000000', 'M', 'Morning', '2010-10-14 12:00:00.000000', 1, '2010-10-15 02:30:29.979869')[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "time_format_groups" ("created_at", "end_time", "group_display_name", "group_name", "start_time", "time_display_format_id", "updated_at") VALUES ('2010-10-15 02:30:29.985178', '2010-10-14 21:00:00.000000', 'A', 'Afternoon', '2010-10-14 16:00:00.000000', 1, '2010-10-15 02:30:29.985178')
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "time_format_groups" ("created_at", "end_time", "group_display_name", "group_name", "start_time", "time_display_format_id", "updated_at") VALUES ('2010-10-15 02:30:29.990057', '2010-10-15 03:00:00.000000', 'EV', 'Evening', '2010-10-14 21:00:00.000000', 1, '2010-10-15 02:30:29.990057')[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "time_format_groups" ("created_at", "end_time", "group_display_name", "group_name", "start_time", "time_display_format_id", "updated_at") VALUES ('2010-10-15 02:30:29.995610', '2010-10-14 08:00:00.000000', 'T', 'Twilight', '2010-10-15 03:00:00.000000', 1, '2010-10-15 02:30:29.995610')
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "courses" ("created_at", "description", "location", "name", "updated_at") VALUES ('2010-10-15 02:30:30.022632', 'A mere 15 minutes from downtown Calgary, Valley Ridge Golf Club feels as though it''s worlds away from the hustle of city life', 'NW Calgary', 'Valley Ridge Golf', '2010-10-15 02:30:30.022632')[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "courses_users" ("course_id", "user_id") VALUES (1, 2)
+  [1m[36mSQL (0.5ms)[0m  [1mINSERT INTO "courses" ("created_at", "description", "location", "name", "updated_at") VALUES ('2010-10-15 02:30:30.044078', 'The RCGA Golf Centre is open to the public and provides a variety of quality golf products, services and programs targeted to families and golfers of all age groups and skill levels.', 'SE Calgary', 'RCGA Golf Centre', '2010-10-15 02:30:30.044078')[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "courses_users" ("course_id", "user_id") VALUES (2, 2)
+  [1m[36mSQL (0.4ms)[0m  [1mINSERT INTO "courses" ("created_at", "description", "location", "name", "updated_at") VALUES ('2010-10-15 02:30:30.055132', 'The Elks is a beautiful oasis conveniently located just northwest of the junction of Deerfoot Trail and the Trans Canada Highway in the center of Calgary.', 'NE Calgary', 'Calgary Elks Lodge & Golf Club', '2010-10-15 02:30:30.055132')[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "courses_users" ("course_id", "user_id") VALUES (3, 2)
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "courses" ("created_at", "description", "location", "name", "updated_at") VALUES ('2010-10-15 02:30:30.065709', 'The two course development provides two distinctively different and exciting golf experiences. ', 'NE Calgary', 'Country Hills Golf Club', '2010-10-15 02:30:30.065709')[0m
+  [1m[35mSQL (0.4ms)[0m  INSERT INTO "courses" ("created_at", "description", "location", "name", "updated_at") VALUES ('2010-10-15 02:30:30.070457', 'he Front 9 is beautiful and fun to play. A great job was done in adding trees, rocks, etc. The rolling greens are a nice addition as are the paved pathways.', 'SW Calgary', 'Shaganappi Point Golf Course', '2010-10-15 02:30:30.070457')
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "courses" ("created_at", "description", "location", "name", "updated_at") VALUES ('2010-10-15 02:30:30.075234', 'Imagine the traditions of a premier golf club only fifteen minutes from the heart of downtown. A place where deer, coyotes, hawks and owls still call home.', 'NW Calgary', 'Silver Springs Golf & Country Club', '2010-10-15 02:30:30.075234')[0m
+  [1m[35mTimeDisplayFormat Load (0.2ms)[0m  SELECT "time_display_formats".* FROM "time_display_formats" WHERE ("time_display_formats"."id" = 1) LIMIT 1
+  [1m[36mCourse Load (0.3ms)[0m  [1mSELECT "courses".* FROM "courses"[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "courses_time_display_formats" ("course_id", "time_display_format_id") VALUES (1, 1)
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "courses_time_display_formats" ("course_id", "time_display_format_id") VALUES (2, 1)[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "courses_time_display_formats" ("course_id", "time_display_format_id") VALUES (3, 1)
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "courses_time_display_formats" ("course_id", "time_display_format_id") VALUES (4, 1)[0m
+  [1m[35mSQL (0.3ms)[0m  INSERT INTO "courses_time_display_formats" ("course_id", "time_display_format_id") VALUES (5, 1)
+  [1m[36mSQL (0.3ms)[0m  [1mINSERT INTO "courses_time_display_formats" ("course_id", "time_display_format_id") VALUES (6, 1)[0m
+
+
+Started GET "/" for 127.0.0.1 at 2010-10-14 22:31:33 -0400
+  Processing by CoursesController#index as HTML
+  [1m[36mSQL (0.3ms)[0m  [1m SELECT name
+ FROM sqlite_master
+ WHERE type = 'table' AND NOT name = 'sqlite_sequence'
+[0m
+  [1m[35mCourse Load (0.4ms)[0m  SELECT "courses".* FROM "courses"
+  [1m[36mTimeEntry Load (0.7ms)[0m  [1mSELECT "time_entries".* FROM "time_entries" WHERE ("time_entries".course_id = 4) ORDER BY updated_at desc[0m
+  [1m[35mTimeEntry Load (0.4ms)[0m  SELECT "time_entries".* FROM "time_entries" WHERE ("time_entries".course_id = 1) ORDER BY updated_at desc
+  [1m[36mTimeEntry Load (0.4ms)[0m  [1mSELECT "time_entries".* FROM "time_entries" WHERE ("time_entries".course_id = 6) ORDER BY updated_at desc[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "time_entries".* FROM "time_entries" WHERE ("time_entries".course_id = 4) ORDER BY updated_at desc
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "time_entries".* FROM "time_entries" WHERE ("time_entries".course_id = 4) ORDER BY updated_at desc[0m
+  [1m[35mTimeEntry Load (0.4ms)[0m  SELECT "time_entries".* FROM "time_entries" WHERE ("time_entries".course_id = 2) ORDER BY updated_at desc
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "time_entries".* FROM "time_entries" WHERE ("time_entries".course_id = 4) ORDER BY updated_at desc[0m
+  [1m[35mTimeEntry Load (0.4ms)[0m  SELECT "time_entries".* FROM "time_entries" WHERE ("time_entries".course_id = 3) ORDER BY updated_at desc
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "time_entries".* FROM "time_entries" WHERE ("time_entries".course_id = 4) ORDER BY updated_at desc[0m
+  [1m[35mTimeEntry Load (0.4ms)[0m  SELECT "time_entries".* FROM "time_entries" WHERE ("time_entries".course_id = 5) ORDER BY updated_at desc
+  [1m[36mTimeDisplayFormat Load (0.3ms)[0m  [1mSELECT * FROM "time_display_formats" INNER JOIN "courses_time_display_formats" ON "time_display_formats".id = "courses_time_display_formats".time_display_format_id WHERE ("courses_time_display_formats".course_id = 1 ) LIMIT 1[0m
+  [1m[35mTimeFormatGroup Load (0.5ms)[0m  SELECT "time_format_groups".* FROM "time_format_groups" WHERE ("time_format_groups".time_display_format_id = 1)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT * FROM "time_display_formats" INNER JOIN "courses_time_display_formats" ON "time_display_formats".id = "courses_time_display_formats".time_display_format_id WHERE ("courses_time_display_formats".course_id = 1 ) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "time_format_groups".* FROM "time_format_groups" WHERE ("time_format_groups".time_display_format_id = 1)
+  [1m[36mTimeEntry Load (0.2ms)[0m  [1mSELECT "time_entries".* FROM "time_entries" WHERE ("time_entries".course_id = 1)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT * FROM "time_display_formats" INNER JOIN "courses_time_display_formats" ON "time_display_formats".id = "courses_time_display_formats".time_display_format_id WHERE ("courses_time_display_formats".course_id = 1 ) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "time_format_groups".* FROM "time_format_groups" WHERE ("time_format_groups".time_display_format_id = 1)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT * FROM "time_display_formats" INNER JOIN "courses_time_display_formats" ON "time_display_formats".id = "courses_time_display_formats".time_display_format_id WHERE ("courses_time_display_formats".course_id = 1 ) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "time_format_groups".* FROM "time_format_groups" WHERE ("time_format_groups".time_display_format_id = 1)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT * FROM "time_display_formats" INNER JOIN "courses_time_display_formats" ON "time_display_formats".id = "courses_time_display_formats".time_display_format_id WHERE ("courses_time_display_formats".course_id = 1 ) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "time_format_groups".* FROM "time_format_groups" WHERE ("time_format_groups".time_display_format_id = 1)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT * FROM "time_display_formats" INNER JOIN "courses_time_display_formats" ON "time_display_formats".id = "courses_time_display_formats".time_display_format_id WHERE ("courses_time_display_formats".course_id = 1 ) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "time_format_groups".* FROM "time_format_groups" WHERE ("time_format_groups".time_display_format_id = 1)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT * FROM "time_display_formats" INNER JOIN "courses_time_display_formats" ON "time_display_formats".id = "courses_time_display_formats".time_display_format_id WHERE ("courses_time_display_formats".course_id = 1 ) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "time_format_groups".* FROM "time_format_groups" WHERE ("time_format_groups".time_display_format_id = 1)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT * FROM "time_display_formats" INNER JOIN "courses_time_display_formats" ON "time_display_formats".id = "courses_time_display_formats".time_display_format_id WHERE ("courses_time_display_formats".course_id = 1 ) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "time_format_groups".* FROM "time_format_groups" WHERE ("time_format_groups".time_display_format_id = 1)[0m
+  [1m[35mTimeDisplayFormat Load (0.3ms)[0m  SELECT * FROM "time_display_formats" INNER JOIN "courses_time_display_formats" ON "time_display_formats".id = "courses_time_display_formats".time_display_format_id WHERE ("courses_time_display_formats".course_id = 2 ) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "time_format_groups".* FROM "time_format_groups" WHERE ("time_format_groups".time_display_format_id = 1)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT * FROM "time_display_formats" INNER JOIN "courses_time_display_formats" ON "time_display_formats".id = "courses_time_display_formats".time_display_format_id WHERE ("courses_time_display_formats".course_id = 2 ) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "time_format_groups".* FROM "time_format_groups" WHERE ("time_format_groups".time_display_format_id = 1)[0m
+  [1m[35mTimeEntry Load (0.1ms)[0m  SELECT "time_entries".* FROM "time_entries" WHERE ("time_entries".course_id = 2)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT * FROM "time_display_formats" INNER JOIN "courses_time_display_formats" ON "time_display_formats".id = "courses_time_display_formats".time_display_format_id WHERE ("courses_time_display_formats".course_id = 2 ) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "time_format_groups".* FROM "time_format_groups" WHERE ("time_format_groups".time_display_format_id = 1)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT * FROM "time_display_formats" INNER JOIN "courses_time_display_formats" ON "time_display_formats".id = "courses_time_display_formats".time_display_format_id WHERE ("courses_time_display_formats".course_id = 2 ) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "time_format_groups".* FROM "time_format_groups" WHERE ("time_format_groups".time_display_format_id = 1)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT * FROM "time_display_formats" INNER JOIN "courses_time_display_formats" ON "time_display_formats".id = "courses_time_display_formats".time_display_format_id WHERE ("courses_time_display_formats".course_id = 2 ) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "time_format_groups".* FROM "time_format_groups" WHERE ("time_format_groups".time_display_format_id = 1)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT * FROM "time_display_formats" INNER JOIN "courses_time_display_formats" ON "time_display_formats".id = "courses_time_display_formats".time_display_format_id WHERE ("courses_time_display_formats".course_id = 2 ) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "time_format_groups".* FROM "time_format_groups" WHERE ("time_format_groups".time_display_format_id = 1)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT * FROM "time_display_formats" INNER JOIN "courses_time_display_formats" ON "time_display_formats".id = "courses_time_display_formats".time_display_format_id WHERE ("courses_time_display_formats".course_id = 2 ) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "time_format_groups".* FROM "time_format_groups" WHERE ("time_format_groups".time_display_format_id = 1)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT * FROM "time_display_formats" INNER JOIN "courses_time_display_formats" ON "time_display_formats".id = "courses_time_display_formats".time_display_format_id WHERE ("courses_time_display_formats".course_id = 2 ) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "time_format_groups".* FROM "time_format_groups" WHERE ("time_format_groups".time_display_format_id = 1)
+  [1m[36mTimeDisplayFormat Load (0.3ms)[0m  [1mSELECT * FROM "time_display_formats" INNER JOIN "courses_time_display_formats" ON "time_display_formats".id = "courses_time_display_formats".time_display_format_id WHERE ("courses_time_display_formats".course_id = 3 ) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "time_format_groups".* FROM "time_format_groups" WHERE ("time_format_groups".time_display_format_id = 1)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT * FROM "time_display_formats" INNER JOIN "courses_time_display_formats" ON "time_display_formats".id = "courses_time_display_formats".time_display_format_id WHERE ("courses_time_display_formats".course_id = 3 ) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "time_format_groups".* FROM "time_format_groups" WHERE ("time_format_groups".time_display_format_id = 1)
+  [1m[36mTimeEntry Load (0.1ms)[0m  [1mSELECT "time_entries".* FROM "time_entries" WHERE ("time_entries".course_id = 3)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT * FROM "time_display_formats" INNER JOIN "courses_time_display_formats" ON "time_display_formats".id = "courses_time_display_formats".time_display_format_id WHERE ("courses_time_display_formats".course_id = 3 ) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "time_format_groups".* FROM "time_format_groups" WHERE ("time_format_groups".time_display_format_id = 1)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT * FROM "time_display_formats" INNER JOIN "courses_time_display_formats" ON "time_display_formats".id = "courses_time_display_formats".time_display_format_id WHERE ("courses_time_display_formats".course_id = 3 ) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "time_format_groups".* FROM "time_format_groups" WHERE ("time_format_groups".time_display_format_id = 1)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT * FROM "time_display_formats" INNER JOIN "courses_time_display_formats" ON "time_display_formats".id = "courses_time_display_formats".time_display_format_id WHERE ("courses_time_display_formats".course_id = 3 ) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "time_format_groups".* FROM "time_format_groups" WHERE ("time_format_groups".time_display_format_id = 1)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT * FROM "time_display_formats" INNER JOIN "courses_time_display_formats" ON "time_display_formats".id = "courses_time_display_formats".time_display_format_id WHERE ("courses_time_display_formats".course_id = 3 ) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "time_format_groups".* FROM "time_format_groups" WHERE ("time_format_groups".time_display_format_id = 1)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT * FROM "time_display_formats" INNER JOIN "courses_time_display_formats" ON "time_display_formats".id = "courses_time_display_formats".time_display_format_id WHERE ("courses_time_display_formats".course_id = 3 ) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "time_format_groups".* FROM "time_format_groups" WHERE ("time_format_groups".time_display_format_id = 1)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT * FROM "time_display_formats" INNER JOIN "courses_time_display_formats" ON "time_display_formats".id = "courses_time_display_formats".time_display_format_id WHERE ("courses_time_display_formats".course_id = 3 ) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "time_format_groups".* FROM "time_format_groups" WHERE ("time_format_groups".time_display_format_id = 1)[0m
+  [1m[35mTimeDisplayFormat Load (0.2ms)[0m  SELECT * FROM "time_display_formats" INNER JOIN "courses_time_display_formats" ON "time_display_formats".id = "courses_time_display_formats".time_display_format_id WHERE ("courses_time_display_formats".course_id = 4 ) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "time_format_groups".* FROM "time_format_groups" WHERE ("time_format_groups".time_display_format_id = 1)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT * FROM "time_display_formats" INNER JOIN "courses_time_display_formats" ON "time_display_formats".id = "courses_time_display_formats".time_display_format_id WHERE ("courses_time_display_formats".course_id = 4 ) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "time_format_groups".* FROM "time_format_groups" WHERE ("time_format_groups".time_display_format_id = 1)[0m
+  [1m[35mTimeEntry Load (0.1ms)[0m  SELECT "time_entries".* FROM "time_entries" WHERE ("time_entries".course_id = 4)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT * FROM "time_display_formats" INNER JOIN "courses_time_display_formats" ON "time_display_formats".id = "courses_time_display_formats".time_display_format_id WHERE ("courses_time_display_formats".course_id = 4 ) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "time_format_groups".* FROM "time_format_groups" WHERE ("time_format_groups".time_display_format_id = 1)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT * FROM "time_display_formats" INNER JOIN "courses_time_display_formats" ON "time_display_formats".id = "courses_time_display_formats".time_display_format_id WHERE ("courses_time_display_formats".course_id = 4 ) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "time_format_groups".* FROM "time_format_groups" WHERE ("time_format_groups".time_display_format_id = 1)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT * FROM "time_display_formats" INNER JOIN "courses_time_display_formats" ON "time_display_formats".id = "courses_time_display_formats".time_display_format_id WHERE ("courses_time_display_formats".course_id = 4 ) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "time_format_groups".* FROM "time_format_groups" WHERE ("time_format_groups".time_display_format_id = 1)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT * FROM "time_display_formats" INNER JOIN "courses_time_display_formats" ON "time_display_formats".id = "courses_time_display_formats".time_display_format_id WHERE ("courses_time_display_formats".course_id = 4 ) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "time_format_groups".* FROM "time_format_groups" WHERE ("time_format_groups".time_display_format_id = 1)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT * FROM "time_display_formats" INNER JOIN "courses_time_display_formats" ON "time_display_formats".id = "courses_time_display_formats".time_display_format_id WHERE ("courses_time_display_formats".course_id = 4 ) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "time_format_groups".* FROM "time_format_groups" WHERE ("time_format_groups".time_display_format_id = 1)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT * FROM "time_display_formats" INNER JOIN "courses_time_display_formats" ON "time_display_formats".id = "courses_time_display_formats".time_display_format_id WHERE ("courses_time_display_formats".course_id = 4 ) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "time_format_groups".* FROM "time_format_groups" WHERE ("time_format_groups".time_display_format_id = 1)
+  [1m[36mTimeDisplayFormat Load (0.2ms)[0m  [1mSELECT * FROM "time_display_formats" INNER JOIN "courses_time_display_formats" ON "time_display_formats".id = "courses_time_display_formats".time_display_format_id WHERE ("courses_time_display_formats".course_id = 5 ) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "time_format_groups".* FROM "time_format_groups" WHERE ("time_format_groups".time_display_format_id = 1)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT * FROM "time_display_formats" INNER JOIN "courses_time_display_formats" ON "time_display_formats".id = "courses_time_display_formats".time_display_format_id WHERE ("courses_time_display_formats".course_id = 5 ) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "time_format_groups".* FROM "time_format_groups" WHERE ("time_format_groups".time_display_format_id = 1)
+  [1m[36mTimeEntry Load (0.1ms)[0m  [1mSELECT "time_entries".* FROM "time_entries" WHERE ("time_entries".course_id = 5)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT * FROM "time_display_formats" INNER JOIN "courses_time_display_formats" ON "time_display_formats".id = "courses_time_display_formats".time_display_format_id WHERE ("courses_time_display_formats".course_id = 5 ) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "time_format_groups".* FROM "time_format_groups" WHERE ("time_format_groups".time_display_format_id = 1)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT * FROM "time_display_formats" INNER JOIN "courses_time_display_formats" ON "time_display_formats".id = "courses_time_display_formats".time_display_format_id WHERE ("courses_time_display_formats".course_id = 5 ) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "time_format_groups".* FROM "time_format_groups" WHERE ("time_format_groups".time_display_format_id = 1)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT * FROM "time_display_formats" INNER JOIN "courses_time_display_formats" ON "time_display_formats".id = "courses_time_display_formats".time_display_format_id WHERE ("courses_time_display_formats".course_id = 5 ) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "time_format_groups".* FROM "time_format_groups" WHERE ("time_format_groups".time_display_format_id = 1)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT * FROM "time_display_formats" INNER JOIN "courses_time_display_formats" ON "time_display_formats".id = "courses_time_display_formats".time_display_format_id WHERE ("courses_time_display_formats".course_id = 5 ) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "time_format_groups".* FROM "time_format_groups" WHERE ("time_format_groups".time_display_format_id = 1)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT * FROM "time_display_formats" INNER JOIN "courses_time_display_formats" ON "time_display_formats".id = "courses_time_display_formats".time_display_format_id WHERE ("courses_time_display_formats".course_id = 5 ) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "time_format_groups".* FROM "time_format_groups" WHERE ("time_format_groups".time_display_format_id = 1)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT * FROM "time_display_formats" INNER JOIN "courses_time_display_formats" ON "time_display_formats".id = "courses_time_display_formats".time_display_format_id WHERE ("courses_time_display_formats".course_id = 5 ) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "time_format_groups".* FROM "time_format_groups" WHERE ("time_format_groups".time_display_format_id = 1)[0m
+  [1m[35mTimeDisplayFormat Load (0.3ms)[0m  SELECT * FROM "time_display_formats" INNER JOIN "courses_time_display_formats" ON "time_display_formats".id = "courses_time_display_formats".time_display_format_id WHERE ("courses_time_display_formats".course_id = 6 ) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "time_format_groups".* FROM "time_format_groups" WHERE ("time_format_groups".time_display_format_id = 1)[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT * FROM "time_display_formats" INNER JOIN "courses_time_display_formats" ON "time_display_formats".id = "courses_time_display_formats".time_display_format_id WHERE ("courses_time_display_formats".course_id = 6 ) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "time_format_groups".* FROM "time_format_groups" WHERE ("time_format_groups".time_display_format_id = 1)[0m
+  [1m[35mTimeEntry Load (0.1ms)[0m  SELECT "time_entries".* FROM "time_entries" WHERE ("time_entries".course_id = 6)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT * FROM "time_display_formats" INNER JOIN "courses_time_display_formats" ON "time_display_formats".id = "courses_time_display_formats".time_display_format_id WHERE ("courses_time_display_formats".course_id = 6 ) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "time_format_groups".* FROM "time_format_groups" WHERE ("time_format_groups".time_display_format_id = 1)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT * FROM "time_display_formats" INNER JOIN "courses_time_display_formats" ON "time_display_formats".id = "courses_time_display_formats".time_display_format_id WHERE ("courses_time_display_formats".course_id = 6 ) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "time_format_groups".* FROM "time_format_groups" WHERE ("time_format_groups".time_display_format_id = 1)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT * FROM "time_display_formats" INNER JOIN "courses_time_display_formats" ON "time_display_formats".id = "courses_time_display_formats".time_display_format_id WHERE ("courses_time_display_formats".course_id = 6 ) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "time_format_groups".* FROM "time_format_groups" WHERE ("time_format_groups".time_display_format_id = 1)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT * FROM "time_display_formats" INNER JOIN "courses_time_display_formats" ON "time_display_formats".id = "courses_time_display_formats".time_display_format_id WHERE ("courses_time_display_formats".course_id = 6 ) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "time_format_groups".* FROM "time_format_groups" WHERE ("time_format_groups".time_display_format_id = 1)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT * FROM "time_display_formats" INNER JOIN "courses_time_display_formats" ON "time_display_formats".id = "courses_time_display_formats".time_display_format_id WHERE ("courses_time_display_formats".course_id = 6 ) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "time_format_groups".* FROM "time_format_groups" WHERE ("time_format_groups".time_display_format_id = 1)
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT * FROM "time_display_formats" INNER JOIN "courses_time_display_formats" ON "time_display_formats".id = "courses_time_display_formats".time_display_format_id WHERE ("courses_time_display_formats".course_id = 6 ) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "time_format_groups".* FROM "time_format_groups" WHERE ("time_format_groups".time_display_format_id = 1)
+  [1m[36mUser Load (0.3ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 3) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 3) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 3) LIMIT 1[0m
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 3) LIMIT 1
+  [1m[36mCACHE (0.0ms)[0m  [1mSELECT "users".* FROM "users" WHERE ("users"."id" = 3) LIMIT 1[0m
+Rendered layouts/_header.html.erb (78.2ms)
+Rendered layouts/_footer.html.erb (0.4ms)
+  [1m[35mCACHE (0.0ms)[0m  SELECT "users".* FROM "users" WHERE ("users"."id" = 3) LIMIT 1
+Rendered courses/index.html.erb within layouts/application (223.3ms)
+Completed 200 OK in 431ms (Views: 227.4ms | ActiveRecord: 6.4ms)

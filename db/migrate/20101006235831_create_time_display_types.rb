@@ -7,9 +7,9 @@ class CreateTimeDisplayTypes < ActiveRecord::Migration
       t.timestamps
     end
     
-    TimeDisplayType.create :type_name => "Monthly", :type_description => "Monthly view for tee times"
-    TimeDisplayType.create :type_name => "Weekly", :type_description => "Weekly view for tee times"
-    TimeDisplayType.create :type_name => "Daily", :type_description => "Daily view for tee times"
+    # TimeDisplayType.create :type_name => "Monthly", :type_description => "Monthly view for tee times"
+    #     TimeDisplayType.create :type_name => "Weekly", :type_description => "Weekly view for tee times"
+    #     TimeDisplayType.create :type_name => "Daily", :type_description => "Daily view for tee times"
   end
 
   def self.down

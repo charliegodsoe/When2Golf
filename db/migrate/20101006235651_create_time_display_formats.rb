@@ -6,7 +6,7 @@ class CreateTimeDisplayFormats < ActiveRecord::Migration
       t.timestamps
     end
     
-    TimeDisplayFormat.create :format_name => "Standard Golf - Weekly", :time_display_type_id => 2
+    # TimeDisplayFormat.create :format_name => "Standard Golf - Weekly", :time_display_type_id => 2
   end
 
   def self.down
