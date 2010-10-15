@@ -100,6 +100,7 @@ DEPENDENCIES
   annotate-models (= 1.0.4)
   compass (>= 0.10.5)
   factory_girl_rails (= 1.0)
+  haml
   jquery-rails
   jrails
   rails (= 3.0.0.rc2)
