@@ -1,0 +1,15 @@
+%h1 Listing Courses
+%table
+	%tr
+		%th Name
+		%th Description
+		%th Location
+		%th
+		%th
+		%th
+	= render :partial => 'course', :collection => @courses
+%br 
+
+-if has_owner_privileges?
+	= link_to 'New Course', new_admin_course_path
+-end

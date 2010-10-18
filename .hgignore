@@ -1,3 +1,3 @@
 log
-db/*.sqlite
+db/*sqlite
 tmp

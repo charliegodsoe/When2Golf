@@ -1,0 +1,7 @@
+%tr
+	%td = course.name
+	%td = course.description
+	%td = course.location
+	%td = link_to 'Show', [:admin, course]
+	%td = link_to 'Edit', edit_admin_course_path(course)
+	%td = button_to 'Destroy', [:admin, course], :confirm => 'Are you sure?', :method => :delete

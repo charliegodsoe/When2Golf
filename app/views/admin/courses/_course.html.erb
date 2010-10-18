@@ -1,8 +1,0 @@
-<tr>
-  	<td><%= course.name %></td>
-  	<td><%= course.description %></td>
-  	<td><%= course.location %></td>
- 	<td><%= link_to 'Show', [:admin, course] %></td>
- 	<td><%= link_to 'Edit', edit_admin_course_path(course) %></td>
-	<td><%= button_to 'Destroy', [:admin, course], :confirm => 'Are you sure?', :method => :delete %></td>
-</tr>
