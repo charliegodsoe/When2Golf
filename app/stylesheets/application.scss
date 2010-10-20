@@ -8,9 +8,11 @@ html{
 }
 
 body.bp {
+	
 	@include linear-gradient(color-stops(white, #dddddd));
 	padding: 0px 50px 0px 50px;
 	height: 100%;
+	
 	nav{
 		@include box-shadow();
 		@include linear-gradient(color-stops(#efefef, #dfdfdf));
