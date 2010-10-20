@@ -1,0 +1,11 @@
+%h1 Listing courses
+%table{:class => 'courses_table'}
+	%thead
+		%tr
+			%th Name
+			%th Today
+			%th Today + 1
+			%th Today + 2
+			%th Today + 3
+	%tbody
+		= render :partial => 'course', :collection => @courses

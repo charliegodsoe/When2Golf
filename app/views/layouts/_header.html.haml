@@ -1,0 +1,17 @@
+%header
+	%nav
+		%ul
+			%li= link_to "Home", root_path
+			-if signed_in?
+				- if has_owner_privileges? or has_publisher_privileges?
+					%li= link_to "Manage Golf Courses", admin_courses_path 
+				-else
+					%li= link_to "View Golf Courses", courses_path
+			
+				-if has_owner_privileges?
+					%li= link_to "Manage Users", admin_users_path
+
+				%li= link_to "Sign out", signout_path, :method => :delete
+			-else
+				%li= link_to "Sign in", signin_path
+				%li= link_to "Sign up", signup_path

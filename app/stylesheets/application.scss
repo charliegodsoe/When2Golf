@@ -1,0 +1,109 @@
+@import "compass/css3/gradient";
+@import "compass/css3/box-shadow";
+@import "compass/css3/border-radius";
+@import "partials/base";
+
+html{
+	height: 100%;
+}
+
+body.bp {
+	@include linear-gradient(color-stops(white, #dddddd));
+	padding: 0px 50px 0px 50px;
+	height: 100%;
+	nav{
+		@include box-shadow();
+		@include linear-gradient(color-stops(#efefef, #dfdfdf));
+		padding:5px 0 5px 0;
+		ul{
+			display:inline;
+			padding: 0 0 0 0;
+			margin: 0 0 0 0;
+		}
+		
+		li{
+			display:inline;
+			border-left: 1px solid #666;
+			margin: 0 0 0 0;
+			padding: 0px 10px 0px 10px;
+			a{
+				text-decoration: none;
+				text-shadow: 0px 1px 1px white;
+				color:  #333 !important;
+			}
+			
+			a:active {
+				text-decoration: underline;
+				color: #333;
+			}
+		}
+		
+		li:first-child{
+			border:none;
+		}
+	}
+
+	header{
+		@include border-radius(4px, 4px); 
+		@include linear-gradient(color-stops(white, #efefef));
+		margin: 10px 0 10px 0;
+	}
+	
+	footer{
+		@include linear-gradient(color-stops(white, #efefef));
+		@include box-shadow();
+		margin: 10px 0 0 0;
+		.debug{
+			padding: 10px 10px 10px 10px;
+			border: 1px dashed #bbb;
+		}
+	}
+
+	// Main Content block
+	section.content{
+		@include box-shadow();
+		@include border-radius(4px, 4px); 
+		@include linear-gradient(color-stops(white, #efefef));
+		padding: 10px;
+		
+		.courses_table{
+			border: 1px solid #666;
+			border-collapse:collapse;
+			
+			tr{
+				border-top: 1px solid #666	!important;
+			}
+			
+			thead{
+				th{
+					background-color: #dedede;
+				}
+			}
+			
+			.row_even{
+				background-color: #fff;
+			}
+			
+			.row_odd{
+				background-color: #eee;
+			}
+		}
+		
+		table.inner_publish{
+			border: 1px solid #666;
+			border-collapse:collapse;
+			
+			td{
+				border: 1px solid #666	!important;
+				background-color: white;
+			}
+			
+			thead{
+				th{
+					border: 1px solid #666	!important;
+					background-color: #dedede;
+				}
+			}
+		}
+	}
+}

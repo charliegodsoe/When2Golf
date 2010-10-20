@@ -244,10 +244,6 @@ hr.space {background:#fff;color:#fff;visibility:hidden;}
 .clearfix, .container {display:block;}
 .clear {clear:both;}
 
-
-
-
-
 .container {
 	width: 800px;
 }
@@ -314,7 +310,8 @@ nav ul li a:hover {
 /*table {margin-bottom:1.4em;width:100%;}*/
 /*th, td, caption {padding:4px 10px 4px 5px;}*/
 table {
-	border-collapse:separate;border-spacing:0;
+	border-collapse:separate;
+	border-spacing:0;
 	r
 }
 

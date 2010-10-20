@@ -1,3 +1,5 @@
 log
-db/*sqlite
+db/development.sqlite
+db/production.sqlite
+db/test.sqlite
 tmp

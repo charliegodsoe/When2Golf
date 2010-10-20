@@ -1,0 +1,19 @@
+%tr{:class => cycle('row_even','row_odd') }
+	%td{ :class => 'outer_publish'}
+		=course.name
+		-4.times do
+			%td{:class => 'outer_publish'}
+				%table{ :class => 'inner_publish'}
+					%thead
+						%tr
+							-# ToDo: something better than just grabbing the first time display format
+							- course.time_display_formats.first.time_format_groups.each do |format_group|
+								%th{:class => 'inner_publish'}
+									= format_group.group_display_name
+					%tbody
+						%tr
+							- course.time_display_formats.first.time_format_groups.each do |format_group|
+								%td{:class => "inner_publish"}
+									= course.tee_times(format_group, @day)
+			- @day = @day.tomorrow
+-@day = DateTime.now

@@ -1,0 +1,134 @@
+/* line 6, ../../../app/stylesheets/application.scss */
+html {
+  height: 100%;
+}
+
+/* line 10, ../../../app/stylesheets/application.scss */
+body.bp {
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #ffffff), color-stop(100%, #dddddd));
+  background-image: -moz-linear-gradient(top, #ffffff 0%, #dddddd 100%);
+  background-image: linear-gradient(top, #ffffff 0%, #dddddd 100%);
+  padding: 0px 50px 0px 50px;
+  height: 100%;
+}
+/* line 14, ../../../app/stylesheets/application.scss */
+body.bp nav {
+  -moz-box-shadow: #333333 1px 1px 5px 0;
+  -webkit-box-shadow: #333333 1px 1px 5px 0;
+  -o-box-shadow: #333333 1px 1px 5px 0;
+  box-shadow: #333333 1px 1px 5px 0;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #efefef), color-stop(100%, #dfdfdf));
+  background-image: -moz-linear-gradient(top, #efefef 0%, #dfdfdf 100%);
+  background-image: linear-gradient(top, #efefef 0%, #dfdfdf 100%);
+  padding: 5px 0 5px 0;
+}
+/* line 18, ../../../app/stylesheets/application.scss */
+body.bp nav ul {
+  display: inline;
+  padding: 0 0 0 0;
+  margin: 0 0 0 0;
+}
+/* line 24, ../../../app/stylesheets/application.scss */
+body.bp nav li {
+  display: inline;
+  border-left: 1px solid #666;
+  margin: 0 0 0 0;
+  padding: 0px 10px 0px 10px;
+}
+/* line 29, ../../../app/stylesheets/application.scss */
+body.bp nav li a {
+  text-decoration: none;
+  text-shadow: 0px 1px 1px white;
+  color: #333 !important;
+}
+/* line 35, ../../../app/stylesheets/application.scss */
+body.bp nav li a:active {
+  text-decoration: underline;
+  color: #333;
+}
+/* line 41, ../../../app/stylesheets/application.scss */
+body.bp nav li:first-child {
+  border: none;
+}
+/* line 46, ../../../app/stylesheets/application.scss */
+body.bp header {
+  -webkit-border-radius: 4px 4px;
+  -moz-border-radius: 4px / 4px;
+  -o-border-radius: 4px / 4px;
+  -ms-border-radius: 4px / 4px;
+  -khtml-border-radius: 4px / 4px;
+  border-radius: 4px / 4px;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #ffffff), color-stop(100%, #efefef));
+  background-image: -moz-linear-gradient(top, #ffffff 0%, #efefef 100%);
+  background-image: linear-gradient(top, #ffffff 0%, #efefef 100%);
+  margin: 10px 0 10px 0;
+}
+/* line 52, ../../../app/stylesheets/application.scss */
+body.bp footer {
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #ffffff), color-stop(100%, #efefef));
+  background-image: -moz-linear-gradient(top, #ffffff 0%, #efefef 100%);
+  background-image: linear-gradient(top, #ffffff 0%, #efefef 100%);
+  -moz-box-shadow: #333333 1px 1px 5px 0;
+  -webkit-box-shadow: #333333 1px 1px 5px 0;
+  -o-box-shadow: #333333 1px 1px 5px 0;
+  box-shadow: #333333 1px 1px 5px 0;
+  margin: 10px 0 0 0;
+}
+/* line 56, ../../../app/stylesheets/application.scss */
+body.bp footer .debug {
+  padding: 10px 10px 10px 10px;
+  border: 1px dashed #bbb;
+}
+/* line 63, ../../../app/stylesheets/application.scss */
+body.bp section.content {
+  -moz-box-shadow: #333333 1px 1px 5px 0;
+  -webkit-box-shadow: #333333 1px 1px 5px 0;
+  -o-box-shadow: #333333 1px 1px 5px 0;
+  box-shadow: #333333 1px 1px 5px 0;
+  -webkit-border-radius: 4px 4px;
+  -moz-border-radius: 4px / 4px;
+  -o-border-radius: 4px / 4px;
+  -ms-border-radius: 4px / 4px;
+  -khtml-border-radius: 4px / 4px;
+  border-radius: 4px / 4px;
+  background-image: -webkit-gradient(linear, 0% 0%, 0% 100%, color-stop(0%, #ffffff), color-stop(100%, #efefef));
+  background-image: -moz-linear-gradient(top, #ffffff 0%, #efefef 100%);
+  background-image: linear-gradient(top, #ffffff 0%, #efefef 100%);
+  padding: 10px;
+}
+/* line 69, ../../../app/stylesheets/application.scss */
+body.bp section.content .courses_table {
+  border: 1px solid #666;
+  border-collapse: collapse;
+}
+/* line 73, ../../../app/stylesheets/application.scss */
+body.bp section.content .courses_table tr {
+  border-top: 1px solid #666	!important;
+}
+/* line 78, ../../../app/stylesheets/application.scss */
+body.bp section.content .courses_table thead th {
+  background-color: #dedede;
+}
+/* line 83, ../../../app/stylesheets/application.scss */
+body.bp section.content .courses_table .row_even {
+  background-color: #fff;
+}
+/* line 87, ../../../app/stylesheets/application.scss */
+body.bp section.content .courses_table .row_odd {
+  background-color: #eee;
+}
+/* line 92, ../../../app/stylesheets/application.scss */
+body.bp section.content table.inner_publish {
+  border: 1px solid #666;
+  border-collapse: collapse;
+}
+/* line 96, ../../../app/stylesheets/application.scss */
+body.bp section.content table.inner_publish td {
+  border: 1px solid #666	!important;
+  background-color: white;
+}
+/* line 102, ../../../app/stylesheets/application.scss */
+body.bp section.content table.inner_publish thead th {
+  border: 1px solid #666	!important;
+  background-color: #dedede;
+}
