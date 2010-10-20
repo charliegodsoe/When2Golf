@@ -13,7 +13,7 @@ publisher_role = UserRole.create :role => "Publisher", :description => "Manages 
 User.create(:email => "admin@admin.com", :name => "Admin", :user_role => admin_role, :password => "pinhead", :password_confirmation => "pinhead")
 owner = User.create(:email => "owner@owner.com", :name => "Owner", :user_role => owner_role, :password => "pinhead", :password_confirmation => "pinhead")
 User.create(:email => "publisher@publisher.com", :name => "Publisher", :user_role => publisher_role, :password => "pinhead", :password_confirmation => "pinhead")
-charlie = User.create :email => "l", :name => "Charlie Godsoe", :user_role => owner_role, :password => "pinhead", :password_confirmation => "pinhead"
+charlie = User.create :email => "charliegodsoe@gmail.com", :name => "Charlie Godsoe", :user_role => owner_role, :password => "pinhead", :password_confirmation => "pinhead"
 
 TimeDisplayType.create :type_name => "Monthly", :type_description => "Monthly view for tee times"
 TimeDisplayType.create :type_name => "Weekly", :type_description => "Weekly view for tee times"

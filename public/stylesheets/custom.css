@@ -318,6 +318,7 @@ table {
 	r
 }
 
+
 .outer_publish {
 	border:solid;
 	border-width:2px;
@@ -332,5 +333,13 @@ table {
 	border:solid;
 	border-width:1px;
 	border-color:lightblue;
-	padding:none;
+	width:30px;
+	height:100%;
+	padding-right: 5px;
+	/*
+	padding-top: 3px;
+	padding-right: 7px;
+	padding-bottom: 2px;
+	padding-left: 7px;
+	*/
 }
