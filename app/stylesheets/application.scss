@@ -7,6 +7,11 @@ html{
 	height: 100%;
 }
 
+$currently_updated_color: 		#8CFF88;
+$not_recently_updated_color:	#FFEF88;
+$data_expired_color:	 		#FF8888;
+
+
 body.bp {
 	
 	@include linear-gradient(color-stops(white, #dddddd));
@@ -114,16 +119,16 @@ body.bp {
 				*/
 			}
 			
-			td.currently_updated {
-				background-color: #8CFF88;
+			.currently_updated {
+				background-color: $currently_updated_color;
 			}
 			
-			td.not_recently_updated {
-				background-color: #FFEF88;
+			.not_recently_updated {
+				background-color: $not_recently_updated_color;
 			}
 			
-			td.data_expired {
-				background-color: #FF8888;
+			.data_expired {
+				background-color: $data_expired_color;
 			}
 			
 			thead{
@@ -133,8 +138,5 @@ body.bp {
 				}
 			}
 		}
-		
-		
-		
 	}
 }
