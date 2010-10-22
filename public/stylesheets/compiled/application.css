@@ -126,8 +126,33 @@ body.bp section.content table.inner_publish {
 body.bp section.content table.inner_publish td {
   border: 1px solid #666	!important;
   background-color: white;
+  				/*
+  				.data_expired {
+  					background-color: #FF8888;
+  				}
+  				
+  				.not_recently_updated {
+  					color: #FFEF88;
+  				}
+  
+  				.currently_updated {
+  					color: #8CFF88;
+  				}
+  				*/
 }
-/* line 104, ../../../app/stylesheets/application.scss */
+/* line 117, ../../../app/stylesheets/application.scss */
+body.bp section.content table.inner_publish td.currently_updated {
+  background-color: #8CFF88;
+}
+/* line 121, ../../../app/stylesheets/application.scss */
+body.bp section.content table.inner_publish td.not_recently_updated {
+  background-color: #FFEF88;
+}
+/* line 125, ../../../app/stylesheets/application.scss */
+body.bp section.content table.inner_publish td.data_expired {
+  background-color: #FF8888;
+}
+/* line 130, ../../../app/stylesheets/application.scss */
 body.bp section.content table.inner_publish thead th {
   border: 1px solid #666	!important;
   background-color: #dedede;

@@ -98,6 +98,32 @@ body.bp {
 			td{
 				border: 1px solid #666	!important;
 				background-color: white;
+				
+				/*
+				.data_expired {
+					background-color: #FF8888;
+				}
+				
+				.not_recently_updated {
+					color: #FFEF88;
+				}
+
+				.currently_updated {
+					color: #8CFF88;
+				}
+				*/
+			}
+			
+			td.currently_updated {
+				background-color: #8CFF88;
+			}
+			
+			td.not_recently_updated {
+				background-color: #FFEF88;
+			}
+			
+			td.data_expired {
+				background-color: #FF8888;
 			}
 			
 			thead{
@@ -107,5 +133,8 @@ body.bp {
 				}
 			}
 		}
+		
+		
+		
 	}
 }

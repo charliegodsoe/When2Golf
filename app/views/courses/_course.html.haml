@@ -13,7 +13,7 @@
 					%tbody
 						%tr
 							- course.time_display_formats.first.time_format_groups.each do |format_group|
-								%td{:class => "inner_publish"}
+								%td{:class => ["inner_publish",  course.cell_quality(format_group, @day)]}
 									= course.tee_times(format_group, @day)
 			- @day = @day.tomorrow
 -@day = DateTime.now

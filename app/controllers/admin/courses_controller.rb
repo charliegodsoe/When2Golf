@@ -9,13 +9,9 @@ class Admin::CoursesController < ApplicationController
   def add_tee_time
     @course = Course.find(params[:id])
     @time_format_group = TimeFormatGroup.find(params[:time_format_group_id]) 
-    logger.debug "Time format group: #{@time_format_group.inspect}"
     @day = Date.parse(params[:day])#.to_date
-    logger.debug "Day: #{@day.inspect}"
     @start_date_time = start_from_group_and_date(@time_format_group, @day)
-    logger.debug "Start Time: #{@start_date_time.inspect}"
     @end_date_time = start_from_group_and_date(@time_format_group, @day)
-    logger.debug "End Time: #{@start_date_time.inspect}"
     
     @course.time_entries.create(:start_date_time => @start_date_time, :end_date_time => @end_date_time)
     redirect_to([:admin, @course])

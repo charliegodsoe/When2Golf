@@ -29,4 +29,20 @@ class Course < ActiveRecord::Base
     end
     return count
   end
+  
+  def cell_quality(time_format_group, date)
+    highest_date = DateTime.new
+    count = 0
+    time_entries.each do |time_entry|
+      highest_date = time_entry.updated_at if time_entry.within?(time_format_group, date) and time_entry.updated_at > highest_date
+      count += 1 if time_entry.within?(time_format_group, date)
+    end
+    highest_date
+    if count > 0
+      minutes = ((DateTime.now.to_f - highest_date.to_f) / 60).round.to_i
+      TimeEntryQuality.find(:all, :order => 'id asc',:conditions => ['time_in_minutes > ?', minutes]).first.name
+    else
+      TimeEntryQuality.find_by_time_in_minutes(nil).name
+    end
+  end
 end

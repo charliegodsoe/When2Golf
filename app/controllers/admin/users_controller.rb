@@ -9,7 +9,7 @@ class Admin::UsersController < ApplicationController
   
   
   def save
-    if current_user.has_owner_privileges?
+    if has_owner_privileges?
       logger.debug "Made it to 'save'"
       logger.debug params.inspect
       @user = User.find(params[:id])
