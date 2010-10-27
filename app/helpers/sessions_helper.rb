@@ -43,6 +43,10 @@ module SessionsHelper
     redirect_to signin_path, :notice => "Please sign in to access this page."
   end
   
+  def deny_administrative_access
+    redirect_to root_path, :notice => "You do not have the correct permissions to access this portion of the site."
+  end
+  
   private
   
     def user_from_cookie

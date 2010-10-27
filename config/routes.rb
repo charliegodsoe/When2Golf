@@ -12,6 +12,7 @@ When2Golf::Application.routes.draw do
   root :to => 'courses#index'
   
   namespace :admin do
+    resources :time_display_formats
     resources :courses 
     resources :users# do
       # member do
