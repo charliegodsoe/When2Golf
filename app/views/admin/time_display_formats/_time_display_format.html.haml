@@ -1,0 +1,6 @@
+%tr
+	%td= time_display_format.format_name
+	%td= time_display_format.format_role_and_description
+	%td= link_to 'Show', [:admin, time_display_format]
+	%td= link_to 'Edit', edit_admin_time_display_format_path(time_display_format)
+	%td= button_to 'Destroy', [:admin, time_display_format], :confirm => 'Are you sure?', :method => :delete

@@ -1,2 +1,32 @@
-%h1 Admin::TimeDisplayFormatsController#show</h1>
-%p Find me in app/views/admin/time_display_formats_controller/show.html.erb</p>
+%p#notice= notice
+%h1= @time_display_format.format_name
+
+%p
+	%b Display Type: 
+	= @time_display_format.format_role_and_description
+
+%p
+	%b Display Groups:
+	
+	%table.inner_publish
+		%thead
+			%tr
+				- @time_display_format.time_format_groups.each do |format_group|
+					%th.inner_publish
+						= format_group.group_display_name
+			%tr
+				- @time_display_format.time_format_groups.each do |format_group|
+					%td.inner_publish
+						= format_group.group_name
+				
+			%tr
+				- @time_display_format.time_format_groups.each do |format_group|
+					%td.inner_publish
+						= "Group Start: #{format_group.start_time.strftime("%I:%M%p")}"  
+						
+			%tr
+				- @time_display_format.time_format_groups.each do |format_group|
+					%td.inner_publish
+						= "Group End: #{format_group.end_time.strftime("%I:%M%p")}"
+= link_to 'Edit', edit_admin_time_display_format_path(@time_display_format) 
+= link_to 'Back', admin_time_display_formats_path 

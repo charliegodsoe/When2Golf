@@ -10,6 +10,7 @@
 			
 				-if has_owner_privileges?
 					%li= link_to "Manage Users", admin_users_path
+					%li= link_to "Manage Display", admin_time_display_formats_path
 
 				%li= link_to "Sign out", signout_path, :method => :delete
 			-else

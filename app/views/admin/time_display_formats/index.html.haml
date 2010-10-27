@@ -1,2 +1,16 @@
-%h1 Admin::TimeDisplayFormatsController#index
-%p Find me in app/views/admin/time_display_formats_controller/index.html.erb
+%h1 Time Display Formats 
+
+%table
+	%thread
+		%tr
+			%th Name
+			%th Display Type
+			%th
+			%th
+			%th
+	
+	= render :partial => 'time_display_format', :collection => @time_display_formats
+	
+-if has_owner_privileges?
+	= link_to 'New Time Display Formats', new_admin_time_display_format_path
+	

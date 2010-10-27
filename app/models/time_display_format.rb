@@ -14,4 +14,8 @@ class TimeDisplayFormat < ActiveRecord::Base
   belongs_to :time_display_type
   has_and_belongs_to_many :courses
   has_many :time_format_groups
+  
+  def format_role_and_description
+    "#{time_display_type.type_name} - #{time_display_type.type_description}"
+  end
 end

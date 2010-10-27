@@ -7,9 +7,11 @@ class Admin::TimeDisplayFormatsController < ApplicationController
   end
   
   def index
+    @time_display_formats = TimeDisplayFormat.find(:all)
   end
 
   def show
+    @time_display_format = TimeDisplayFormat.find(params[:id])
   end
 
   def new
