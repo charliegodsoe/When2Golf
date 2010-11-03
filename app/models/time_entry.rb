@@ -17,7 +17,7 @@ class TimeEntry < ActiveRecord::Base
   def within?(time_format_group, date)
     start_time = DateTime.new(date.year, date.month, date.day, time_format_group.start_time.hour, time_format_group.start_time.min)
     if(time_format_group.end_time.hour < time_format_group.start_time.hour)    
-      end_time = DateTime.new(date.year, date.month, date.day + 1, time_format_group.end_time.hour, time_format_group.end_time.min)
+      end_time = DateTime.new(date.year, date.month, date.day, time_format_group.end_time.hour, time_format_group.end_time.min).advance(:days => 1)
     else  
       end_time = DateTime.new(date.year, date.month, date.day, time_format_group.end_time.hour, time_format_group.end_time.min)
     end

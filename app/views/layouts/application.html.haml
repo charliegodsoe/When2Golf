@@ -9,7 +9,7 @@
 		= stylesheet_link_tag 'compiled/print.css', :media => 'print'
 		/[if lt IE 8]
 			= stylesheet_link_tag 'compiled/ie.css', :media => 'screen, projection'
-		= javascript_include_tag :all 
+		= javascript_include_tag :all #:defaults 
 	%body{:class => "bp"}
 		= render 'layouts/header'
 		-# main content

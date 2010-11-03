@@ -1,0 +1,28 @@
+= form_for([:admin, @time_display_format]) do |f|
+	- if @time_display_format.errors.any?
+		#error_explanation
+			%h2
+				= pluralize(@time_display_format.errors.count, "error") + "prohibited this course from being saved:"
+			%ul 
+				- @course.errors.full_messages.each do |msg|
+					%li= msg 
+
+	.field
+		= f.label :format_name 
+		%br
+		= f.text_field :format_name
+	.field
+		= f.label :time_display_type 	
+		%br
+		= f.collection_select :time_display_type_id, TimeDisplayType.find(:all), :id, :type_name
+	
+	.time_format_groups
+		- f.fields_for :time_format_groups do |time_format_group_fields|
+			= render :partial => 'time_format_group', :locals => {:f => time_format_group_fields}, :collection => @time_display_format.time_format_groups	
+
+	= add_time_format_group_link "Add a Time Group", f #time_format_group_fields
+	
+	.actions
+		= f.submit
+	
+

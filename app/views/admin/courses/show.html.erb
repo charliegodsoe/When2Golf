@@ -38,6 +38,8 @@
 						<% @course_display.time_format_groups.each do |format_group| %>
 							<td class="inner_publish">
 								<% #= link_to @course.tee_times(format_group, @day), :action => "add_tee_time", :controller => "admin/course", :id => @course %>
+								<% logger.debug 'HERE??' %>
+								<% logger.debug "#{@day} - #{format_group.group_display_name} - #{@course.tee_times(format_group, @day)}" %>
 								<%= link_to @course.tee_times(format_group, @day), :action => :add_tee_time, :id => @course, :time_format_group_id => format_group, :day => @day %>
 							</td>
 						<% end %>
@@ -45,6 +47,7 @@
 				</table>
 			</td>
 			<% @day = @day.tomorrow %>
+			<% logger.debug "#{@day}" %>
 		<% end %>
 	  	</tr>
 	</table>
