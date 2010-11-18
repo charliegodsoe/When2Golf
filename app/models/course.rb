@@ -22,6 +22,24 @@ class Course < ActiveRecord::Base
     return DateTime.new
   end
   
+  def last_updated_ago
+    # difference = DateTime.now.to_time.to_i - last_tee_time_update.to_i 
+    DateTime.now.to_time.to_i - last_tee_time_update.to_i 
+    #return "#{difference / 1.day} days ago" unless difference / 1.day = 0
+    #return "#{difference / 1.hours} hours ago" unless difference / 1.hours = 0
+    #return "#{difference / 1.minute} minutes ago" unless difference / 1.minute = 0
+    #return "#{difference / 1.second} seconds ago" unless difference / 1.second = 0
+    # minute = 60 # in seconds
+    #     hour = minute * 60 # in seconds
+    #     day = hour * 24 # in seconds
+    #     
+    #     #return "Not Updated" if time_entries.count = 0
+    #     return "#{difference / day} days ago" if difference / day != 0 or time_entry
+    #     return "#{difference / hour} hours ago" if difference / hour != 0
+    #     return "#{difference / minute} minutes ago" if difference / minute != 0
+    #     return "#{difference} seconds ago" if difference != 0
+  end
+  
   def tee_times(time_format_group, date)
     count = 0
     time_entries.each do |time_entry|

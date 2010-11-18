@@ -16,4 +16,5 @@
 								%td{:class => ["inner_publish",  course.cell_quality(format_group, @day)]}
 									= course.tee_times(format_group, @day)
 			- @day = @day.advance(:days => 1)
+	%td.outer_publish= updated_time_eplapsed(course)
 -@day = DateTime.now
