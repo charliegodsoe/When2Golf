@@ -56,7 +56,7 @@ Course.find(:all).each do |c|
   c.time_display_formats << time_display_format
 end
 
-TimeEntryQuality.create(:name => "currently_updated",     :description => "Recently a Tee Time was added",    :time_in_minutes => 24*60)
-TimeEntryQuality.create(:name => "not_recently_updated",  :description => "Updated a day ago",                :time_in_minutes => 2*24*60)
-TimeEntryQuality.create(:name => "data_expired",          :description => "Updated greater than 2 days ago",  :time_in_minutes => 2147483647)
-TimeEntryQuality.create(:name => "no_data", :description => "No tee times added", :time_in_minutes => nil)
+TimeEntryQuality.create(:name => "currently_updated",     :description => "Recently a Tee Time was added",    :time_in_minutes => 24*60,      :display_name => "Current Updates")
+TimeEntryQuality.create(:name => "not_recently_updated",  :description => "Updated a day ago",                :time_in_minutes => 2*24*60,    :display_name => "Not Updated Today")
+TimeEntryQuality.create(:name => "data_expired",          :description => "Updated greater than 2 days ago",  :time_in_minutes => 2147483647, :display_name => "Not Updated for >2 days")
+TimeEntryQuality.create(:name => "no_data", :description => "No tee times added", :time_in_minutes => nil, :display_name => nil)
