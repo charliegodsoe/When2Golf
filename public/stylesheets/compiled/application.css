@@ -97,32 +97,36 @@ body.bp section.content {
   padding: 10px;
 }
 /* line 76, ../../../app/stylesheets/application.scss */
+body.bp section.content .legend {
+  width: 150px;
+}
+/* line 80, ../../../app/stylesheets/application.scss */
 body.bp section.content .courses_table {
   border: 1px solid #666;
   border-collapse: collapse;
 }
-/* line 80, ../../../app/stylesheets/application.scss */
+/* line 84, ../../../app/stylesheets/application.scss */
 body.bp section.content .courses_table tr {
   border-top: 1px solid #666	!important;
 }
-/* line 85, ../../../app/stylesheets/application.scss */
+/* line 89, ../../../app/stylesheets/application.scss */
 body.bp section.content .courses_table thead th {
   background-color: #dedede;
 }
-/* line 90, ../../../app/stylesheets/application.scss */
+/* line 94, ../../../app/stylesheets/application.scss */
 body.bp section.content .courses_table .row_even {
   background-color: #fff;
 }
-/* line 94, ../../../app/stylesheets/application.scss */
+/* line 98, ../../../app/stylesheets/application.scss */
 body.bp section.content .courses_table .row_odd {
   background-color: #eee;
 }
-/* line 99, ../../../app/stylesheets/application.scss */
+/* line 103, ../../../app/stylesheets/application.scss */
 body.bp section.content table.inner_publish {
   border: 1px solid #666;
   border-collapse: collapse;
 }
-/* line 103, ../../../app/stylesheets/application.scss */
+/* line 107, ../../../app/stylesheets/application.scss */
 body.bp section.content table.inner_publish td {
   border: 1px solid #666	!important;
   background-color: white;
@@ -140,19 +144,19 @@ body.bp section.content table.inner_publish td {
   				}
   				*/
 }
-/* line 122, ../../../app/stylesheets/application.scss */
+/* line 126, ../../../app/stylesheets/application.scss */
 body.bp section.content table.inner_publish .currently_updated {
   background-color: #8cff88;
 }
-/* line 126, ../../../app/stylesheets/application.scss */
+/* line 130, ../../../app/stylesheets/application.scss */
 body.bp section.content table.inner_publish .not_recently_updated {
   background-color: #ffef88;
 }
-/* line 130, ../../../app/stylesheets/application.scss */
+/* line 134, ../../../app/stylesheets/application.scss */
 body.bp section.content table.inner_publish .data_expired {
   background-color: #ff8888;
 }
-/* line 135, ../../../app/stylesheets/application.scss */
+/* line 139, ../../../app/stylesheets/application.scss */
 body.bp section.content table.inner_publish thead th {
   border: 1px solid #666	!important;
   background-color: #dedede;

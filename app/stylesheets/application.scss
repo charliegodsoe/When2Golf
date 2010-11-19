@@ -73,6 +73,10 @@ body.bp {
 		@include linear-gradient(color-stops(white, #efefef));
 		padding: 10px;
 		
+		.legend{
+			width: 150px;
+		}
+		
 		.courses_table{
 			border: 1px solid #666;
 			border-collapse:collapse;

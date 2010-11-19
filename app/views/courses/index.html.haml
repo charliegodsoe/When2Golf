@@ -1,4 +1,9 @@
 %h2 Listing courses
+%table{:class => ["inner_publish", "legend"]}
+	- @time_entry_qualities.each do |time_entry_quality|
+		%tr
+			%td{:class => time_entry_quality.name}= time_entry_quality.display_name
+
 %table{:class => 'courses_table'}
 	%thead
 		%tr

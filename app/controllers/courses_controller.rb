@@ -7,6 +7,7 @@ class CoursesController < ApplicationController
     #@course.time_entries.find(:all, :order => "updated_at", :limit => 1)
     @courses.sort! { |a,b| b.last_tee_time_update <=> a.last_tee_time_update } #find(:all, :order => "updated_at", :limit => 1).first.updated_at }
     @day = DateTime.now
+    @time_entry_qualities = TimeEntryQuality.find(:all, :conditions => "display_name IS NOT NULL")
 
     respond_to do |format|
       format.html # index.html.erb
